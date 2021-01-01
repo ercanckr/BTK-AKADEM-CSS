@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Child (çocuk)Seçicisi*/
+
+div > p{
+	color: red;
+}
+
+span > p{
+	color: orangered;
+}
+
+div > p > span{
+	color: blue;
+}
+
+ul>li#deger2{
+	color: orange;
+}
+ul>li#deger1{
+	color: blue;
+}
+ul>li.deger{
+	color: magenta;
+}
+
+/*Descendant (Torun)Seçicisi*/

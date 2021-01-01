@@ -32,3 +32,50 @@ h2{
 li{
 	color: darkred;
 }
+
+
+
+/*İD (Benzersiz Kimlik) Seçicisi*/
+
+h3#FirmaAdi{
+	color: orange;
+}
+#EgitimSeti{
+	color: red;
+	font-weight: bold;
+}
+#isimSoyisim{
+	display: inline;
+	background-color: gray;
+	color: yellow;
+}
+
+
+
+/*Class (Sınıf) Seçicisi*/
+
+.kirmizi{
+	color: red;
+}
+.mavi{
+	color: blue;
+}
+.yesil{
+	color: green;
+}
+.kalin{
+	font-weight: bold;
+}
+div.sari{
+	color: yellow
+}
+
+.turuncuyazi{
+	color: orange;
+}
+.kalinyazi{
+	font-weight: bold;
+}
+.yaziboyutu{
+	font-size: 20px;
+}
