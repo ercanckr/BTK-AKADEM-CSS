@@ -3,26 +3,55 @@
 
 /*Child (çocuk)Seçicisi*/
 
-div > p{
-	color: red;
+div > p {
+  color: red;
 }
 
-span > p{
-	color: orangered;
+span > p {
+  color: orangered;
 }
 
-div > p > span{
-	color: blue;
+div > p > span {
+  color: blue;
 }
 
-ul>li#deger2{
-	color: orange;
+ul > li#deger2 {
+  color: orange;
 }
-ul>li#deger1{
-	color: blue;
+ul > li#deger1 {
+  color: blue;
 }
-ul>li.deger{
-	color: magenta;
+ul > li.deger {
+  color: magenta;
 }
 
 /*Descendant (Torun)Seçicisi*/
+
+div a {
+  color: red;
+  text-decoration: none;
+}
+ul span {
+  color: blue;
+}
+ul span.renkli {
+  color: darkgreen;
+}
+
+/*Genel Sibling(Kardeş) Seçici*/
+div ~ h3 {
+  color: orange;
+}
+h3 ~ p {
+  color: blue;
+}
+
+div#deneme ~ h3 {
+  color: darkblue;
+}
+
+div#deneme1 ~ h3.boya {
+  color: red;
+  background-color: yellow;
+  display: inline;
+}
