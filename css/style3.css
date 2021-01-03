@@ -1,0 +1,31 @@
+/*Bitişik Sibling (Kardeş) seçici */
+
+div + h3 {
+  color: red;
+}
+
+div#deneme + h3.boya {
+  color: darkblue;
+}
+
+div + h3.boya {
+  color: purple;
+}
+/* Multiple (Çoklu) seçici*/
+
+h2,
+li,
+div {
+  color: red;
+}
+
+h4,
+li.bir {
+  color: orange;
+}
+
+p,
+li#bir,
+li#iki {
+  color: darkblue;
+}

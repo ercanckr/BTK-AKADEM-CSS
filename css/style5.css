@@ -1,0 +1,10 @@
+/*Attribute (Özellik) Seçicilerde içeren tam değer filtresi*/
+
+div[title~="isim" i] {
+  color: red;
+  font-weight: bold;
+}
+[title~="isimler" i] {
+  color: blue;
+  font-weight: bold;
+}

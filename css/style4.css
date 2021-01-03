@@ -1,0 +1,65 @@
+/*Attribute (Özellik) Seçiciler*/
+
+li[name] {
+  color: darkblue;
+}
+h2[name],
+div[name] {
+  color: red;
+}
+
+h2[id],
+li[id] {
+  font-weight: bold;
+  color: blue;
+}
+
+li[class] {
+  color: rebeccapurple;
+}
+li[title],
+li[style] {
+  color: green;
+}
+li[translate] {
+  color: yellow;
+}
+
+/*Attribute (Özellik) Seçicilerde tam değer filtresi*/
+li[class="htm"] {
+  color: orange;
+}
+li[class="htm"] {
+  color: brown;
+}
+[title="c++"] {
+  color: pink;
+}
+li[accesskey=""] {
+  color: red;
+  font-weight: bold;
+}
+li[name="htm"],
+li[data-dil=""],
+li[lang=""] {
+  color: magenta;
+}
+
+li > span[name="Program"] {
+  background-color: yellow;
+}
+
+li > span[name="Programlama "],
+li > span[name="Programlama Dili"] {
+  background-color: green;
+}
+
+ol span[name="Prog"] {
+  background-color: gray;
+}
+
+span[name="isaret"],
+li > span[name="tur"],
+ol span[name=""] {
+  background-color: aqua;
+}
