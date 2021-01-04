@@ -1,0 +1,107 @@
+/* CSS Seçicilerinde Pseudo classes (sahte sınıflar) */
+
+/*link pseudo class (sahte sınıfı) 
+:link  :  Daha önce hiç açılmamış Link'in Rengini tanımlar. */
+
+a:link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+a[id="kimlik"]:link {
+  color: yellow;
+}
+
+a[href*="hepsiburada"]:link {
+  color: brown;
+}
+/*hover pseudo class (sahte sınıfı)
+ :hover : Belirtilen HTML Elementinin mause üzerine geldiğinde stil tanımlar.
+ :hover : Belirtilen HTML Elementinin mause üzerinden ayrıldığında stil normale döner. */
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: #ccc;
+}
+a[id="kimlik"]:hover {
+  color: red;
+}
+
+a[href*="hepsiburada"]:hover {
+  color: blue;
+}
+
+div:hover {
+  color: red;
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+/*active pseudo class (sahte sınıfı)
+ :active : Belirtilen HTML Elementi aktif oldugunda stil tanımlar. */
+
+a:active {
+  color: rebeccapurple;
+  text-decoration: none;
+  font-weight: bold;
+}
+a[id="kimlik"]:active {
+  color: grey;
+}
+
+a[href*="hepsiburada"]:active {
+  color: green;
+}
+div:active {
+  color: blue;
+  background-color: yellow;
+  font-weight: bold;
+}
+/*visited pseudo class (sahte sınıfı)
+ :visited :  Daha önce açılmış link'in stil tanımlar. */
+a:visited {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: bold;
+}
+a[id="kimlik"]:visited {
+  color: orangered;
+}
+
+a[href*="hepsiburada"]:visited {
+  color: magenta;
+}
+/* link, hover, active ve visited Pseudo classes 
+(sahte sınıflarının) bir arada kullanımı. */
+nav {
+  text-align: center;
+}
+nav > a {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 15px;
+  font-family: tahoma;
+}
+
+nav > a:link {
+  color: red;
+  text-decoration: none;
+}
+nav > a:visited {
+  color: red;
+  text-decoration: none;
+}
+nav > a:hover {
+  color: blue;
+  background-color: aqua;
+}
+nav > a:active {
+  color: green;
+}

@@ -1,0 +1,7 @@
+/*Attribute (Özellik) Seçicilerde birden fazla aynı veya 
+farklı filtrelerin bir arada kullanımı*/
+
+a[href^="https"][href*="goog"][href$="com"] {
+  color: orangered;
+  text-decoration: none;
+}

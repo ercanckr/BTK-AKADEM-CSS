@@ -1,0 +1,47 @@
+/* :any-link pseudo class (sahte sınıfı)
+:any-link : Döküman içerisinde bulunan HTML'nin link elementinin
+ veya elementlerinin URL değeri boş değil ise stil tanımlar. */
+
+nav a:-webkit-any-link {
+  color: red;
+  text-decoration: none;
+}
+nav a:-moz-any-link {
+  color: red;
+  text-decoration: none;
+}
+
+nav a:-o-any-link {
+  color: red;
+  text-decoration: none;
+}
+
+nav a:-ms-any-link {
+  color: red;
+  text-decoration: none;
+}
+nav a:any-link {
+  color: red;
+  text-decoration: none;
+}
+/* :focus pseudo class (sahte sınıfı)
+:focus : Belirtilen HTML elementine odaklanıldığında stil tanımlar.
+Belirtilen HTML elementinin odağıdan cıkıldığında stil normale döner. */
+
+section input:focus {
+  background-color: aqua;
+}
+
+div:focus {
+  background-color: aqua;
+}
+/* :lang() pseudo class (sahte sınıfı)
+:lang() :Belirtilen HTML elementine lang (dil) özelliğine göre stil tanımlar.*/
+
+header div:lang(it) {
+  color: red;
+}
+
+div[id="icerik"] {
+  color: blue;
+}

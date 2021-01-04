@@ -8,3 +8,43 @@ div[title~="isim" i] {
   color: blue;
   font-weight: bold;
 }
+/*Attribute (Özellik) Seçicilerde içeren değer filtresi*/
+
+div[title*="örnek" i] {
+  color: red;
+  font-weight: bold;
+}
+[title*="lar"] {
+  color: rgb(192, 192, 201);
+  font-weight: bold;
+}
+
+/*Attribute (Özellik) Seçicilerde başlayan değer filtresi*/
+
+p[name^="m"] {
+  color: red;
+}
+
+p[name^="be" i] {
+  color: blue;
+}
+/*Attribute (Özellik) Seçicilerde tireli ve tiresiz değer filtresi*/
+
+div[lang|="en"] {
+  color: red;
+  font-weight: bold;
+}
+
+div[lang|="tr" i] {
+  color: blue;
+  font-weight: bold;
+}
+/*Attribute (Özellik) Seçicilerde biten değer filtresi*/
+
+p[name$="ı"] {
+  color: yellow;
+}
+
+p[name$="r" i] {
+  color: green;
+}
