@@ -45,3 +45,45 @@ header div:lang(it) {
 div[id="icerik"] {
   color: blue;
 }
+
+/* :target pseudo class (sahte sınıfı)
+:target  : Belirtilen HTML Elementine Çapa türündeki Linklerle Bağlanmış olan 
+ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar*/
+
+ul:target {
+  color: blue;
+  background-color: yellow;
+}
+/* :root pseudo class (sahte sınıfı)
+:root : HTML Belgesinin Kök Elementine Stil Tanımlar */
+
+:root {
+  background-color: #ccc;
+}
+
+/* :empty pseudo class (sahte sınıfı)
+:empty  :Belirtilen HTML Elementinin içeriği tamamen
+ boş ise stil tanımlaması yaapar. */
+
+div:empty {
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+:empty {
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+}
+/* :not() pseudo class (sahte sınıfı)
+:not() : Belirtilen HTML Elementi Hariç
+ Diğer tüm HTML Elementlerine Stil Tanımlar*/
+
+main li {
+  color: blue;
+  background-color: #fff;
+}
+main:not(li) {
+  color: red;
+  background-color: aqua;
+}

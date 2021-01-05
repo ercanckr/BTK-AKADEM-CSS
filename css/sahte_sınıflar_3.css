@@ -1,0 +1,92 @@
+/* :checked pseudo class (sahte sınıfı)
+:checked : Belirtilen HTML Elementi Seçildiğinde Stil tanımlar.
+Belirtilen HTML Elementi Seçimi kaldirildiğinda stil normale döner.*/
+
+input:checked {
+  width: 20px;
+  height: 20px;
+}
+/* :disabled pseudo class (sahte sınıfı)
+:disabled : Belirtilen HTML Elementi Etkin olmadığında stil tanımlar */
+input:disabled {
+  border: none;
+  background-color: #ccc;
+  color: red;
+  font-weight: bold;
+}
+textarea:disabled {
+  border: none;
+  background-color: #ccc;
+  color: red;
+  font-weight: bold;
+}
+
+/* :enabled pseudo class (sahte sınıfı)
+:disabled : Belirtilen HTML Elementi Etkin olduğunda stil tanımlar */
+article input:enabled {
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
+}
+article textarea:enabled {
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
+}
+/* :read-only pseudo class (sahte sınıfı)
+:read-only : Belirtilen HTML Elementi Sadece okunabilir oldugunda stil tanımlar.*/
+aside input:read-only {
+  color: red;
+  background-color: aqua;
+}
+aside textarea:read-only {
+  color: blue;
+  background-color: aqua;
+}
+/* :read-write pseudo class (sahte sınıfı)
+:read-write : Belirtilen HTML Elementi okunabilir ve yazılabilir
+ (düzenlenebilir )oldugunda stil tanımlar.*/
+aside input:read-write {
+  color: red;
+  background-color: aqua;
+  font-weight: bold;
+}
+aside textarea:read-write {
+  color: blue;
+  background-color: aqua;
+  font-weight: bold;
+}
+/* :required pseudo class (sahte sınıfı)
+:required : Belirtilen HTML Elementine Bilgi Girişi
+ Zorunlu Olduğunda stil tanımlar.*/
+
+header input:required {
+  border: 2px solid red;
+  width: 100%;
+  height: 30px;
+  color: red;
+  background-color: yellow;
+  font-size: 20px;
+}
+header textarea:required {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
+/* :optional pseudo class (sahte sınıfı)
+:required : Belirtilen HTML Elementine Bilgi Girişi opsiyonel oldugunda yani
+ Zorunlu Olmadığında stil tanımlar.*/
+
+header input[type="text"]:optional {
+  border: 2px solid red;
+  color: blue;
+  background-color: #f6f6f6;
+  font-size: 20px;
+}
+header textarea:optional {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
