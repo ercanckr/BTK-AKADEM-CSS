@@ -1,0 +1,87 @@
+/* :valid pseudo class (sahte sınıfı)
+:valid : Belirtilen HTML Elementi bilgi girişi geçerli bir değer olduğunda stil tanımlar.
+Belirtilen HTML Elementi bilgi girişi geçersiz bir değer olduğunda stil normale döner.*/
+
+header input[type="email"]:valid {
+  color: red;
+  background-color: yellow;
+}
+
+/* :invalid pseudo class (sahte sınıfı)
+:invalid : Belirtilen HTML Elementi bilgi girişi geçersiz bir değer olduğunda stil tanımlar.
+Belirtilen HTML Elementi bilgi girişi geçerli bir değer olduğunda stil normale döner.*/
+
+header input[type="email"]:invalid {
+  color: blue;
+  background-color: aqua;
+}
+/* :in-range pseudo class (sahte sınıfı)
+:in-range :Belirtilen HTML Elementi Bilgi girişi Belirtilen Aralıklar
+ Dahilinde bir değer olduğunda stil tanımlar. :Belirtilen HTML Elementi Bilgi girişi Belirtilen Aralıklar
+ Dışında bir değer olduğunda stil normale döner.*/
+
+article input[type="number"]:in-range {
+  color: red;
+  background-color: rgb(0, 216, 0);
+}
+/* :out-of-range pseudo class (sahte sınıfı)
+ :out-of-range  :Belirtilen HTML Elementi Bilgi girişi Belirtilen Aralıklar dışında bir değer olduğunda sitil tanımlar.
+ Belirtilen HTML Elementi Bilgi girişi Belirtilen Aralıklar dahilinde bir değer olduğunda sitil ormale döner.*/
+section input[type="number"]:out-of-range {
+  color: white;
+  background-color: red;
+}
+article input[type="number"]:out-of-range {
+  color: white;
+  background-color: red;
+}
+/* :first-child pseudo class (sahte sınıfı)
+:first-child  :Belirtilen HTML Elementi baz alınarak üst elementine göre
+ bitişik ilk child (çocuk) durumundaki elemente stil tanımlar*/
+
+main div:first-child {
+  color: red;
+}
+main p:first-child {
+  color: red;
+}
+/* :last-child pseudo class (sahte sınıfı)
+:last-child  :Belirtilen HTML Elementi baz alınarak üst elementine göre
+ bitişik son child (çocuk) durumundaki elemente stil tanımlar*/
+
+main p:last-child {
+  color: blue;
+}
+/* :first-of-type pseudo class (sahte sınıfı)
+:first-of-type :Belirtilen HTML Elementi baz alınarak, üst elementine göre
+ ilk child (çocuk) durumundaki elemente stil tanımlar*/
+aside div:first-of-type {
+  color: gray;
+}
+
+p:first-of-type {
+  color: yellow;
+}
+/* :last-of-type pseudo class (sahte sınıfı)
+:last-of-type :Belirtilen HTML Elementi baz alınarak, üst elementine göre
+ son child (çocuk) durumundaki elemente stil tanımlar*/
+aside div:last-of-type {
+  color: orange;
+}
+
+p:last-of-type {
+  color: green;
+}
+/* :only-child pseudo class (sahte sınıfı)
+:only-child  :Belirtilen HTML Elementi baz alınarak, üst elementine göre
+ bitişik tek child (çocuk) durumundaki elemente stil tanımlar*/
+footer div:only-child {
+  color: orange;
+}
+/* :only-of-type pseudo class (sahte sınıfı)
+:only-of-type  :Belirtilen HTML Elementi baz alınarak, üst elementine göre
+kardeş element türleride eşleşen tek child (çocuk) durumundaki elemente stil tanımlar*/
+
+div p:only-of-type {
+  color: orangered;
+}
