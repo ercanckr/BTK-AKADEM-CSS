@@ -1,0 +1,73 @@
+/*::first-letter  : Belirtilen HTML Elementinin İlk karakterine stil tanımlar.*/
+header p::first-letter {
+  color: red;
+  font-size: 40px;
+}
+header div::first-letter {
+  color: blue;
+  font-size: 40px;
+}
+div[name="deneme"]::first-letter {
+  color: green;
+  font-size: 40px;
+}
+#bir::first-letter {
+  color: orangered;
+  font-size: 40px;
+}
+/*::first-line  : Belirtilen HTML Elementinin İlk satırına stil tanımlar.*/
+
+nav p::first-line {
+  color: red;
+}
+nav h2::first-line {
+  color: orange;
+}
+/*::before  : Belirtilen HTML Elementinin öncesine içerik atayarak stil tanımlar.*/
+
+section div::before {
+  content: "CSS ";
+  color: green;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: aqua;
+}
+section p::before {
+  content: "\2600 \2601 \2602 \2603";
+  color: red;
+  font-size: 20px;
+}
+section button::before {
+  content: "\2600  ";
+  color: yellow;
+}
+/*::after  : Belirtilen HTML Elementinin sonrasına içerik atayarak stil tanımlar.*/
+
+article p::after {
+  content: "lar";
+  color: blue;
+}
+article div::after {
+  content: "\2605 \2605 \2605 ";
+  color: white;
+  background-color: aqua;
+}
+article button::after {
+  content: " \2605 \2605 \2605 ";
+  color: red;
+}
+/*::selection  : Belirtilen HTML Elementinin kullanıcı tarafından seçilen kısmına stil tanımlar.*/
+
+aside li::selection {
+  background-color: red;
+  color: white;
+}
+
+aside h3::selection {
+  background-color: yellow;
+  color: red;
+}
+aside div::selection {
+  background-color: aqua;
+  color: green;
+}
