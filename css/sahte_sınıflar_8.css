@@ -1,0 +1,40 @@
+/*:nth-last-of-type() pseudo class (sahte sınıfı)
+nth-last-of-type()  :Belirtilen HTML Elementi baz alınarak, üst elementine göre kardeş element türleride eşleşen, 
+son (child) çocuk durumundaki elementten başlıyarak sıra numarasına yada numaralarına göre stil tanımlar.
+odd    : Tek haneye göre sıralama
+even   : Çift haneye göre sıralama */
+
+header ul li:nth-last-of-type(3) {
+  color: orangered;
+  background-color: #f1f1f1;
+}
+
+nav ul li:nth-last-of-type(3n + 1) {
+  color: yellow;
+  background-color: #f1f1f1;
+}
+section ul li:nth-last-of-type(odd) {
+  color: green;
+  background-color: #f1f1f1;
+}
+
+article ul li:nth-last-of-type(even) {
+  color: blue;
+  background-color: #f1f1f1;
+}
+aside ul li:nth-last-of-type(n + 3) {
+  color: gray;
+  background-color: #f1f1f1;
+}
+main ul li:nth-last-of-type(-n + 5) {
+  color: red;
+  background-color: #f1f1f1;
+}
+footer ul li:nth-of-type(1n + 3):nth-last-of-type(1n + 2) {
+  color: red;
+  background-color: #f1f1f1;
+}
+div div:nth-last-of-type(3n + 2) {
+  color: red;
+  background-color: #f1f1f1;
+}
