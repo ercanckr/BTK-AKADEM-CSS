@@ -71,3 +71,15 @@ aside div::selection {
   background-color: aqua;
   color: green;
 }
+
+/* !important : css seviye basamaklandırma yapısında önceliği değiştirme*/
+
+footer div {
+  color: blue !important ;
+}
+footer div#kimlik {
+  color: red;
+}
+footer div.sinif {
+  color: green;
+}

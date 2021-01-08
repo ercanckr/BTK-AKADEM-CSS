@@ -1,0 +1,130 @@
+/*Ana Renk tanımlamalarının kullanımı*/
+header div {
+  color: peru;
+  background-color: burlywood;
+}
+header h3 {
+  color: rebeccapurple;
+}
+/*rgb Renk tanımlamalarının kullanımı*/
+
+li#bir {
+  color: rgb(225, 126, 0);
+}
+li#iki {
+  color: rgb(49, 53, 231);
+}
+li#uc {
+  color: rgb(189, 181, 53);
+}
+li#dort {
+  color: rgb(59, 22, 121);
+}
+li#bes {
+  color: rgb(148, 10, 36);
+}
+/*rgba Renk tanımlamalarının kullanımı*/
+section {
+  background-color: rgba(255, 0, 0, 1);
+}
+div[name="bir"] {
+  background-color: rgba(0, 0, 255, 1);
+}
+div[name="iki"] {
+  background-color: rgba(0, 0, 255, 0.9);
+}
+
+div[name="uc"] {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+div[name="dort"] {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+div[name="bes"] {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+div[name="alti"] {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+div[name="yedi"] {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+div[name="sekiz"] {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+div[name="dokuz"] {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+div[name="on"] {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+div[name="onbir"] {
+  background-color: rgba(0, 0, 255, 0);
+}
+/*hsl Renk tanımlamalarının kullanımı*/
+
+article {
+  background-color: hsl(0, 100%, 54%);
+  color: hsl(115, 100%, 54%);
+}
+/*hsla Renk tanımlamalarının kullanımı*/
+main {
+  background-color: hsla(0, 0%, 0%, 1);
+}
+.bir {
+  background-color: hsla(106, 73%, 17%, 1);
+}
+.iki {
+  background-color: hsla(106, 73%, 17%, 0.9);
+}
+
+.uc {
+  background-color: hsla(106, 73%, 17%, 0.8);
+}
+
+.dort {
+  background-color: hsla(106, 73%, 17%, 0.7);
+}
+
+.bes {
+  background-color: hsla(106, 73%, 17%, 0.6);
+}
+
+.alti {
+  background-color: hsla(106, 73%, 17%, 0.5);
+}
+
+.yedi {
+  background-color: hsla(106, 73%, 17%, 0.4);
+}
+
+.sekiz {
+  background-color: hsla(106, 73%, 17%, 0.3);
+}
+
+.dokuz {
+  background-color: hsla(106, 73%, 17%, 0.2);
+}
+
+.on {
+  background-color: hsla(106, 73%, 17%, 0.1);
+}
+.onbir {
+  background-color: hsla(106, 73%, 17%, 0);
+}
+/*hexadecimal(onaltılık) Renk tanımlamalarının kullanımı*/
+footer {
+  border: 20px solid #f00;
+  width: 100%;
+  height: 100px;
+  background-color: #ff9900;
+  color: #0f0;
+  padding: 10px;
+}

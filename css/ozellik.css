@@ -1,0 +1,128 @@
+/*  width  : HTML elementinin genişliğini belirler.
+Değerler   : auto, lenght ,  %, initial , inherit.
+auto       : otomatik değer alır.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+/*  auto  */
+header p {
+  background-color: red;
+  width: auto;
+}
+/*  lenght  */
+
+nav {
+  background-color: yellow;
+  width: 500px;
+}
+nav p {
+  background-color: red;
+  width: 300px;
+}
+/*  %  */
+section {
+  background-color: green;
+  width: 50%;
+}
+section p {
+  background-color: gray;
+  width: 75%;
+}
+/*  initial  */
+article p {
+  background-color: orange;
+  width: 500px;
+}
+article p {
+  width: initial;
+}
+/*  inherit  */
+div#bir {
+  background-color: black;
+  width: 80%;
+}
+div#iki {
+  background-color: red;
+  width: inherit;
+}
+div#uc {
+  background-color: green;
+  width: 50%;
+}
+
+div#dort {
+  background-color: yellow;
+  width: inherit;
+}
+/*max-width  : HTML Elementinin maximum genişliğini belirlr
+Değerler   : none, lenght ,  %, initial , inherit.
+none       : Değer yok.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+
+/*  none  */
+div#none {
+  background-color: yellow;
+  max-width: 500px;
+}
+aside div p {
+  background-color: orange;
+  max-width: none;
+}
+
+/*  langht  */
+
+#langht {
+  background-color: aqua;
+  max-width: 500px;
+}
+aside h3 {
+  background-color: brown;
+  max-width: 300px;
+}
+
+/*  %  */
+
+main {
+  background-color: purple;
+  max-width: 75%;
+}
+main p {
+  background-color: magenta;
+  max-width: 50%;
+}
+
+/* initial */
+
+footer p {
+  background-color: yellow;
+  max-width: 50%;
+}
+footer p[id="initial"] {
+  background-color: yellow;
+  max-width: initial;
+}
+/* inherit */
+div[name="div1"] {
+  background-color: blue;
+  max-width: 80%;
+}
+div[name="div2"] {
+  background-color: yellow;
+  max-width: inherit;
+}
+div[name="div3"] {
+  background-color: orange;
+  max-width: 50%;
+}
+div[name="div4"] {
+  background-color: purple;
+  max-width: inherit;
+}
+div[name="div5"] {
+  background-color: pink;
+  max-width: inherit;
+}
