@@ -1,0 +1,56 @@
+/*max-height  : HTML Elementinin maksimum yüksekliğini belirler.
+Değerler   :none, lenght ,  %, initial , inherit.
+none       : Değer yok.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+
+header > div {
+  background-color: yellow;
+  height: 50px;
+}
+header p {
+  background-color: red;
+  max-height: none;
+}
+nav > div {
+  background-color: yellow;
+  height: 50px;
+}
+nav p {
+  background-color: red;
+  max-height: 10px;
+}
+section > div {
+  background-color: yellow;
+  height: 50px;
+}
+section p {
+  background-color: red;
+  max-height: 25%;
+}
+article > div {
+  background-color: yellow;
+  height: 50px;
+}
+article p {
+  background-color: red;
+  max-height: initial;
+}
+#AnaEleman {
+  background-color: red;
+  height: 80px;
+}
+#araci {
+  background-color: red;
+  max-height: 10px;
+}
+#bir {
+  background-color: yellow;
+  max-height: inherit;
+}
+#iki {
+  background-color: green;
+  max-height: inherit;
+}

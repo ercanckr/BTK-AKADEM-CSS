@@ -1,0 +1,71 @@
+/*height  : HTML Elementinin yüksekliğini belirler.
+Değerler   :auto, lenght ,  %, initial , inherit.
+auto       : otomatik değer alır.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+
+header > div {
+  background-color: red;
+  height: 100px;
+}
+
+header p {
+  background-color: yellow;
+  height: auto;
+}
+
+nav > div {
+  background-color: red;
+  height: 100px;
+}
+
+nav p {
+  background-color: yellow;
+  height: 50px;
+}
+section > div {
+  background-color: red;
+  height: 100px;
+}
+
+section p {
+  background-color: yellow;
+  height: 80%;
+}
+article > div {
+  background-color: red;
+  height: 100px;
+}
+
+article p {
+  background-color: yellow;
+  height: initial;
+}
+aside > div {
+  background-color: red;
+  height: 300px;
+}
+#araci {
+  background-color: yellow;
+  height: 50px;
+}
+#bir {
+  background-color: yellow;
+  height: inherit;
+}
+#iki {
+  background-color: yellow;
+  height: inherit;
+}
+
+#uc {
+  background-color: yellow;
+  height: inherit;
+}
+
+#dort {
+  background-color: yellow;
+  height: inherit;
+}

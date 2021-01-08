@@ -1,0 +1,55 @@
+/*min-height  : HTML Elementinin minimum yüksekliğini belirler.
+Değerler   : lenght ,  %, initial , inherit.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+
+header > div {
+  background-color: yellow;
+  height: 50px;
+}
+header p {
+  background-color: red;
+  min-height: 40px;
+}
+nav > div {
+  background-color: yellow;
+  height: 50px;
+}
+nav p {
+  background-color: red;
+  min-height: 30px;
+}
+section > div {
+  background-color: yellow;
+  height: 50px;
+}
+section p {
+  background-color: red;
+  min-height: 50%;
+}
+article > div {
+  background-color: yellow;
+  height: 50px;
+}
+article p {
+  background-color: red;
+  min-height: initial;
+}
+#AnaEleman {
+  background-color: red;
+  height: 150px;
+}
+#araci {
+  background-color: red;
+  min-height: 40px;
+}
+#bir {
+  background-color: yellow;
+  min-height: inherit;
+}
+#iki {
+  background-color: green;
+  min-height: inherit;
+}

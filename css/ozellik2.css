@@ -1,0 +1,35 @@
+/*min-width  : HTML Elementinin minimum genişliğini belirlr
+Değerler   : lenght ,  %, initial , inherit.
+lenght     : uzunluk değeri.
+%          : yüzde değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.*/
+#bir {
+  background-color: blue;
+  width: 1000px;
+}
+#iki {
+  background-color: yellow;
+  min-width: 500px;
+}
+
+nav > div {
+  background-color: yellow;
+  width: 80%;
+}
+nav p {
+  background-color: red;
+  min-width: 50%;
+}
+section > p {
+  background-color: yellow;
+  min-width: 500px;
+}
+article > div {
+  background-color: yellow;
+  min-width: 80%;
+}
+article p {
+  background-color: red;
+  min-width: inherit;
+}
