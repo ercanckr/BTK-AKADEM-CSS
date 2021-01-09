@@ -1,0 +1,101 @@
+header p {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+}
+header h1 {
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+}
+header h3 {
+  background-color: yellow;
+  width: 50%;
+  height: 100px;
+}
+header h2 {
+  background-color: yellow;
+  min-height: 100px;
+  max-width: 25%;
+}
+header h4 {
+  background-color: yellow;
+  min-width: 100px;
+  max-width: 150px;
+}
+header > div {
+  max-width: 500px;
+  height: 100%;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+}
+/* Boyutlandırma İşlemleri */
+/* pixel px */
+#bir {
+  background-color: yellow;
+  width: 500px;
+}
+/* point pt */
+#iki {
+  background-color: yellow;
+  width: 500pt;
+}
+/* pica pc */
+#uc {
+  background-color: yellow;
+  width: 50pc;
+}
+/* milimetre mm */
+#dort {
+  background-color: yellow;
+  width: 100mm;
+}
+/* santimetre cm */
+#bes {
+  background-color: yellow;
+  width: 15cm;
+}
+/* inç in */
+#alti {
+  background-color: yellow;
+  width: 10in;
+}
+/* Göreceli ölçülendirme Birimleri */
+#yedi {
+  background-color: yellow;
+  width: 50%;
+}
+#sekiz {
+  background-color: yellow;
+  width: 100em;
+}
+#dokuz {
+  background-color: yellow;
+  width: 50rem;
+}
+#on {
+  background-color: yellow;
+  width: 50ex;
+}
+#onbir {
+  background-color: yellow;
+  width: 50ch;
+}
+#oniki {
+  background-color: yellow;
+  width: 50vw;
+}
+#onuc {
+  background-color: yellow;
+  width: 50vh;
+}
+#ondort {
+  background-color: yellow;
+  width: 50vmin;
+}
+#onbes {
+  background-color: yellow;
+  width: 50vmax;
+}
