@@ -1,0 +1,108 @@
+/* border    : HTML elementinin kenarlık / çerçeve özelliklerini belirler.
+Parametreler : length / style / color
+Değerler     : 
+length = length & initial & inherit & thin & medium & thick 
+style  = none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset
+color  = color  
+
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+color         : Renk   */
+
+#bir {
+  border: 2px solid red;
+}
+#bir {
+  border: initial;
+}
+#iki {
+  border: thin solid red;
+}
+#uc {
+  border: medium solid red;
+}
+#dort {
+  border: thick solid red;
+}
+header > div {
+  border: 1px solid red;
+}
+#bes {
+  border: inherit;
+}
+#alti {
+  border: none;
+}
+#yedi {
+  border: hidden;
+}
+#sekiz {
+  border: 2px solid orange;
+}
+#dokuz {
+  border: 4px double yellow;
+}
+#on {
+  border: 2px dashed blue;
+}
+#onbir {
+  border: medium dotted brown;
+}
+#oniki {
+  border: thick groove gray;
+}
+#onuc {
+  border: thick ridge green;
+}
+#ondort {
+  border: thick inset magenta;
+}
+#onbes {
+  border: thick outset pink;
+}
+
+.aa {
+  border: 2px none orange;
+}
+.bb {
+  border: 2px hidden orange;
+}
+.cc {
+  border: 2px solid orange;
+}
+.dd {
+  border: 4px double orange;
+}
+.ee {
+  border: 2px dashed orange;
+}
+.ff {
+  border: 2px dotted orange;
+}
+.gg {
+  border: 4px groove orange;
+}
+.hh {
+  border: 4px ridge orange;
+}
+.jj {
+  border: 2px inset orange;
+}
+.kk {
+  border: 2px outset orange;
+}

@@ -99,3 +99,62 @@ header img {
   background-color: yellow;
   width: 50vmax;
 }
+
+/* calc()  : Değer hesaplama işlemleri için kullanılır,
+Değerler   : +, -, *, /
++          : toplama
+-          : çıkartma
+*          : çarpma
+/          : bölme  */
+
+#topla {
+  background-color: yellow;
+  width: calc(50% + 200px);
+}
+#cikar {
+  background-color: yellow;
+  width: calc(50% - 200px);
+}
+#carp {
+  background-color: yellow;
+  width: calc(300px * 2);
+}
+#bol {
+  background-color: yellow;
+  width: calc(50% / 2);
+}
+#topla2 {
+  background-color: yellow;
+  height: calc(50px + 30px);
+}
+#cikar2 {
+  background-color: yellow;
+  height: calc(500px - 400px);
+}
+#carp2 {
+  background-color: yellow;
+  height: calc(50px * 2);
+}
+#bol2 {
+  background-color: yellow;
+  height: calc(250px / 2);
+}
+
+#menu {
+  background-color: yellow;
+  width: 250px;
+  height: 500px;
+  float: left;
+}
+#icerik {
+  background-color: red;
+  width: calc(100% - 525px);
+  height: 500px;
+  float: left;
+}
+#reklam {
+  background-color: yellow;
+  width: 275px;
+  height: 500px;
+  float: left;
+}
