@@ -1,0 +1,176 @@
+/* border-Top   : HTML elementinin üst kenarlık / çerçeve özelliklerini belirler.
+Parametreler : length / style / color
+Değerler     : 
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+color         : Renk   */
+
+#bir {
+  width: 100px;
+  height: 50px;
+  border-top: 2px solid red;
+}
+#iki {
+  width: 100px;
+  height: 50px;
+  border-top: 2px solid;
+}
+#inherit {
+  width: 200px;
+  height: 50px;
+  border-top: 2px solid blue;
+}
+#uc {
+  width: 200px;
+  height: 50px;
+  border-top: inherit;
+}
+
+#dort {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+  border-top: initial;
+}
+#bes {
+  width: 100px;
+  height: 50px;
+  border-top: thin solid red;
+}
+#alti {
+  width: 100px;
+  height: 50px;
+  border-top: medium solid red;
+}
+#yedi {
+  width: 100px;
+  height: 50px;
+  border-top: thick solid red;
+}
+#sekiz {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+  border-top: none;
+}
+#dokuz {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+  border-top: hidden;
+}
+#on {
+  width: 100px;
+  height: 50px;
+  border-top: thin double red;
+}
+#onbir {
+  width: 100px;
+  height: 50px;
+  border-top: medium dashed red;
+}
+#oniki {
+  width: 100px;
+  height: 50px;
+  border-top: thick dotted red;
+}
+#onuc {
+  width: 100px;
+  height: 50px;
+  border-top: 8px groove red;
+}
+#ondort {
+  width: 100px;
+  height: 50px;
+  border-top: 8px ridge red;
+}
+#onbes {
+  width: 100px;
+  height: 50px;
+  border-top: 8px inset red;
+}
+#onalti {
+  width: 100px;
+  height: 50px;
+  border-top: 8px outset red;
+}
+
+#onyedi {
+  width: 100px;
+  height: 50px;
+  border: 8px solid red;
+  border-top: 4px double blue;
+}
+
+/* border-Top-width   : HTML elementinin üst kenarlık / çerçeve genişliğini belirler.
+Parametreler          : length / style / color
+Değerler              : 
+length                : Uzunluk Değeri.
+initial               : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin                  : İnce.
+medium                : Orta.
+thick                 : Kalın.  */
+
+#onsekiz {
+  width: 100px;
+  height: 50px;
+  border: 2px solid red;
+  border-top-width: 6px;
+}
+#ondokuz {
+  width: 100px;
+  height: 50px;
+  border: 8px solid orangered;
+  border-top-width: thin;
+}
+#yirmi {
+  width: 100px;
+  height: 50px;
+  border: 8px solid yellow;
+  border-top-width: thin;
+}
+#yirmibir {
+  width: 100px;
+  height: 50px;
+  border: 8px solid green;
+  border-top-width: medium;
+}
+#yirmiiki {
+  width: 100px;
+  height: 50px;
+  border: 8px solid blue;
+  border-top-width: thick;
+}
+#yirmiuc {
+  width: 100px;
+  height: 50px;
+  border: 8px solid orange;
+  border-top-width: initial;
+}
+div#inherit2 {
+  width: 200px;
+  height: 50px;
+  border: 8px solid orange;
+  border-top-width: 4px;
+}
+#yirmidort {
+  width: 80px;
+  height: 40px;
+  border: 8px solid red;
+  border-top-width: inherit;
+}

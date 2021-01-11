@@ -204,3 +204,108 @@ section > div {
 .onyedi {
   border-style: dashed solid;
 }
+/*
+border-radius : HTML elementinin kenarlık / çerçeve köşelerinin yuvarlaklığını belirler.
+Değerler      : 
+length        : Uzunluk Değeri.
+%             : yüzde değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner. */
+
+.onsekiz {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+.ondokuz {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 0 5px;
+  border-radius: 20%;
+}
+.yirmi {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 0 5px;
+  border-radius: initial;
+}
+#radius {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 5px 5px;
+  border-radius: 20px;
+}
+
+.yirmibir {
+  width: 80px;
+  height: 80px;
+  border: 2px solid red;
+  float: left;
+  margin: 5px 5px;
+  border-radius: inherit;
+}
+
+/*  1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol  */
+
+.yirmiiki {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 5px 5px;
+  border-radius: 10px 20px 30px 40px;
+}
+
+/*  1. parametre : üst, 2. parametre : sağ ve sol, 3. parametre : alt  */
+
+.yirmiuc {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 5px 5px;
+  border-radius: 10px 20px 30px;
+}
+
+/*  1. parametre : üst ve alt, 2. parametre : sağ ve sol*/
+
+.yirmidort {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  float: left;
+  margin: 5px 5px;
+  border-radius: 10px 20px;
+}
+.yirmibes {
+  width: 100px;
+  height: 100px;
+  border: 2px solid gray;
+  float: left;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.yirmialti {
+  width: 100px;
+  height: 100px;
+  border: 2px solid gray;
+  float: left;
+  margin: 5px 5px;
+  position: relative;
+  background-color: yellow;
+  border-radius: 50%;
+}
+#yazi {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
