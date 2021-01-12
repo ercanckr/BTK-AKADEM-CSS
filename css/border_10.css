@@ -1,0 +1,179 @@
+/* border-right   : HTML elementinin sağ kenarlık / çerçeve özelliklerini belirler.
+Parametreler : length / style / color
+Değerler     : 
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+color         : Renk   */
+
+#bir {
+  width: 200px;
+  height: 40px;
+  border-right: 8px solid red;
+}
+#iki {
+  width: 200px;
+  height: 40px;
+  border-right: 8px solid;
+}
+#uc {
+  width: 200px;
+  height: 40px;
+  border-right: thin solid red;
+}
+#dort {
+  width: 200px;
+  height: 40px;
+  border-right: medium solid yellow;
+}
+#bes {
+  width: 200px;
+  height: 40px;
+  border-right: thick solid orangered;
+}
+#alti {
+  width: 200px;
+  height: 40px;
+  border: 8px solid darkblue;
+  border-right: initial;
+}
+#ustdiv {
+  width: 300px;
+  height: 100px;
+  border: 8px solid red;
+  border-right: 4px double blue;
+}
+#yedi {
+  width: 200px;
+  height: 40px;
+  border: 8px solid orange;
+  border-right: inherit;
+}
+#sekiz {
+  width: 200px;
+  height: 40px;
+  border: 8px solid green;
+  border-right: none;
+}
+#dokuz {
+  width: 200px;
+  height: 40px;
+  border: 8px solid gray;
+  border-right: hidden;
+}
+#on {
+  width: 200px;
+  height: 40px;
+  border-right: 8px solid red;
+}
+#onbir {
+  width: 200px;
+  height: 40px;
+  border-right: 8px double aqua;
+}
+#oniki {
+  width: 200px;
+  height: 40px;
+  border-right: 8px dashed brown;
+}
+#onuc {
+  width: 200px;
+  height: 40px;
+  border-right: 8px dotted brown;
+}
+#ondort {
+  width: 200px;
+  height: 40px;
+  border-right: 8px groove brown;
+}
+#onbes {
+  width: 200px;
+  height: 40px;
+  border-right: 8px ridge brown;
+}
+#onalti {
+  width: 200px;
+  height: 40px;
+  border-right: 8px inset brown;
+}
+#onyedi {
+  width: 200px;
+  height: 40px;
+  border-right: 8px outset brown;
+}
+#onsekiz {
+  width: 200px;
+  height: 40px;
+  border-right: 8px double hsla(100, 50%, 50%, 1);
+}
+
+#ondokuz {
+  width: 200px;
+  height: 40px;
+  border: 8px double red;
+  border-right: 20px solid blue;
+}
+/* border-right-width  : HTML elementinin sağ kenarlık / çerçeve genişliğini belirler.
+Değerler     : 
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.  */
+
+#yirmi {
+  width: 200px;
+  height: 40px;
+  border: 4px solid red;
+  border-right-width: 10px;
+}
+#yirmibir {
+  width: 200px;
+  height: 40px;
+  border: 10px solid red;
+  border-right-width: thin;
+}
+#yirmiiki {
+  width: 200px;
+  height: 40px;
+  border: 10px solid red;
+  border-right-width: medium;
+}
+#yirmiuc {
+  width: 200px;
+  height: 40px;
+  border: 10px solid red;
+  border-right-width: thick;
+}
+#yirmidort {
+  width: 200px;
+  height: 40px;
+  border: 10px solid red;
+  border-right-width: initial;
+}
+#ustdiv2 {
+  width: 400px;
+  height: 100px;
+  border: 6px solid red;
+  border-right-width: 20px;
+}
+#yirmibes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid blue;
+  border-right-width: inherit;
+}

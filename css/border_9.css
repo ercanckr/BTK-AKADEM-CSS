@@ -174,3 +174,271 @@ div#inherit2 {
   border: 8px solid red;
   border-top-width: inherit;
 }
+/* border-Top-color   : HTML elementinin üst kenarlık / çerçeve rengini belirler.
+Değerler              : 
+color                 : renk Değeri.
+transparent           : Transparan.
+initial               : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+ */
+.bir {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-color: blue;
+}
+.iki {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-color: transparent;
+}
+.uc {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-color: initial;
+}
+.inherit {
+  width: 250px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-color: gray;
+}
+.dort {
+  width: 200px;
+  height: 20px;
+  border: 5px solid blue;
+  border-top-color: inherit;
+}
+/* border-top-style   : HTML elementinin üst kenarlık / çerçeve sitilini belirler.
+Parametreler : length / style / color
+Değerler     : 
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+ */
+.bes {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: none;
+}
+
+.alti {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: hidden;
+}
+.yedi {
+  width: 200px;
+  height: 20px;
+  border: 5px double red;
+  border-top-style: solid;
+}
+.sekiz {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: dashed;
+}
+.dokuz {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: dotted;
+}
+.on {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: double;
+}
+.onbir {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: groove;
+}
+.oniki {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: ridge;
+}
+.onuc {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: inset;
+}
+.ondort {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: outset;
+}
+.onbes {
+  width: 200px;
+  height: 20px;
+  border: 5px double red;
+  border-top-style: initial;
+}
+.inherit2 {
+  width: 300px;
+  height: 60px;
+  border: 5px solid blue;
+  border-top-style: double;
+}
+.onalti {
+  width: 200px;
+  height: 20px;
+  border: 5px solid red;
+  border-top-style: inherit;
+}
+/* border-top-right-radius   : HTML elementinin sağ üst kenarlık / çerçeve yuvarlaklığını belirler.
+Değerler              : 
+length                : Uzunluk Değeri.
+%                     : Yüzde Değeri
+initial               : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+.onyedi {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: 30px;
+}
+.onsekiz {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: 80px 50px;
+}
+.ondokuz {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: 30%;
+}
+.yirmi {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: 30% 50%;
+}
+.yirmibir {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-radius: 20px;
+  border-top-right-radius: initial;
+}
+.yirmiiki {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: 80px 80%;
+}
+.inherituc {
+  width: 300px;
+  height: 100px;
+  border: 5px solid red;
+  border-top-right-radius: 30px;
+}
+.yirmiuc {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-right-radius: inherit;
+}
+.yirmidort {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-radius: 20px;
+  border-top-right-radius: 50px 20px;
+}
+/* border-top-left-radius   : HTML elementinin sol üst kenarlık / çerçeve yuvarlaklığını belirler.
+Değerler              : 
+length                : Uzunluk Değeri.
+%                     : Yüzde Değeri
+initial               : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+.yirmibes {
+  width: 200px;
+  height: 50px;
+  border: 5px double red;
+  border-top-left-radius: 30px;
+}
+.yirmialti {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-left-radius: 30px 20px;
+}
+.yirmiyedi {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-left-radius: 30%;
+}
+.yirmisekiz {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-left-radius: 30% 50%;
+}
+.yirmidokuz {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-radius: 20px;
+  border-top-left-radius: initial;
+}
+.otuz {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-left-radius: 80px 80%;
+}
+.otuzbir {
+  width: 300px;
+  height: 100px;
+  border: 5px solid blue;
+  border-top-left-radius: 30px;
+}
+.otuziki {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-top-left-radius: inherit;
+}
+.otuzuc {
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+  border-radius: 20px;
+  border-top-left-radius: 50px 20px;
+}
+.otuzdort {
+  width: 200px;
+  height: 50px;
+  border: 10px solid blue;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: red;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
