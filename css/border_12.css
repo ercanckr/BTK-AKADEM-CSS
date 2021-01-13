@@ -1,0 +1,462 @@
+/* border-left   : HTML elementinin sol kenarlık / çerçeve özelliklerini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+
+color         : Renk   */
+
+#bir {
+  width: 200px;
+  height: 40px;
+  border-left: 6px solid red;
+}
+#iki {
+  width: 200px;
+  height: 40px;
+  border-left: 6px solid;
+}
+#uc {
+  width: 200px;
+  height: 40px;
+  border-left: thin solid red;
+}
+#dort {
+  width: 200px;
+  height: 40px;
+  border-left: medium solid red;
+}
+#bes {
+  width: 200px;
+  height: 40px;
+  border-left: thick solid red;
+}
+#alti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: initial;
+}
+#ustdiv {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-left: 10px double blue;
+}
+#yedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: inherit;
+}
+#sekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: none;
+}
+#dokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: hidden;
+}
+#on {
+  width: 200px;
+  height: 40px;
+  border: 6px double red;
+  border-left: solid;
+}
+#onbir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px double red;
+}
+#oniki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px dashed red;
+}
+#onuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px dotted red;
+}
+#ondort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px groove red;
+}
+#onbes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px ridge red;
+}
+#onalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px inset red;
+}
+#onyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px outset red;
+}
+#onyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left: 6px solid rgba(255, 0, 0, 0.3);
+}
+/* border-left-width  : HTML elementinin sol kenarlık / çerçeve genişliğini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın. */
+
+#onsekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: 15px;
+}
+
+#ondokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: thin;
+}
+
+#yirmi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: medium;
+}
+
+#yirmibir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: thick;
+}
+#yirmiiki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: initial;
+}
+#ustdiv2 {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-left-width: 15px;
+}
+#yirmiuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-width: inherit;
+}
+/* border-left-color   : HTML elementinin sol kenarlık / çerçeve rengini belirler.
+Parametreler      : length / style / color
+Değerler          : 
+color             : Renk
+transparent       : Transparan Değeri.
+initial           : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit           : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+#yirmidort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid gray;
+  border-left-color: red;
+}
+#yirmibes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-color: transparent;
+}
+#yirmialti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-color: initial;
+}
+#ustdiv3 {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-left-color: blue;
+}
+
+#yirmiyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-color: inherit;
+}
+/* border-left-style   : HTML elementinin sol kenarlık / çerçeve sitilini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.  */
+
+#yirmisekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: none;
+}
+#yirmidokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: hidden;
+}
+#otuz {
+  width: 200px;
+  height: 40px;
+  border: 6px double red;
+  border-left-style: solid;
+}
+#otuzbir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: double;
+}
+#otuziki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: dashed;
+}
+
+#otuzuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: dotted;
+}
+
+#otuzdort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: groove;
+}
+
+#otuzbes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: ridge;
+}
+
+#otuzalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: inset;
+}
+
+#otuzyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: outset;
+}
+#otuzsekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: initial;
+}
+#ustdivdort {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-left-style: double;
+}
+#otuzdokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-left-style: inherit;
+}
+
+/*Tüm Border left Özelliklerinin birlikte kullanımı */
+
+#kirk {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-left-width: 6px;
+  border-left-style: double;
+  border-left-color: blue;
+}
+
+#kirkbir {
+  width: 300px;
+  height: 80px;
+  border-left-width: 6px;
+  border-left-style: dashed;
+  border-left-color: blue;
+}
+/*Tüm Border Özelliklerinin birlikte kullanımı */
+
+#kirkiki {
+  width: 300px;
+  height: 80px;
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: red;
+  -webkit-border-top-left-radius: 25px;
+  -moz-border-top-left-radius: 25px;
+  -o-border-top-left-radius: 25px;
+  -ms-border-top-left-radius: 25px;
+  border-top-left-radius: 25px;
+  -webkit-border-top-right-radius: 25px;
+  -moz-border-top-right-radius: 25px;
+  -o-border-top-right-radius: 25px;
+  -ms-border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: red;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-bottom-left-radius: 25px;
+  -o-border-bottom-left-radius: 25px;
+  -ms-border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-bottom-right-radius: 25px;
+  -o-border-bottom-right-radius: 25px;
+  -ms-border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: red;
+}
+
+#kirkuc {
+  width: 200px;
+  height: 200px;
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: orange;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -o-border-radius: 10%;
+  -ms-border-radius: 10%;
+  border-radius: 10%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-top-left-radius: 50%;
+  -o-border-top-left-radius: 50%;
+  -ms-border-top-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-top-right-radius: 50%;
+  -o-border-top-right-radius: 50%;
+  -ms-border-top-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: yellow;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  -webkit-border-bottom-left-radius: 50%;
+  -moz-border-bottom-left-radius: 50%;
+  -o-border-bottom-left-radius: 50%;
+  -ms-border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -moz-border-bottom-right-radius: 50%;
+  -o-border-bottom-right-radius: 50%;
+  -ms-border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: green;
+}
+#kirkdort {
+  width: 200px;
+  height: 200px;
+  border-top-width: 10px;
+  border-top-style: double;
+  border-top-color: red;
+  -webkit-border-top-left-radius: 25%;
+  -moz-border-top-left-radius: 25%;
+  -o-border-top-left-radius: 25%;
+  -ms-border-top-left-radius: 25%;
+  border-top-left-radius: 25%;
+  -webkit-border-top-right-radius: 30%;
+  -moz-border-top-right-radius: 30%;
+  -o-border-top-right-radius: 30%;
+  -ms-border-top-right-radius: 30%;
+  border-top-right-radius: 30%;
+  border-right-width: 15px;
+  border-right-style: dashed;
+  border-right-color: red;
+  border-bottom-width: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+  -webkit-border-bottom-left-radius: 15%;
+  -moz-border-bottom-left-radius: 15%;
+  -o-border-bottom-left-radius: 15%;
+  -ms-border-bottom-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  -webkit-border-bottom-right-radius: 35%;
+  -moz-border-bottom-right-radius: 35%;
+  -o-border-bottom-right-radius: 35%;
+  -ms-border-bottom-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+  border-left-width: 25px;
+  border-left-style: groove;
+  border-left-color: gray;
+}

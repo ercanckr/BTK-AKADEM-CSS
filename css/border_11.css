@@ -1,0 +1,472 @@
+/* border-bottom   : HTML elementinin alt kenarlık / çerçeve özelliklerini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+
+color         : Renk   */
+
+#bir {
+  width: 200px;
+  height: 40px;
+  border-bottom: 6px solid red;
+}
+#iki {
+  width: 200px;
+  height: 40px;
+  border-bottom: 6px solid;
+}
+#uc {
+  width: 200px;
+  height: 40px;
+  border-bottom: thin solid red;
+}
+#dort {
+  width: 200px;
+  height: 40px;
+  border-bottom: medium solid red;
+}
+#bes {
+  width: 200px;
+  height: 40px;
+  border-bottom: thick solid red;
+}
+#alti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: initial;
+}
+#ustdiv {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom: 10px double blue;
+}
+#yedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: inherit;
+}
+#sekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: none;
+}
+#dokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: hidden;
+}
+#on {
+  width: 200px;
+  height: 40px;
+  border: 6px double red;
+  border-bottom: solid;
+}
+#onbir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px double red;
+}
+#oniki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px dashed red;
+}
+#onuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px dotted red;
+}
+#ondort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px groove red;
+}
+#onbes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px ridge red;
+}
+#onalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px inset red;
+}
+#onyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px outset red;
+}
+#onyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom: 6px solid rgba(255, 0, 0, 0.3);
+}
+/* border-bottom-width  : HTML elementinin alt kenarlık / çerçeve genişliğini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın. */
+
+#onsekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: 15px;
+}
+
+#ondokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: thin;
+}
+
+#yirmi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: medium;
+}
+
+#yirmibir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: thick;
+}
+#yirmiiki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: initial;
+}
+#ustdiv2 {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-width: 15px;
+}
+#yirmiuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-width: inherit;
+}
+/* border-bottom-color   : HTML elementinin alt kenarlık / çerçeve rengini belirler.
+Parametreler      : length / style / color
+Değerler          : 
+color             : Renk
+transparent       : Transparan Değeri.
+initial           : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit           : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+#yirmidort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid gray;
+  border-bottom-color: red;
+}
+#yirmibes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-color: transparent;
+}
+#yirmialti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-color: initial;
+}
+#ustdiv3 {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-color: blue;
+}
+
+#yirmiyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-color: inherit;
+}
+/* border-bottom-style   : HTML elementinin alt kenarlık / çerçeve sitilini belirler.
+Parametreler  : length / style / color
+Değerler      : 
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.  */
+
+#yirmisekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: none;
+}
+#yirmidokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: hidden;
+}
+#otuz {
+  width: 200px;
+  height: 40px;
+  border: 6px double red;
+  border-bottom-style: solid;
+}
+#otuzbir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: double;
+}
+#otuziki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: dashed;
+}
+
+#otuzuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: dotted;
+}
+
+#otuzdort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: groove;
+}
+
+#otuzbes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: ridge;
+}
+
+#otuzalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: inset;
+}
+
+#otuzyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: outset;
+}
+#otuzsekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: initial;
+}
+#ustdivdort {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-style: double;
+}
+#otuzdokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-style: inherit;
+}
+/* border-bottom-right-radius   : HTML elementinin sağ alt köşe kenarlık / çerçeve yuvarlaklığını belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+%             :Yüzde Değeri
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+#kirk {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: 25px;
+}
+
+#kirkbir {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: 50px 40px;
+}
+
+#kirkiki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: 25%;
+}
+
+#kirkuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: 30% 50%;
+}
+#kirkdort {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: initial;
+}
+#ustdivbes {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-right-radius: 30% 50%;
+}
+#kirkbes {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-right-radius: inherit;
+}
+#kirkalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+/* border-bottom-left-radius   : HTML elementinin sol alt köşe kenarlık / çerçeve yuvarlaklığını belirler.
+Parametreler  : length / style / color
+Değerler      : 
+
+length        : Uzunluk Değeri.
+%             :Yüzde Değeri
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+#kirkalti {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: 25px;
+}
+
+#kirkyedi {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: 50px 40px;
+}
+
+#kirksekiz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: 25%;
+}
+
+#kirkdokuz {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: 30% 50%;
+}
+#elli {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: initial;
+}
+#ustdivalti {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-left-radius: 30% 50%;
+}
+#elliiki {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-bottom-left-radius: inherit;
+}
+#elliuc {
+  width: 200px;
+  height: 40px;
+  border: 6px solid red;
+  border-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+/*Tüm Border Bottom Özelliklerinin birlikte kullanımı */
+
+#ellidort {
+  width: 300px;
+  height: 80px;
+  border: 6px solid red;
+  border-bottom-width: 6px;
+  border-bottom-style: double;
+  border-bottom-color: blue;
+  border-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#ellibes {
+  width: 300px;
+  height: 80px;
+  border-bottom-width: 6px;
+  border-bottom-style: double;
+  border-bottom-color: blue;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
