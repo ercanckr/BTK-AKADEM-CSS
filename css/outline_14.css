@@ -1,0 +1,175 @@
+/* outline    : HTML elementinin anahat özelliklerini belirler.
+Değerler      : 
+
+length        : Uzunluk Değeri.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+
+color         : Renk 
+invert        : Ters Çevir.   */
+
+#bir {
+  width: 1000px;
+  height: 100px;
+  border: 10px solid blue;
+  outline: 10px solid red;
+}
+#iki {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+}
+#uc {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid;
+}
+
+#dort {
+  width: 1000px;
+  height: 100px;
+  outline: solid;
+}
+
+#bes {
+  width: 1000px;
+  height: 100px;
+  outline: thin solid red;
+}
+#alti {
+  width: 1000px;
+  height: 100px;
+  outline: medium solid red;
+}
+#yedi {
+  width: 1000px;
+  height: 100px;
+  outline: thick solid red;
+}
+#sekiz {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+}
+#sekiz {
+  outline: initial;
+}
+#dokuz {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+}
+#dokuz {
+  border-image: initial;
+}
+
+#ustdiv {
+  width: 1000px;
+  height: 130px;
+  outline: 10px solid red;
+}
+#on {
+  width: 800px;
+  height: 60px;
+  outline: inherit;
+}
+
+#onbir {
+  width: 1000px;
+  height: 130px;
+  outline: 10px none red;
+}
+#oniki {
+  width: 1000px;
+  height: 130px;
+  outline: none;
+}
+
+#onuc {
+  width: 1000px;
+  height: 130px;
+  outline: hidden;
+}
+#ustdiv2 {
+  width: 1000px;
+  height: 130px;
+  outline: 10px solid red;
+}
+
+#ondort {
+  width: 1000px;
+  height: 130px;
+  outline: 10px double red;
+}
+
+#onbes {
+  width: 1000px;
+  height: 130px;
+  outline: 10px dashed red;
+}
+#onalti {
+  width: 1000px;
+  height: 130px;
+  outline: 10px dotted red;
+}
+#onyedi {
+  width: 1000px;
+  height: 130px;
+  outline: 10px groove red;
+}
+#onsekiz {
+  width: 1000px;
+  height: 130px;
+  outline: 10px ridge red;
+}
+#ondokuz {
+  width: 1000px;
+  height: 130px;
+  outline: 10px inset red;
+}
+#yirmi {
+  width: 1000px;
+  height: 130px;
+  outline: 10px outset red;
+}
+
+#yirmibir {
+  width: 1000px;
+  height: 130px;
+  outline: 10px solid rgba(0, 255, 0, 0.7);
+}
+#yirmiiki {
+  width: 1000px;
+  height: 130px;
+  background-color: red;
+}
+#yirmiuc {
+  width: 1000px;
+  height: 130px;
+  outline: 30px solid invert;
+}
+
+#yirmidort {
+  width: 1000px;
+  height: 130px;
+  border: 100px solid rgba(255, 0, 0, 0.5);
+}
+#yirmialti {
+  width: 1000px;
+  height: 130px;
+  outline: 100px solid rgba(0, 0, 255, 0.5);
+}

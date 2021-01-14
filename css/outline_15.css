@@ -1,0 +1,323 @@
+/* outline-width   : HTML elementinin anahat genişliğini belirler.
+Değerler      : 
+length        : Uzunluk Değeri.
+thin          : İnce.
+medium        : Orta.
+thick         : Kalın.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+ */
+
+#bir {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: 8px;
+}
+#iki {
+  width: 1000px;
+  height: 100px;
+  outline: solid red;
+  outline-width: 6px;
+}
+#uc {
+  width: 1000px;
+  height: 100px;
+  outline: solid;
+  outline-width: 6px;
+}
+
+#dort {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: thin;
+}
+
+#bes {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: medium;
+}
+#alti {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: thick;
+}
+#yedi {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: initial;
+}
+#sekiz {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-width: 8px;
+}
+#ustdiv {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-width: 8px;
+}
+#dokuz {
+  width: 800px;
+  height: 40px;
+  outline: 10px solid red;
+  outline-width: inherit;
+}
+
+/* outline-color   : HTML elementinin anahat rengini belirler.
+Değerler      : 
+color         : Renk 
+invert        : Ters Çevir 
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner. */
+
+#on {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-color: blue;
+}
+
+#onbir {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid;
+  outline-color: blue;
+}
+#oniki {
+  width: 1000px;
+  height: 100px;
+  background-color: red;
+}
+
+#onuc {
+  width: 1000px;
+  height: 100px;
+  outline: 30px solid blue;
+  outline-color: invert;
+}
+#ondort {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-color: initial;
+}
+
+#ustdiv2 {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid;
+  outline-color: blue;
+}
+#onbes {
+  width: 800px;
+  height: 40px;
+  outline: 4px solid;
+  outline-color: inherit;
+}
+
+/* outline-style    : HTML elementinin anahat sitilini belirler.
+Değerler      : 
+none          : Değer Yok.
+hidden        : Gizli.
+solid         : Düz çizgi.
+double        : Çift çizgi.
+dashed        : Kesitli çizği.
+dotted        : Noktalı çizgi.
+groove        : İçe Dönük Gölgeli Çizgi.
+ridge         : Dışa Dönük Gölgeli Çizgi.
+inset         : İçe Dönük Derin Çizgi.
+outset        : Dışa Dönük Derin Çizgi.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+ */
+
+#onalti {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: double;
+}
+
+#onyedi {
+  width: 1000px;
+  height: 100px;
+  outline-style: solid;
+}
+#onsekiz {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: none;
+}
+#ondokuz {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: hidden;
+}
+#yirmi {
+  width: 1000px;
+  height: 100px;
+  outline: 4px double red;
+  outline-style: solid;
+}
+
+#yirmibir {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: double;
+}
+#yirmiiki {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: dashed;
+}
+#yirmiuc {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: dotted;
+}
+
+#yirmidort {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: groove;
+}
+#yirmialti {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: ridge;
+}
+#yirmiyedi {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: inset;
+}
+#yirmisekiz {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: outset;
+}
+#yirmidokuz {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: initial;
+}
+#yirmisekiz {
+  width: 1000px;
+  height: 100px;
+  outline: 10px solid red;
+  outline-style: outset;
+}
+#ustdiv3 {
+  width: 1000px;
+  height: 100px;
+  outline: 4px solid red;
+  outline-style: dashed;
+}
+#otuz {
+  width: 800px;
+  height: 40px;
+  outline: 4px solid red;
+  outline-style: inherit;
+}
+/* outline-offset    : HTML elementi için anahat ile kenarlık / çerçeve arasındaki mesafeyi belirler.
+Değerler      : 
+length        : Uzunluk Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.   */
+
+#otuzbir {
+  width: 1000px;
+  height: 100px;
+  outline: 2px solid red;
+  outline-offset: 5px;
+}
+
+#otuziki {
+  width: 1000px;
+  height: 100px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: 5px;
+}
+
+#otuzuc {
+  width: 1000px;
+  height: 100px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: -9px;
+}
+#otuzdort {
+  width: 1000px;
+  height: 100px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: initial;
+}
+#otuzbes {
+  width: 1000px;
+  height: 100px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+}
+
+#ustdiv4 {
+  width: 1000px;
+  height: 200px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: 5px;
+}
+#otuzalti {
+  width: 800px;
+  height: 100px;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: inherit;
+}
+/* Tüm outline özelliklerinin birlikte kullanımı */
+
+#otuzyedi {
+  width: 500px;
+  height: 100px;
+  outline-width: 4px;
+  outline-color: red;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+#otuzsekiz {
+  width: 500px;
+  height: 100px;
+  border: 10px solid blue;
+  outline-width: 4px;
+  outline-color: red;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+#otuzdokuz {
+  width: 500px;
+  height: 100px;
+  border: 10px solid blue;
+  outline-width: 4px;
+  outline-color: red;
+  outline-style: hidden;
+  outline-offset: 2px;
+}
