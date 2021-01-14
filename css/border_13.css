@@ -1,0 +1,474 @@
+/* border-image   : HTML elementinin kenarlık / çerçeve resminin özelliğini belirler.
+Parametreler  : image | slice | repeat
+Değerler      : 
+
+image         : Resim Değeri.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.
+length        : Uzunluk Değeri.
+%             : Yüzde Değeri.
+repeat        : Tekrarla.
+roud          : Yuvarla
+stretch       : Uzat & Gerdir & Esnet.  */
+
+#bir {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png);
+}
+#iki {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30;
+}
+#uc {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 33%;
+}
+
+/*1. Parametresi: Sağ Üstten Yükseklik, 
+  2. Parametresi: Sağ Üstten Genişlik, 
+  3. Parametresi: Sağ alttan Yükseklik, 
+  4. Parametresi: Sol Üstten Genişlik, */
+#dort {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 25 30 10 20;
+}
+
+/*1. Parametresi: Sağ Üstten Yükseklik, 
+  2. Parametresi: Sağ Üstten Genişlik,  */
+#bes {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 25 30;
+}
+#alti {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30 stretch;
+}
+#yedi {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30 repeat;
+}
+#sekiz {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+}
+#dokuz {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+}
+#dokuz {
+  border-image: initial;
+}
+
+#ustdiv {
+  width: 500px;
+  height: 300px;
+  border: 30px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+}
+#on {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: inherit;
+}
+
+/* border-image-source   : HTML elementinin kenarlık / çerçeve resmini belirler.
+Parametreler             : image | slice | repeat
+Değerler                 : 
+none                     : Değer Yok
+image                    : Resim Değeri.
+initial                  : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit                  : HTML Elementi üst elementinin Biçimlendirme değerine döner. */
+
+#onbir {
+  width: 400px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-image-source: url(../img/Resim.png);
+}
+#oniki {
+  width: 400px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-source: none;
+}
+
+#onuc {
+  width: 400px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-source: initial;
+}
+#ustdiv2 {
+  width: 400px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-image-source: url(../img/Resim.png);
+}
+
+#ondort {
+  width: 300px;
+  height: 100px;
+  border: 20px solid transparent;
+  border-image-source: inherit;
+}
+/* border-image-slice   : HTML elementinin kenarlık / çerçeve resminin dilimleme özelliklerini belirler.
+Değerler      : 
+
+length        : Uzunluk Değeri.
+%             : Yüzde Değeri.
+fill          : Doldurma.
+repeat        : Tekrarla.
+initial       : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+#onbes {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+}
+#onalti {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 10%;
+}
+#onyedi {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: fill;
+}
+#onsekiz {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 10% fill;
+}
+#ondokuz {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 33% fill;
+}
+#yirmi {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 33 fill;
+}
+#yirmi {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 20% 25% fill;
+}
+#yirmibir {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30 10 fill;
+}
+#yirmiiki {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+}
+#yirmiiki {
+  border-image-slice: initial;
+}
+#ustdiv3 {
+  width: 400px;
+  height: 300px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+}
+#yirmiuc {
+  width: 200px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: inherit;
+}
+/* border-image-width   : HTML elementinin kenarlık / çerçeve resminin genişliğini belirler.
+Değerler                : 
+
+auto                    : Otomatik Değer Alır.
+length                  : Uzunluk Değeri.
+%                       : Yüzde Değeri.
+initial                 : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit                 : HTML Elementi üst elementinin Biçimlendirme değerine döner. */
+
+#yirmidort {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: auto;
+}
+#yirmibes {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 10px;
+}
+#yirmialti {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 10px 30px;
+}
+#yirmiyedi {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px 30px 10px;
+}
+#yirmisekiz {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px 20px 15px 25px;
+}
+#yirmidokuz {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 2%;
+}
+#otuz {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 2% 4%;
+}
+#otuzbir {
+  width: calc(100%-60px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+}
+#otuzbir {
+  border-image-width: initial;
+}
+#ustdiv4 {
+  width: calc(100%-60px);
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 10px;
+}
+#otuziki {
+  width: calc(100%-100px);
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: inherit;
+}
+/* border-image-repeat   : HTML elementinin kenarlık / çerçeve resminin tekrarlanma özelliklerini belirler.
+Değerler                 : 
+repeat                   : Tekrarla.
+roud                     : Yuvarla
+stretch                  : Uzat & Gerdir & Esnet.
+initial                  : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit                  : HTML Elementi üst elementinin Biçimlendirme değerine döner.  */
+
+#otuzuc {
+  width: 500px;
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: stretch;
+}
+
+#otuzdort {
+  width: 500px;
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: repeat;
+}
+#otuzbes {
+  width: 500px;
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: round;
+}
+#otuzalti {
+  width: 500px;
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: round;
+}
+#otuzalti {
+  border-image-repeat: initial;
+}
+#ustdiv5 {
+  width: 500px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: round;
+}
+#otuzalti {
+  width: 400px;
+  height: 100px;
+  border: 30px solid transparent;
+  border-image-source: url(../img/Resim.png);
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: inherit;
+}
+/* border-image-outset   : HTML elementinin kenarlık / çerçeve resminin, kenarlık / çerçeve sınırından dışa taşma özelliklerini belirler.
+Değerler                 : 
+
+length                   : Uzunluk Değeri.
+initial                  : HTML Elementi varsayılan Biçimlendirme değerine döner.
+inherit                  : HTML Elementi üst elementinin Biçimlendirme değerine döner. */
+
+#otuzyedi {
+  width: 50%;
+  height: 50px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 10px;
+}
+/*1. Parametresi: Üst, 
+  2. Parametresi: Sağ, 
+  3. Parametresi: Alt, 
+  4. Parametresi: Sol */
+#otuzsekiz {
+  width: 50%;
+  height: 50px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 10px 200px 50px 2px;
+}
+/*1. Parametresi: Üst, 
+  2. Parametresi: Sağ ve Sol, 
+  3. Parametresi: Alt, 
+ */
+#otuzdokuz {
+  width: 50%;
+  height: 50px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 10px 200px 50px;
+}
+/*1. Parametresi: Üst ve Alt, 
+  2. Parametresi: Sağ ve Sol,  
+ */
+#kirk {
+  width: 50%;
+  height: 50px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 40px 3px;
+}
+#kirkbir {
+  width: 50%;
+  height: 100px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 40px 3px;
+}
+#kirkbir {
+  border-image-outset: initial;
+}
+
+#ustdiv6 {
+  width: 60%;
+  height: 100px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: 40px 10px;
+}
+#kirkiki {
+  width: 40%;
+  height: 40px;
+  border: 10px solid transparent;
+  border-image: url(../img/Resim.png) 30 round;
+  border-image-outset: inherit;
+}
+
+/* border-image Özelliğinde linear-gradient özelliğinin kullanımı  */
+
+#kirkuc {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: linear-gradient(blue, yellow);
+}
+#kirkdort {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: linear-gradient(blue, yellow) 10;
+}
+#kirkbes {
+  width: 400px;
+  height: 200px;
+  border: 30px solid transparent;
+  border-image: linear-gradient(blue, yellow, red) 30;
+}
