@@ -248,7 +248,7 @@ initial            : HTML Elementi varsayılan biçimlendirme değerine döner.
   height: 50px;
   border: 1px solid blue;
 }
-/* Flex-basis      : Esnek kutu içerisindeki element veya elementlerin başlangıç
+/* Flex-basis      : Esnek kutu içerisindeki element veya elementlerin diğer elementlere göre başlangıç
  uzunluğu değerlerini belirler 
 Değerler           :
 auto               : Otomatik Değer Alır.
@@ -418,4 +418,88 @@ initial            : HTML Elementi varsayılan biçimlendirme değerine döner. 
 .yedi {
   border: 1px solid blue;
   flex-grow: initial;
+}
+/* Flex-shrink       : Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük 
+yani büzülme oranının ne şekilde olması gerektiğini belirler.
+Değerler           :
+Değerler           :
+number             : Rakam.
+initial            : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+.AnaDiv23 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  border: 1px solid red;
+}
+.icDiv23 {
+  flex-basis: 200px;
+  border: 1px solid red;
+  flex-shrink: 1; /*varsayılan hali*/
+}
+
+.AnaDiv24 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  border: 1px solid red;
+}
+.icDiv24 {
+  flex-basis: 150px;
+  border: 1px solid red;
+  flex-shrink: 1;
+}
+.Deneme {
+  flex-shrink: 2;
+}
+
+.AnaDiv25 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  border: 1px solid red;
+}
+.icDiv25 {
+  width: 125px;
+  border: 1px solid red;
+  flex-shrink: 1;
+}
+.Denemebir {
+  flex-shrink: 3;
+}
+
+.AnaDiv26 {
+  display: flex;
+  width: 100px;
+  height: 500px;
+  border: 1px solid red;
+  flex-direction: column;
+}
+.icDiv26 {
+  flex-basis: 150px;
+  border: 1px solid red;
+  flex-shrink: 1;
+}
+.Denemeiki {
+  flex-shrink: 2;
+}
+
+.AnaDiv27 {
+  display: flex;
+  width: 100px;
+  height: 500px;
+  border: 1px solid red;
+  flex-direction: column;
+}
+.icDiv27 {
+  flex-basis: 150px;
+  border: 1px solid red;
+  flex-shrink: 1;
+}
+.Denemeuc {
+  flex-shrink: 2;
+}
+
+.Denemedort {
+  flex-shrink: initial;
 }

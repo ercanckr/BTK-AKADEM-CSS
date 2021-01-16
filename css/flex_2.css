@@ -1,0 +1,616 @@
+/* Flex            : Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük 
+oranını yada küçüklük büzülme oranının yada başlangıç uzunluğu değerini belirler.
+Değerler           :
+Flex-grow          : Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük 
+oranının ne şekilde olması gerektiğini belirler.  
+(varsayılan değeri= 0)
+Flex-shrink        : Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük 
+yani büzülme oranının ne şekilde olması gerektiğini belirler.
+(varsayılan değeri= 1)
+Flex-basis         : Esnek kutu içerisindeki element veya elementlerin diğer elementlere göre başlangıç
+ uzunluğu değerlerini belirler 
+ (varsayılan değeri= auto)
+auto               : Otomatik Değer Alır.
+initial            : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+  flex-direction: row;
+}
+.icEleman {
+  border: 1px solid blue;
+  flex: 0;
+}
+#AnaEleman1 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+  flex-direction: row;
+}
+.icEleman1 {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+#AnaEleman2 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+  flex-direction: row;
+}
+.icEleman2 {
+  border: 1px solid blue;
+  flex: auto;
+}
+
+#AnaEleman3 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+  flex-direction: row;
+}
+.icEleman3 {
+  border: 1px solid blue;
+  flex: 100px;
+}
+#AnaEleman4 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  border: 1px solid red;
+  flex-direction: row;
+}
+.icEleman4 {
+  border: 1px solid blue;
+  flex: initial;
+}
+/* align-items    : Esnek kutu içerisinde bulunan elementlerin hizalama özelliklerini belirler.
+Değerler            :
+stretch             : Uzat /Esne.
+center              : Orta.
+flex-start          : Esnek başlangıç.
+flex-end            : Esnek bitiş
+baseline            : başlangıc.
+initial             : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman5 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: stretch;
+}
+.icEleman5 {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+#AnaEleman6 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman6 {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+#AnaEleman7 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: flex-start;
+}
+.icEleman7 {
+  border: 1px solid blue;
+  flex: 1;
+}
+#AnaEleman8 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: flex-end;
+}
+.icEleman8 {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+#AnaEleman9 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: baseline;
+}
+.icEleman9 {
+  border: 1px solid blue;
+  flex: 1;
+}
+#AnaEleman10 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid red;
+  align-items: initial;
+}
+.icEleman10 {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+#AnaEleman11 {
+  display: flex;
+  width: 250px;
+  height: 500px;
+  border: 1px solid red;
+  flex-direction: column;
+  align-items: center;
+}
+.icEleman11 {
+  border: 1px solid blue;
+  flex: 1;
+}
+/* align-self     : Esnek kutu içerisinde bulunan ve seçilen element veya elementlerin hizalama özelliklerini belirler.
+Değerler          :
+auto              : Otomatik Değer Alır.
+stretch           : Uzat /Esne.
+center            : Orta.
+flex-start        : Esnek başlangıç.
+flex-end          : Esnek bitiş
+baseline          : başlangıc.
+initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman12 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman12 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme {
+  align-self: auto;
+}
+
+#AnaEleman13 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman13 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme1 {
+  align-self: stretch;
+}
+
+#AnaEleman14 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman14 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme2 {
+  align-self: center;
+}
+
+#AnaEleman15 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman15 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme3 {
+  align-self: flex-start;
+}
+
+#AnaEleman16 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman16 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme4 {
+  align-self: flex-end;
+}
+
+#AnaEleman17 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman17 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme5 {
+  align-self: baseline;
+}
+
+#AnaEleman18 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+}
+.icEleman18 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme6 {
+  align-self: initial;
+}
+
+#AnaEleman19 {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid red;
+  align-items: center;
+  flex-direction: column;
+}
+.icEleman19 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.Deneme7 {
+  align-self: flex-start;
+}
+
+/* align-content     : Esnek kutu içerisinde bulunan elementler tüm alanı kullanmadığında ve satır kırılma olduğunda,
+  elementlerin hizalama özelliklerini belirler.
+Değerler          :
+stretch           : Uzat /Esne.
+center            : Orta.
+flex-start        : Esnek başlangıç.
+flex-end          : Esnek bitiş
+space-between     : Boşluk arasında.
+space-around      : Boşluk etrafında.
+initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman20 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.icEleman20 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman21 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.icEleman21 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman22 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.icEleman22 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman23 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.icEleman23 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman24 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.icEleman24 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman25 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.icEleman25 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman26 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: initial;
+}
+.icEleman26 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+#AnaEleman27 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: initial;
+}
+.icEleman27 {
+  width: 125px;
+  height: 125px;
+  border: 1px solid blue;
+}
+
+/* justify-content     : Esnek kutu içerisinde bulunan elementler tüm alanı kaplamadığında elementlerin arasındaki
+ hizalama özelliklerini belirler.
+Değerler          :
+flex-start        : Esnek başlangıç.
+flex-end          : Esnek bitiş
+center            : Orta.
+space-between     : Boşluk arasında.
+space-around      : Boşluk etrafında.
+initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman28 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+}
+.icEleman28 {
+  width: 100px;
+  border: 1px solid blue;
+}
+#AnaEleman29 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+.icEleman29 {
+  width: 100px;
+  border: 1px solid blue;
+}
+#AnaEleman30 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+.icEleman30 {
+  width: 100px;
+  border: 1px solid blue;
+}
+#AnaEleman31 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.icEleman31 {
+  width: 100px;
+  border: 1px solid blue;
+}
+#AnaEleman32 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+.icEleman32 {
+  width: 100px;
+  border: 1px solid blue;
+}
+#AnaEleman33 {
+  width: 1500px;
+  height: 50px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: initial;
+}
+.icEleman33 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+#AnaEleman34 {
+  width: 50px;
+  height: 750px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.icEleman34 {
+  height: 100px;
+  border: 1px solid blue;
+}
+
+/* order          : Esnek kutu içerisinde bulunan element veya elementlerin diğer elementlere göre 
+sıralama özelliklerini belirler
+Değerler          :
+number            : Rakam.
+initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  */
+
+#AnaEleman35 {
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  display: flex;
+}
+.icEleman35 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.ilksira {
+  order: 1;
+}
+
+#AnaEleman36 {
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  display: flex;
+}
+.icEleman36 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.ilksira1 {
+  order: -1;
+}
+
+#AnaEleman37 {
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  display: flex;
+}
+.icEleman37 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.bir {
+  order: 1;
+}
+
+.iki {
+  order: 2;
+}
+
+.uc {
+  order: 3;
+}
+
+.dort {
+  order: 4;
+}
+
+.bes {
+  order: 5;
+}
+
+.alti {
+  order: 6;
+}
+
+.yedi {
+  order: 7;
+}
+
+.sekiz {
+  order: 8;
+}
+
+.dokuz {
+  order: 9;
+}
+
+.on {
+  order: 10;
+}
+
+#AnaEleman38 {
+  width: 50px;
+  height: 500px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+.icEleman38 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.onbir {
+  order: -1;
+}
+
+#AnaEleman39 {
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  display: flex;
+}
+.icEleman39 {
+  border: 1px solid blue;
+  flex: 1;
+}
+.oniki {
+  order: -1;
+}
+#islem {
+  order: initial;
+}
