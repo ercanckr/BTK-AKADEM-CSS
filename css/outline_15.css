@@ -321,3 +321,41 @@ inherit       : HTML Elementi üst elementinin Biçimlendirme değerine döner. 
   outline-style: hidden;
   outline-offset: 2px;
 }
+/* Logo */
+
+position: static;
+width: 68px;
+height: 40px;
+left: 0px;
+top: 1.5px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.75%;
+right: 0%;
+top: 0.02%;
+bottom: 0%;
+
+/* Green */
+background: #71A894;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 0%;
+bottom: 0%;
+
+/* Black */
+background: #303031;
