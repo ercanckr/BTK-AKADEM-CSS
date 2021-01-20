@@ -1,0 +1,285 @@
+/* padding   : HTML Elementinin dolgu / iç boşluk özelliklerini belirler
+length       : Uzunluk Değeri.
+%            : Yüzde Değeri.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#bir {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 25px;
+}
+#iki {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 50px 30px 25px 100px; /*  1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol  */
+}
+#uc {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 50px 30px 25px; /*  1. parametre : üst, 2. parametre : sağ ve sol 3. parametre : alt */
+}
+#dort {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 50px 30px; /*  1. parametre : üst ve alt 2. parametre : sağ ve sol */
+}
+#bes {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 10%;
+}
+#bes {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: initial;
+}
+#ustdiv1 {
+  width: 199px;
+  height: 46px;
+  border: 4px solid red;
+  padding: 10px;
+}
+#alti {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding: inherit;
+}
+/* padding-top  : HTML Elementinin üst dolgu / iç boşluk özelliklerini belirler
+length       : Uzunluk Değeri.
+%            : Yüzde Değeri.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#yedi {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-top: 25px;
+}
+#sekiz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-top: 10%;
+}
+#sekiz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-top: initial;
+}
+
+#ustdiv2 {
+  width: 199px;
+  height: 46px;
+  border: 4px solid red;
+  padding: 20px;
+}
+
+#dokuz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-top: inherit;
+}
+#on {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 25px;
+  padding-top: 50px;
+}
+/* padding-right  : HTML Elementinin sağ dolgu / iç boşluk özelliklerini belirler
+length       : Uzunluk Değeri.
+%            : Yüzde Değeri.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#onbir {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-right: 50px;
+}
+#oniki {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-right: 10%;
+}
+#onuc {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-right: initial;
+}
+
+#ustdiv3 {
+  width: 199px;
+  height: 26px;
+  border: 4px solid red;
+  padding-right: 50px;
+}
+#ondort {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-right: inherit;
+}
+
+#onbes {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding: 10px;
+  padding-right: 50px;
+}
+/* padding-bottom  : HTML Elementinin alt dolgu / iç boşluk özelliklerini belirler
+length       : Uzunluk Değeri.
+%            : Yüzde Değeri.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#onalti {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-bottom: 50px;
+}
+#onyedi {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-bottom: 10%;
+}
+#onsekiz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-bottom: initial;
+}
+
+#ustdiv4 {
+  width: 179px;
+  height: 76px;
+  border: 4px solid red;
+  padding-bottom: 50px;
+}
+
+#ondokuz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-bottom: inherit;
+}
+
+#yirmi {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/* padding-left  : HTML Elementinin sol dolgu / iç boşluk özelliklerini belirler
+length       : Uzunluk Değeri.
+%            : Yüzde Değeri.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#yirmibir {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-left: 50px;
+}
+#yirmiiki {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-left: 10%;
+}
+#yirmiuc {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-left: initial;
+}
+
+#ustdiv5 {
+  width: 229px;
+  height: 26px;
+  border: 4px solid red;
+  padding-left: 50px;
+}
+
+#yirmidort {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  padding-left: inherit;
+}
+
+#yirmibes {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding: 20px;
+  padding-left: 50px;
+}
+/* Tüm Padding özelliklerinin birlikte kullanımı*/
+
+#yirmialti {
+  width: 171px;
+  height: 18px;
+  border: 4px double red;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+#yirmiyedi {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#yirmisekiz {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#yirmidokuz {
+    width: 171px;
+    height: 18px;
+    border: 4px solid red;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+  
+  #otuz {
+    width: 171px;
+    height: 18px;
+    border: 4px double red;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+  }
+  
