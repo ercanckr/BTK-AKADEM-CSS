@@ -1,0 +1,191 @@
+/*background-color    : HTML Elementinin arka plan rengini belirler.
+transparent           : transparan
+color                 : Renk
+initial               : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+header {
+  background-color: aqua;
+}
+
+#bir {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  background-color: red;
+}
+#iki {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  background-color: transparent;
+}
+#uc {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  background-color: #ff0000;
+}
+#dort {
+  width: 171px;
+  height: 18px;
+  border: 4px solid red;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+#bes {
+  width: 171px;
+  height: 18px;
+  border: 4px solid blue;
+  background-color: initial;
+}
+#ustdiv1 {
+  width: 199px;
+  height: 46px;
+  border: 4px solid blue;
+  background-color: orange;
+}
+
+#alti {
+  width: 191px;
+  height: 18px;
+  border: 4px solid blue;
+  background-color: initial;
+}
+
+/*background-color    : HTML Elementinin arka plan resmini belirler.
+none                  : Deger Yok
+image                 : Resim.
+initial               : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+nav {
+  background-image: url(../img/Desen.jpg);
+}
+
+#yedi {
+  width: 1000px;
+  height: 100px;
+  border: 4px solid blue;
+  background-image: url(../img/AnaLogo.png);
+}
+#sekiz {
+  width: 1000px;
+  height: 100px;
+  border: 4px solid blue;
+  background-image: url(../img/Resim.jpg);
+}
+#dokuz {
+  width: 191px;
+  height: 18px;
+  border: 4px solid blue;
+  background-image: none;
+}
+#on {
+  width: 191px;
+  height: 18px;
+  border: 4px solid blue;
+  background-image: url(../img/AnaLogo.png);
+}
+.on {
+  background-image: initial;
+}
+
+#onbir {
+  width: 200px;
+  height: 40px;
+  border: 4px solid blue;
+  background-color: yellow;
+  background-image: url(../img/AnaLogo.png);
+}
+#ustdiv2 {
+  width: 1000px;
+  height: 200px;
+  border: 4px solid blue;
+  background-color: yellow;
+  background-image: url(../img/AnaLogo.png);
+}
+#oniki {
+  width: 800px;
+  height: 150px;
+  border: 4px solid blue;
+  background-color: aqua;
+  background-image: inherit;
+}
+
+/*background-repeat : HTML Elementine atanmış olan arkaplan resminin tekrarlanma özelliklerini belirler.
+repeat                : Tekrar Et.
+space                 : Boşluk
+round                 : Yuvarla
+no-repeat             : Tekrar Yok.
+repeat-x              : X ekseni boyunca tekrar et
+repeat-x              : Y ekseni boyunca tekrar et
+initial               : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#onuc {
+  width: 1000px;
+  height: 150px;
+  border: 4px solid red;
+  background-image: url(../img/Desen.jpg);
+  background-repeat: repeat;
+}
+
+#ondort {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/Desen.jpg);
+  background-repeat: space;
+}
+#onbes {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: round;
+}
+#onalti {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/Desen.jpg);
+  background-repeat: no-repeat;
+}
+#onyedi {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: repeat-x;
+}
+#onsekiz {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: repeat-y;
+}
+#ondokuz {
+    width: 1000px;
+    height: 250px;
+    border: 4px solid red;
+    background-image: url(../img/AnaLogo.png);
+    background-repeat: initial;
+  }
+  #ustdiv3 {
+    width: 1000px;
+    height: 250px;
+    border: 4px solid blue;
+    background-color: aqua;
+    background-image: url(../img/AnaLogo.png);
+    background-repeat: repeat-x;
+  }
+  #yirmi {
+    width: 500px;
+    height: 100px;
+    border: 4px solid red;
+    background-color: yellow;
+    background-image: url(../img/AnaLogo.png);
+    background-repeat: inherit;
+  }
+  
