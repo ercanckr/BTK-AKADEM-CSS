@@ -166,26 +166,230 @@ inherit               : HTML Elementi üst elementin biçimlendirme değerini al
   background-repeat: repeat-y;
 }
 #ondokuz {
-    width: 1000px;
-    height: 250px;
-    border: 4px solid red;
-    background-image: url(../img/AnaLogo.png);
-    background-repeat: initial;
-  }
-  #ustdiv3 {
-    width: 1000px;
-    height: 250px;
-    border: 4px solid blue;
-    background-color: aqua;
-    background-image: url(../img/AnaLogo.png);
-    background-repeat: repeat-x;
-  }
-  #yirmi {
-    width: 500px;
-    height: 100px;
-    border: 4px solid red;
-    background-color: yellow;
-    background-image: url(../img/AnaLogo.png);
-    background-repeat: inherit;
-  }
-  
+  width: 1000px;
+  height: 250px;
+  border: 4px solid red;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: initial;
+}
+#ustdiv3 {
+  width: 1000px;
+  height: 250px;
+  border: 4px solid blue;
+  background-color: aqua;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: repeat-x;
+}
+#yirmi {
+  width: 500px;
+  height: 100px;
+  border: 4px solid red;
+  background-color: yellow;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: inherit;
+}
+/*background-size     : HTML Elementine atanmış olan arkaplan resminin boyutunu belirler.
+auto                  : Otomatik değer alir.
+length                : uzunluk değeri.
+%                     : Yüzde değeri.
+cover                 : Kapak.
+contain               : içerme.
+initial               : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementin biçimlendirme değerini alır. */
+
+#yirmibir {
+  width: 800px;
+  height: 500px;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#yirmiiki {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+#yirmiuc {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px 300px;
+}
+
+#yirmidort {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#yirmibes {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+}
+#yirmialti {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#yirmiyedi {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#yirmisekiz {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+#ustdiv4 {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#yirmidokuz {
+  margin-top: 70px;
+  margin-left: 70px;
+  width: 600px;
+  height: 350px;
+  border: 4px solid black;
+  background-image: url(../img/Resim.jpg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+
+/*background-position : HTML Elementine atanmış olan arkaplan resminin konum özelliklerini belirler.
+length                : uzunluk değeri.
+%                     : Yüzde değeri.
+position              : Pozisyon değeri.
+initial               : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit               : HTML Elementi üst elementin biçimlendirme değerini alır.
+top                   : üst.
+right                 : sağ.
+bottom                : alt.
+left                  : sol.
+center                : orta. */
+
+#otuz {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: 100px;
+}
+#otuzbir {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: 100px 50px;
+}
+#otuziki {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: 25%;
+}
+#otuzuc {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+}
+#otuzdort {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+#otuzbes {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#otuzalti {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+#otuzyedi {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#otuzsekiz {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#otuzdokuz {
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+#ustdiv5 {
+  width: 1000px;
+  height: 500px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#kirk {
+  margin-top: 120px;
+  margin-left: 200px;
+  width: 500px;
+  height: 250px;
+  border: 4px solid black;
+  background-image: url(../img/AnaLogo.png);
+  background-repeat: no-repeat;
+  background-position: inherit;
+}
