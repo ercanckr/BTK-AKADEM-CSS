@@ -1,0 +1,575 @@
+/*background-origin : HTML Elementine atanmış olan arkaplan resminin başlangıç konumunu belirler.
+padding-box         : Dolgu kutusu.
+border-box          : Kenarlık Kurusu.
+content-box         : içerik kutusu.
+initial             : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit             : HTML Elementi üst elementin biçimlendirme değerini alır.
+ */
+
+#bir {
+  width: 1000px;
+  height: 625px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+#iki {
+  width: 1000px;
+  height: 625px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+#uc {
+  width: 1000px;
+  height: 625px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+#dort {
+  width: 1000px;
+  height: 625px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: initial;
+}
+
+#ustdiv1 {
+  width: 1000px;
+  height: 625px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+#bes {
+  width: 500px;
+  height: 325px;
+  padding: 50px;
+  border: 10px double blue;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: inherit;
+}
+
+/*background-clip : HTML Elementine atanmış olan arkaplan renginin başlangıç konumunu belirler.
+padding-box         : Dolgu kutusu.
+border-box          : Kenarlık Kurusu.
+content-box         : içerik kutusu.
+initial             : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit             : HTML Elementi üst elementin biçimlendirme değerini alır.
+ */
+
+#alti {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double red;
+  background-color: blue;
+  background-clip: padding-box;
+}
+
+#yedi {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double red;
+  background-color: blue;
+  background-clip: border-box;
+}
+#sekiz {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double red;
+  background-color: blue;
+  background-clip: content-box;
+}
+#dokuz {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double red;
+  background-color: blue;
+  background-clip: initial;
+}
+#ustdiv2 {
+  width: 700px;
+  height: 425px;
+  padding: 50px;
+  border: 10px double red;
+  background-color: blue;
+  background-clip: border-box;
+}
+#on {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double yellow;
+  background-color: red;
+}
+
+/*background-blend-mode : HTML Elementine atanmış olan arkaplan resmlerinin karıştırma modu özelliklerini belirler.
+normal              : Normal.
+multiply            : Çoğaltma.
+screen              : Ekran.
+overlay             : Kaplama.
+darken              : Karartma.
+lighten             : Hafifletme.
+color-dodge         : Renk Kaçırma.
+color-burn          : Renk Yakma.
+hard-light          : Sert ışık.
+soft-light          : Yumuşak ışık.
+difference          : Fark.
+exclusion           : Hariç Tutma.
+hue                 : Renk.
+saturation          : Doyma.
+color               : Renk.
+luminosity          : Parlaklık. */
+article {
+  width: 100%;
+  height: 4600px;
+}
+
+#onbir {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: normal;
+  float: left;
+}
+
+#oniki {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: multiply;
+  float: left;
+}
+
+#onuc {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: screen;
+  float: left;
+}
+
+#ondort {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: overlay;
+  float: left;
+}
+#onbes {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: darken;
+  float: left;
+}
+#onalti {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: lighten;
+  float: left;
+}
+#onyedi {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: color-dodge;
+  float: left;
+}
+#onsekiz {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: color-burn;
+  float: left;
+}
+#ondokuz {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: hard-light;
+  float: left;
+}
+#yirmi {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: soft-light;
+  float: left;
+}
+
+#yirmibir {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: difference;
+  float: left;
+}
+
+#yirmiiki {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: exclusion;
+  float: left;
+}
+#yirmiuc {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: hue;
+  float: left;
+}
+
+#yirmidort {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: saturation;
+  float: left;
+}
+#yirmibes {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: color;
+  float: left;
+}
+#yirmialti {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url(../img/Resim.jpg), url(../img/Resim2.jpg);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: luminosity;
+  float: left;
+}
+#yirmiyedi {
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  background-color: yellow;
+  background-image: url(../img/Resim.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  float: left;
+}
+
+/*background : HTML Elementinin arkaplan özelliğini veya özelliklerini belirler.
+color        : Renk.
+image        : Resim.
+repeat       : Tekrar et.
+position     : Pozisyon.
+size         : Boyut.
+attachment   : Sayfa harelketine göre davranış.
+origin       : Resmin başlangıç konumu.
+clip         : Rengin başlangıç konumu.
+initial      : HTML Elementi varsayılan biçimlendirme değerine döner.
+inherit      : HTML Elementi üst elementin biçimlendirme değerini alır.*/
+
+#yirmisekiz {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: red;
+}
+
+#yirmidokuz {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: url(../img/Resim.jpg);
+}
+
+#otuz {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: url(../img/AnaLogo.png) no-repeat;
+}
+#otuzbir {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: url(../img/AnaLogo.png) no-repeat right top;
+}
+#otuziki {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: url(../img/AnaLogo.png) no-repeat center top/300px;
+}
+#otuzuc {
+  width: 500px;
+  height: 250px;
+  border: 10px solid orange;
+  background: url(../img/Resim.jpg) no-repeat center top/500px local;
+  overflow: hidden;
+}
+#otuzdort {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double orange;
+  background: url(../img/AnaLogo.png) no-repeat left top/150px local content-box;
+}
+#otuzbes {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double orange;
+  background: yellow no-repeat left top/150px local content-box;
+}
+#otuzalti {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double orange;
+  background: url(../img/Resim.jpg) no-repeat left top/100% local content-box;
+}
+#otuzalti {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double orange;
+  background: initial;
+}
+#ustdiv5 {
+  width: 650px;
+  height: 400px;
+  padding: 50px;
+  border: 10px double orange;
+  background: url(../img/AnaLogo.png) no-repeat right top/200px local
+    padding-box;
+}
+
+#otuzyedi {
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+  border: 10px double orange;
+  background: inherit;
+}
+#otuzsekiz {
+  width: 650px;
+  height: 400px;
+  padding: 50px;
+  border: 10px double orange;
+  background: url(../img/AnaLogo.png) no-repeat right top/100px,
+    url(../img/AnaLogo.png) no-repeat left top/200px,
+    url(../img/AnaLogo.png) no-repeat center top/150px;
+}
+#otuzdokuz {
+  width: 650px;
+  height: 400px;
+  padding: 50px;
+  border: 10px double orange;
+  background: url(../img/AnaLogo.png) no-repeat right top/100px,
+    url(../img/AnaLogo.png) no-repeat left top/200px, yellow;
+}
+
+#kirk {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+}
+#kirkbir {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+  background-position: -30px;
+}
+#kirkiki {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+  background-position: -60px;
+}
+#kirkuc {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+  background-position: -90px;
+}
+
+#kirkdort {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+  background-position: -120px;
+}
+
+#kirkbes {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-image: url(../img/SosyalMedyaA.png);
+  background-repeat: no-repeat;
+  background-position: -150px;
+}
+
+#kirkalti {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+}
+#kirkalti:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -180px;
+}
+
+#kirkyedi {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -30px;
+}
+#kirkyedi:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -210px;
+}
+#kirksekiz {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -60px;
+}
+#kirksekiz:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -240px;
+}
+#kirkdokuz {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -90px;
+}
+#kirkdokuz:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -270px;
+}
+#elli {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -120px;
+}
+#elli:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -300px;
+}
+
+#ellibir {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -150px;
+}
+#ellibir:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/SosyalMedyaB.png);
+  background-repeat: no-repeat;
+  background-position: -330px;
+}
