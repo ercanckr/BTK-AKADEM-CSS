@@ -1,0 +1,111 @@
+/*color    : Metnin Rengini Belirler.
+color      : Renk
+initial    : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir {
+  color: red;
+}
+#iki {
+  color: blue;
+}
+#iki > h3 {
+  color: #ff0000;
+}
+#iki > p {
+  color: rgb(0, 250, 0);
+}
+#uc {
+  color: rgba(0, 255, 0, 0.5);
+}
+#uc > h3 {
+  color: initial;
+}
+#dort {
+  color: blue;
+}
+#dort > h3 {
+  color: inherit;
+}
+
+/*direction : Metnin veya içerğin akış yönü özelliklerini Belirler.
+ltr         : Soldan sağa.
+rtl         : sağdan sola.
+initial     : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit     : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bes {
+  direction: ltr;
+}
+#alti {
+  direction: rtl;
+}
+
+#yedi {
+  direction: rtl;
+}
+#yedi > h3 {
+  direction: initial;
+}
+
+#sekiz {
+  direction: rtl;
+}
+#sekiz > p {
+  direction: ltr;
+}
+#sekiz > h3 {
+  direction: inherit;
+}
+
+#dokuz {
+  direction: rtl;
+}
+
+/*unicode-bidi : Metnin direction özelliği ile belirtilmiş akış yönü özelliğinin döndürme durumunu Belirler.
+normal         : Normal
+embet          : Gömülü.
+bidi-override  : Geçersiz Kılma.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#on {
+  direction: rtl;
+  unicode-bidi: normal;
+}
+
+#onbir {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+#oniki {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+#bbb {
+  unicode-bidi: embed;
+}
+#ccc {
+  unicode-bidi: normal;
+}
+
+#onuc {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+#onuc {
+  unicode-bidi: initial;
+}
+
+#ondort {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+#ondort > h3 {
+    unicode-bidi: inherit;
+}

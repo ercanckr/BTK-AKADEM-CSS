@@ -1,0 +1,278 @@
+/*linear-gradient() : HTML Elementinin doğrusal arkaplan renk geçişi özelliklerini belirler.
+diection (Yön)      : Başlangıç noktası & açı- derece
+colors (renkler)    : Başlangıç Rengi - Bitiş Rengi. */
+
+#bir {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(blue, yellow);
+}
+#iki {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(blue, yellow, red, orange, purple);
+}
+#uc {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(top, blue, yellow);
+}
+#dort {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(right, blue, yellow);
+}
+
+#bes {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(bottom, blue, yellow);
+}
+#alti {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(left, blue, yellow);
+}
+
+#yedi {
+    width: 1000px;
+    height: 625px;
+    border: 2px solid black;
+    background: -webkit-linear-gradient(bottom right, blue, yellow);
+}
+#sekiz {
+    width: 1000px;
+    height: 625px;
+    border: 2px solid black;
+    background: -webkit-linear-gradient(top left, blue, yellow);
+}
+#dokuz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(-45deg, blue, yellow);
+}
+
+#on {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(90deg, blue, yellow);
+}
+
+
+#onbir {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(top, blue 0%, yellow 40%);
+}
+
+#oniki {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(top, blue 0%, yellow 40%, red 80%);
+}
+
+#onuc {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-linear-gradient(left, blue 0%, yellow 40%, red 80%);
+}
+/*repeating-linear-gradient() : HTML Elementinin doğrusal arkaplan renk geçişi tekrarlama özelliklerini belirler.
+diection (Yön)                : Başlangıç noktası & açı- derece
+colors (renkler)              : Başlangıç Rengi - Bitiş Rengi & Dilimleme. */
+
+#ondort {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(red, yellow);
+}
+#onbes {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(red 0%, yellow 25%);
+}
+#onalti {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(left, red 0%, yellow 25%);
+}
+#onyedi {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(right, red 0%, yellow 15%, blue 25%);
+}
+#onsekiz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(top right, red 0%, yellow 15%, blue 25%);
+}
+#ondokuz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-linear-gradient(-45deg, red 0%, yellow 15%, blue 25%);
+}
+
+/*radial-gradient() : HTML Elementinin dairesel arkaplan renk geçişi özelliklerini belirler.
+Shape (Şekil)       : Ellipse (elips) & circle (Daire)
+Size (Boyut)        : farthest-corner (En uzak Köşe) & closest-corner (En yakın Köşe) & 
+farthest-side (En uzak Taraf) & closest-side (En yakın taraf)
+diection (Yön)      : Başlangıç noktası & açı- derece
+colors (renkler)    : Başlangıç Rengi - Bitiş Rengi. */
+
+#yirmi {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-radial-gradient( red , yellow , blue);
+}
+
+#yirmibir {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-radial-gradient(circle red , yellow , blue);
+}
+
+#yirmiiki {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-radial-gradient(circle red , yellow 20% , yellow 60%, blue);
+}
+#yirmiuc {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+
+#yirmidort {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(closest-corner  at 60% 55%, red, yellow, black);
+}
+#yirmibes {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(farthest-side   at 60% 55%, red, yellow, black);
+}
+#yirmialti {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(closest-side  at 60% 55%, red, yellow, black);
+}
+#yirmiyedi {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(at 0% 0%, red, yellow, black);
+}
+
+#yirmisekiz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(circle at 0% 0%, red, yellow, black);
+}
+
+#yirmidokuz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(circle at 0% 50%, red, yellow, black);
+}
+
+#otuz {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(100px 200px Ellipse at 50%, red, yellow, black);
+  color: white;
+}
+#otuzbir {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(circle, white, white 10%, black 10% ,black);
+  color: white;
+}
+#otuziki {
+  width: 1000px;
+  height: 625px;
+  border: 2px solid black;
+  background:radial-gradient(circle, white, white 10px, black 10px ,black);
+  color: white;
+}
+
+/*repeating-radial-gradient() : HTML Elementinin dairesel arkaplan renk geçişi tekrarlanma özelliklerini belirler.
+Shape (Şekil)       : Ellipse (elips) & circle (Daire)
+Size (Boyut)        : farthest-corner (En uzak Köşe) & closest-corner (En yakın Köşe) & 
+farthest-side (En uzak Taraf) & closest-side (En yakın taraf)
+diection (Yön)      : Başlangıç noktası & açı- derece
+colors (renkler)    : Başlangıç Rengi - Bitiş Rengi - Dilimleme */
+
+#otuzuc {
+  width: 800px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-radial-gradient(red , yellow , black);
+}
+#otuzdort {
+  width: 800px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-radial-gradient(red 0%, yellow 25%);
+}
+
+#otuzbes {
+  width:800px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-radial-gradient(circle, yellow 10px , blue, red 50px);
+}
+#otuzalti {
+  width:800px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-radial-gradient(circle, yellow 10% , blue, red 25%);
+}
+#otuzyedi {
+  width:800px;
+  height: 625px;
+  border: 2px solid black;
+  background: -webkit-repeating-radial-gradient(circle, yellow 0px, yellow 25px , blue 25px , blue 50px, red 50px , red 100px);
+}
+
+#otuzsekiz {
+  width:800px;
+  height: 625px;
+  border: 2px solid black;
+  background:repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px , black 20px , black 30px);
+
+}
+#otuzdokuz {
+  width:800px;
+  height: 625px;
+  border: 2px solid black;
+  background:repeating-radial-gradient(red,yellow,red 25%);
+
+}
