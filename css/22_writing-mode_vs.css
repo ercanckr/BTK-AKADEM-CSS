@@ -1,0 +1,163 @@
+/*writing-mode   : Metnin veya içerğin hizalama yönü özelliklerini Belirler.
+horizontal-tb    : Yatay Sekme.
+vertical-lr      : Dikey (sol).
+vertical-rl      : Dikey (sağ)
+initial          : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit          : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  writing-mode: horizontal-tb;
+}
+#iki {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  writing-mode: vertical-lr;
+}
+
+#uc {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  writing-mode: vertical-rl;
+}
+
+#dort {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  writing-mode: initial;
+}
+#ustdiv1 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  writing-mode: vertical-rl;
+}
+
+#bes {
+  margin-right: 30px;
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  writing-mode: inherit;
+}
+
+/*text-orientation : Metnin writing-mode özelliği ile belirtilmiş hizalama yönü 
+özelliğinin döndürme durumunu Belirler.
+mixed              : Karışık.
+upright            : Dik.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#alti {
+  width: 200px;
+  height: 150px;
+  border: thin solid red;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+#yedi {
+  width: 200px;
+  height: 500px;
+  border: thin solid red;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#sekiz {
+  width: 200px;
+  height: 500px;
+  border: thin solid red;
+  writing-mode: vertical-lr;
+  text-orientation: initial;
+}
+
+#ustdiv2 {
+  width: 200px;
+  height: 500px;
+  border: thin solid red;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+#dokuz {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 100px;
+  height: 200px;
+  border: thin solid red;
+  writing-mode: vertical-lr;
+  text-orientation: inherit;
+}
+
+/*line-height  : Metnin bloğunda bulunan satırların yüksekliğini Belirler.
+normal         : Normal
+number         : Rakam değeri.
+length         : uzunluk değeri.
+%              : Yüzde değeri.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#on {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: normal;
+}
+
+#onbir {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: 2;
+}
+
+#oniki {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: 30px;
+}
+
+#onuc {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: 200%;
+}
+
+#ondort {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: initial;
+}
+#ustdiv3 {
+  width: 1000px;
+  height: 500px;
+  border: 2px solid red;
+  line-height: 30px;
+}
+#onbes {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  line-height: inherit;
+}
+
+#onalti {
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  line-height: 500px;
+}
