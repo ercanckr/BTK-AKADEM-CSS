@@ -1,0 +1,205 @@
+/*text-indent    : Metnin bloğunda bulunan ilk satırın girintisini Belirler.
+length         : uzunluk değeri.
+%              : Yüzde değeri.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+#bir {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  text-indent: 50px;
+}
+#iki {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  text-indent: 20%;
+}
+
+#uc {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  text-indent: initial;
+}
+#ustdiv1 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  text-indent: 50px;
+}
+
+#dort {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  text-indent: inherit;
+}
+
+/*letter-spacing   : Metnin içerisindeki karakterlerin aralarındaki boşluk değerlerini Belirler.
+normal             : Normal.
+length             : uzunluk değeri.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+#bes {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  letter-spacing: normal;
+}
+
+#alti {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  letter-spacing: 5px;
+}
+
+#yedi {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  letter-spacing: initial;
+}
+#ustdiv2 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  letter-spacing: 5px;
+}
+
+#sekiz {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  letter-spacing: inherit;
+}
+
+#dokuz {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  letter-spacing: -1px;
+}
+
+/*word-spacing : Metnin içerisindeki kelimelerin aralarındaki boşluk değerlerini Belirler.
+normal             : Normal.
+length             : uzunluk değeri.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#on {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  word-spacing: normal;
+}
+
+#onbir {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  word-spacing: 25px;
+}
+
+#oniki {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  word-spacing: -5px;
+}
+
+#onuc {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  word-spacing: initial;
+}
+#ustdiv3 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  word-spacing: 25px;
+}
+
+#ondort {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  word-spacing: 30px;
+}
+
+/*White-space  : HTML elementi içerisinde bulunan metin boşluk değerleri için davranış özellikleri Belirler.
+normal         : Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleride tek boşluk olur.
+nowrap         : Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleride tek boşluk olur ve satır sonları
+hiçbir zaman alt satıra geçmez.
+pre            : Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleride korunur  ve satır sonları
+hiçbir zaman alt satıra geçmez.
+pre-line       : Satır boşluk dizeleri korunur ve metin içi boşluk dizeleri tek boşluk olur.
+pre-wrap       : Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleride korunur.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+#onbes {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: normal;
+}
+
+#onalti {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: nowrap;
+}
+
+#onyedi {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: pre;
+}
+
+#onsekiz {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: pre-line;
+}
+
+#ondokuz {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: pre-wrap;
+}
+
+#yirmi {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: initial;
+}
+#ustdiv4 {
+  width: 800px;
+  height: 600px;
+  border: 2px solid red;
+  white-space: pre;
+}
+#yirmibir {
+  margin-left: 250px;
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  white-space: inherit;
+}
