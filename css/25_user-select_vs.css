@@ -1,0 +1,234 @@
+/*user-select  : Metnin kullanıcı tarafından seçilebilme durumunu Belirler.
+auto           : Otomatik değer alır.
+none           : Değer yok. (Metin seçilemez).
+text           : Metin (Metin Seçilebilir).
+all            : Tümü ( Tüm metin bir seferde seçilebilir).
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir {
+  user-select: auto;
+}
+
+#iki {
+  user-select: none;
+}
+#uc {
+  user-select: text;
+}
+
+#dort {
+  user-select: all;
+}
+
+#bes {
+  user-select: initial;
+}
+
+#ustdiv1 {
+  width: 800px;
+  height: 300px;
+  border: thin solid red;
+  user-select: all;
+}
+
+#alti {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 400px;
+  height: 100px;
+  border: thin solid red;
+  user-select: inherit;
+}
+
+/*text-transform : Metnin büyük harf küçük harf dönüştürme özelliklerini belirler.
+none             : Değer yok.
+capitalize       : Her kelimenin ilk harfi büyük olur.
+uppercase        : Kelimenin / Kelimelerim tüm harfleri büyük harf olur.
+lowercase        : Kelimenin / Kelimelerim tüm harfleri küçük harf olur..
+initial          : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit          : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yedi {
+  text-transform: none;
+}
+#sekiz {
+  text-transform: capitalize;
+}
+
+#dokuz {
+  text-transform: uppercase;
+}
+
+#on {
+  text-transform: lowercase;
+}
+
+#onbir {
+  text-transform: initial;
+}
+#ustdiv2 {
+  width: 500px;
+  height: 300px;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+
+#oniki {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  text-transform: inherit;
+}
+
+#onuc {
+  width: 500px;
+  height: 300px;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+
+/*text-decoration  : Metne eklenecek olan dekorasyon / süsleme özelliklerini belirler.
+parametreler:-->
+
+decoration         : Dekorasyon.  Aldığı değerler:-->
+none               : Değer yok.
+underline          : Metnin alt tarafına çizgi ekler.
+overline           : Metnin üst tarafına çizgi ekler
+line-through       : Metnin üzerine çizgi ekler.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+
+style              : Stil.  Aldığı değerler:-->
+solid              : Düz çizgi.
+dashed             : Kesitli çizği.
+dotted             : Noktalı çizği.
+double             : çift çizgi.
+wavy               : Dalgalı Çizgi.
+
+color              : Renk.  Aldığı değerler:-->
+color               : Renk
+*/
+
+#ondort {
+  text-decoration: none;
+}
+
+#onbes > a {
+  text-decoration: none;
+}
+
+#onalti {
+  text-decoration: underline;
+}
+#onyedi {
+  text-decoration: overline;
+}
+
+#onsekiz {
+  text-decoration: line-through;
+}
+
+#ondokuz {
+  text-decoration: underline overline line-through;
+}
+#yirmi {
+  text-decoration: underline overline;
+}
+
+#yirmibir {
+  text-decoration: underline dashed;
+}
+#yirmiiki {
+  text-decoration: underline dotted;
+}
+#yirmiuc {
+  text-decoration: underline double;
+}
+#yirmidort {
+  text-decoration: underline wavy;
+}
+#yirmibes {
+  text-decoration: underline line-through wavy;
+}
+#yirmialti {
+  text-decoration: underline overline line-through dotted;
+}
+#yirmiyedi {
+  text-decoration: underline wavy orange;
+}
+#yirmisekiz {
+  text-decoration: underline overline double orange;
+}
+
+#yirmidokuz {
+  text-decoration: underline overline double orange;
+}
+
+#otuz {
+  text-decoration: initial;
+}
+
+#otuzbir {
+  text-decoration: underline overline line-through dashed blue;
+}
+
+#otuziki {
+  text-decoration: underline wavy orange;
+}
+.deneme {
+  text-decoration: initial;
+}
+#inherit {
+  text-decoration: inherit;
+}
+
+/*
+text-decoration-line : Metne eklenecek olan dekorasyon / süsleme çizgisi türünü belirler.
+none                 : Değer yok.
+underline            : Metnin alt tarafına çizgi ekler.
+overline             : Metnin üst tarafına çizgi ekler
+line-through         : Metnin üzerine çizgi ekler.
+initial              : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit              : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#otuzuc > a {
+  text-decoration-line: none;
+}
+#otuzdort {
+  text-decoration-line: underline;
+}
+#otuzbes {
+  text-decoration-line: overline;
+}
+#otuzalti {
+  text-decoration-line: line-through;
+}
+#otuzyedi {
+  text-decoration-line: underline line-through;
+}
+#otuzsekiz {
+  text-decoration-line: underline overline line-through;
+}
+#otuzdokuz {
+  text-decoration-line: initial;
+}
+
+#kirk{
+    text-decoration-line: underline;
+}
+.deneme{
+    text-decoration-line: initial;
+}
+#inherit2{
+    text-decoration-line: inherit;
+}
+#kirkbir{
+    text-decoration: underline;
+    text-decoration-line: overline;
+}

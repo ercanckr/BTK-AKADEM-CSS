@@ -47,23 +47,23 @@ inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
   height: 300px;
   border: thin solid red;
   text-align: center;
-  }
+}
 
-  #alti {
-    margin-top: 50px;
-    margin-left: 200px;
-    width: 400px;
-    height: 100px;
-    border: thin solid red;
-    text-align: inherit;
-  }
+#alti {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 400px;
+  height: 100px;
+  border: thin solid red;
+  text-align: inherit;
+}
 
-  #yedi {
-    width: 400px;
-    height: auto;
-    border: thin solid red;
-    text-align: center;
-  }
+#yedi {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: center;
+}
 
 /*text-align- last : Metnin son satırının ve metnin justfy değeri atanmiş olan
  satırlarının yatay hizalama özelliklerini belirler.
@@ -78,8 +78,6 @@ initial            : HTML Elementi Varsayılan biçimlendirme değerine döner.
 inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
 */
 
-
-
 #sekiz {
   width: 400px;
   height: auto;
@@ -87,14 +85,12 @@ inherit            : HTML Elementi üst elementinin biçimlendirme değerini al�
   text-align-last: auto;
 }
 
-
 #dokuz {
   width: 400px;
   height: auto;
   border: thin solid red;
   text-align-last: auto;
 }
-
 
 #on {
   width: 400px;
@@ -145,7 +141,6 @@ inherit            : HTML Elementi üst elementinin biçimlendirme değerini al�
   text-align-last: justify;
 }
 
-
 #onalti {
   margin-top: 50px;
   margin-left: 200px;
@@ -168,4 +163,92 @@ inherit            : HTML Elementi üst elementinin biçimlendirme değerini al�
   border: thin solid red;
   text-align: justify;
   text-align-last: right;
+}
+
+/*vertical-align   : Metnin veya içeriğin dikey hizalama özelliklerini belirler.
+baseline           : Alt köşeden başlar.
+length             : Uzunluk değeri.
+%                  : Yüzde değeri.
+sub                : Alt simge.
+super              : Üst Simge.
+top                : En üstten.
+text-top           : Metnin veya içeriğin üst hizasından.
+middle             : Ortadan.
+bottom             : An alttan.
+text-bottom        : Metnin veya içeriğin alt hizasından.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+#ondokuz > span {
+  vertical-align: baseline;
+}
+
+#yirmi > span {
+  vertical-align: 100px;
+}
+#yirmibir > span {
+  vertical-align: -100px;
+}
+#yirmiiki > span {
+  vertical-align: 250%;
+}
+#yirmiuc > span {
+  vertical-align: -250%;
+}
+#yirmidort > span {
+  vertical-align: sub;
+}
+#yirmibes > span {
+  vertical-align: super;
+}
+#yirmialti > span {
+  vertical-align: top;
+}
+#yirmiyedi > span {
+  vertical-align: text-top;
+  font-size: 10px;
+}
+#yirmisekiz{
+  font-size: 50px;
+}
+
+#yirmisekiz > span {
+  vertical-align: middle;
+  font-size: 20px;
+}
+#yirmidokuz {
+  font-size: 50px;
+}
+
+#yirmidokuz > span {
+  vertical-align: bottom;
+  font-size: 20px;
+}
+#otuz {
+  font-size: 50px;
+}
+
+#otuz > span {
+  vertical-align: text-bottom;
+  font-size: 20px;
+}
+#otuzbir {
+  font-size: 50px;
+}
+
+#otuzbir > span {
+  vertical-align: initial;
+  font-size: 20px;
+}
+
+
+#otuziki {
+  vertical-align: 50px;
+  font-size: 20px;
+}
+.deneme{
+  vertical-align: initial;
+}
+#vertical{
+  vertical-align: inherit;
 }
