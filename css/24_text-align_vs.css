@@ -1,0 +1,171 @@
+/*text-align   : HTML Elementi içerisinde bulunan metnin içerdiği sekme karakterinin genişliğini Belirler.
+left           : Sol.
+right          : Sağ.
+center         : Orta.
+justfy         : Sağa ve sola Eşit.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: left;
+}
+
+#iki {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: right;
+}
+
+#uc {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: center;
+}
+
+#dort {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: justify;
+}
+
+#bes {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: initial;
+}
+
+#ustdiv1 {
+  width: 800px;
+  height: 300px;
+  border: thin solid red;
+  text-align: center;
+  }
+
+  #alti {
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 400px;
+    height: 100px;
+    border: thin solid red;
+    text-align: inherit;
+  }
+
+  #yedi {
+    width: 400px;
+    height: auto;
+    border: thin solid red;
+    text-align: center;
+  }
+
+/*text-align- last : Metnin son satırının ve metnin justfy değeri atanmiş olan
+ satırlarının yatay hizalama özelliklerini belirler.
+auto               : Otomatik değer alır.
+left               : Sol.
+right              : Sağ.
+center             : Orta.
+justfy             : Sağa ve sola hizalı.
+start              : Başlangıç.
+and                : Bitiş.
+initial            : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit            : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+
+
+#sekiz {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: auto;
+}
+
+
+#dokuz {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: auto;
+}
+
+
+#on {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: right;
+}
+
+#onbir {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: center;
+}
+
+#oniki {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: justify;
+}
+
+#onuc {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: start;
+}
+
+#ondort {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: end;
+}
+
+#onbes {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: initial;
+}
+
+#ustdiv2 {
+  width: 800px;
+  height: 300px;
+  border: thin solid red;
+  text-align-last: justify;
+}
+
+
+#onalti {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align-last: inherit;
+}
+#onyedi {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: justify;
+  text-align-last: center;
+}
+
+#onsekiz {
+  width: 400px;
+  height: auto;
+  border: thin solid red;
+  text-align: justify;
+  text-align-last: right;
+}
