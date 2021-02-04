@@ -1,0 +1,347 @@
+/*
+text-stroke   : Metne eklenecek olan dış çizgisi özelliklerini belirler.
+length        : Uzunluk Değeri.
+color         : Renk.
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit       : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir {
+  -webkit-text-stroke: 1px;
+}
+
+#iki {
+  color: red;
+  -webkit-text-stroke: 1px;
+}
+#uc {
+  -webkit-text-stroke: 1px blue;
+}
+
+#dort {
+  font-size: 40px;
+  -webkit-text-stroke: 1px orange;
+}
+
+#bes {
+  -webkit-text-stroke: initial;
+}
+
+#alti {
+  -webkit-text-stroke: 1px brown;
+}
+.test {
+  -webkit-text-stroke: initial;
+}
+#deneme {
+  -webkit-text-stroke: inherit;
+}
+
+/*
+text-stroke-width : Metne eklenecek olan dış çizgisisi genişliğini belirler.
+length            : Uzunluk Değeri.
+initial           : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit           : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yedi {
+  -webkit-text-stroke-width: 1px;
+}
+#sekiz {
+  color: red;
+  -webkit-text-stroke-width: 1px;
+}
+
+#dokuz {
+  -webkit-text-stroke-width: 1px;
+}
+
+#deneme1 {
+  -webkit-text-stroke-width: initial;
+}
+
+#on {
+  -webkit-text-stroke-width: 1px;
+}
+.test1 {
+  -webkit-text-stroke-width: initial;
+}
+#deneme2 {
+  -webkit-text-stroke-width: inherit;
+}
+
+#onbir {
+  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke-width: 2px;
+}
+
+/*
+text-stroke-color : Metne eklenecek olan dış çizgisisi rengini belirler.
+color             : Renk.
+initial           : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit           : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#oniki {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+}
+
+#onuc {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+}
+
+#ondort {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+}
+
+#onbes {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: aqua;
+}
+#deneme3 {
+  -webkit-text-stroke-color: initial;
+}
+
+#onalti {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: green;
+}
+.test2 {
+  -webkit-text-stroke-color: initial;
+}
+#deneme4 {
+  -webkit-text-stroke-color: inherit;
+}
+
+#onyedi {
+  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke-color: rebeccapurple;
+}
+
+/*
+text-shadow       : Metne eklenecek olan dış çizgisisi rengini belirler.
+
+horizontalshadow  : Yatay Gölge. | #vertical shadow : Dikey Gölge. | 
+blur-radius : Bulanıklık yarıçapı. | color: Renk.
+
+
+none              : Değer Yok.
+length            : Uzunluk Değeri.
+initial           : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit           : HTML Elementi üst elementinin biçimlendirme değerini alır.
+blur-radius       : Bulanıklık yarıçapı.
+color             : Renk.
+*/
+
+#onsekiz {
+  text-shadow: none;
+}
+
+#ondokuz {
+  text-shadow: 0px 0px 5px red;
+}
+#yirmi {
+  text-shadow: 2px 0px 5px red;
+}
+
+#yirmibir {
+  text-shadow: 0px 2px 5px red;
+}
+#yirmiiki {
+  text-shadow: 2px 2px 5px red;
+}
+#yirmiuc {
+  text-shadow: -2px -2px 5px red;
+}
+#yirmidort {
+  text-shadow: -2px -2px 0px rgba(204, 204, 204, 50%);
+}
+
+#yirmibes {
+  text-shadow: -2px 2px 5px red;
+}
+#deneme5 {
+  text-shadow: initial;
+}
+
+#yirmialti {
+  text-shadow: -2px 2px 4px blue;
+}
+
+.test3 {
+  text-shadow: initial;
+}
+
+#deneme6 {
+  text-shadow: inherit;
+}
+
+#yirmiyedi {
+  text-shadow: -2px -2px 4px red, 2px 2px 4px yellow;
+}
+
+#yirmisekiz {
+  text-shadow: 0px 0px 2px yellow, 0px 0px 10px red;
+}
+
+#yirmidokuz {
+  width: 500px;
+  height: 300px;
+  border: 1px solid red;
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  box-sizing: border-box;
+  text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ff3, 2px -10px 6px #fd3,
+    -2px -15px 10px #f80, 2px -20px 20px #f20;
+}
+
+/*
+text-overflow     : HTML elementinin boyutlandırılmış alanına
+ sığmayacak kadar büyük metnin taşma özelliklerini belirler.
+clip              : Metni Kırpar.
+ellipsis          : Metni Kırpar ve ... ekler.
+initial           : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit           : HTML Elementi üst elementinin biçimlendirme değerini alır.
+
+*/
+
+#otuz {
+  width: 250px;
+  height: 18px;
+  border: thin solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+#otuzbir {
+  width: 400px;
+  height: 18px;
+  border: thin solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#otuziki {
+  width: 400px;
+  height: 18px;
+  border: thin solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#otuziki {
+  text-overflow: initial;
+}
+
+#otuzuc {
+  width: 400px;
+  height: 250px;
+  border: thin solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#otuzuc > p {
+  margin-top: 50px;
+  margin-left: 80px;
+  width: 200px;
+  height: 18px;
+  border: thin solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: inherit;
+}
+
+/*
+word-wrap   : HTML elementinin boyutlandırılmış alanına
+ sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+
+normal      : Normal.
+break-word  : Kelimeyi Kırar.
+initial     : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit     : HTML Elementi üst elementinin biçimlendirme değerini alır.
+
+*/
+#otuzdort {
+  width: 400px;
+  border: 1px solid red;
+  word-wrap: normal;
+}
+#otuzbes {
+  width: 400px;
+  border: 1px solid red;
+  word-wrap: break-word;
+}
+#otuzalti {
+  width: 400px;
+  border: 1px solid red;
+  word-wrap: initial;
+}
+#otuzyedi {
+  word-wrap: break-word;
+}
+.test5 {
+  width: 200px;
+  border: 1px solid red;
+  word-wrap: initial;
+}
+#deneme8 {
+  word-wrap: inherit;
+}
+
+/*
+word-break  : HTML elementinin boyutlandırılmış alanının
+ sonuna sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+
+normal      : Normal.
+break-all   : Kelimeyi harflerden Kırar.
+keep-all    : Kelimeyi boşluklardan Kırar.
+initial     : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit     : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#otuzsekiz {
+  width: 400px;
+  border: 1px solid red;
+  word-break: normal;
+}
+#otuzdokuz {
+  width: 400px;
+  border: 1px solid red;
+  word-break: break-all;
+}
+
+#kirk {
+  width: 400px;
+  border: 1px solid red;
+  word-break: keep-all;
+}
+
+#kirkbir {
+  width: 400px;
+  border: 1px solid red;
+  word-break: initial;
+}
+
+#kirkiki {
+  word-break: break-all;
+}
+.test6 {
+  width: 200px;
+  border: 1px solid red;
+  word-break: initial;
+}
+
+#deneme9 {
+  word-break: inherit;
+}
+

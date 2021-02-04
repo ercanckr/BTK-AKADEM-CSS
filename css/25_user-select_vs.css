@@ -232,3 +232,94 @@ inherit              : HTML Elementi üst elementinin biçimlendirme değerini a
     text-decoration: underline;
     text-decoration-line: overline;
 }
+
+/*
+text-decoration-style : Metne eklenecek olan dekorasyon / süsleme çizgisi sitilini belirler.
+solid                 : Düz çizgi.
+dashed                : Kesitli çizği.
+dotted                : Noktalı çizği.
+double                : çift çizgi.
+wavy                  : Dalgalı Çizgi.
+initial               : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit               : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#kirkiki{
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+#kirkuc{
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+#kirkdort{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+#kirkbes{
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+#kirkalti{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+#kirkyedi{
+  text-decoration: underline wavy;
+  text-decoration-style: double;
+}
+#kirksekiz{
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+}
+#kirkdokuz{
+  text-decoration-line: overline;
+  text-decoration-style: initial;
+}
+#elli{
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+}
+#elli > p{
+  text-decoration-style: initial;
+}
+#deneme3{
+  text-decoration-style: inherit;
+}
+/*
+text-decoration-color: Metne eklenecek olan dekorasyon / süsleme çizgisi rengini belirler.
+color                : Renk
+initial              : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit              : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+#ellibir{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+#elliiki{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+}
+#elliuc{
+  text-decoration: underline double;
+  text-decoration-color: red;
+}
+#ellidort{
+  text-decoration: underline double;
+  text-decoration-color: initial;
+}
+#ellidort{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+#ellidort > p{
+  text-decoration-color: initial;
+}
+#deneme5{
+  text-decoration-color: inherit;
+}
+#ellibes{
+  text-decoration: underline red;
+ text-decoration-color: blue;
+}
