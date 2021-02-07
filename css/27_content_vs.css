@@ -1,0 +1,257 @@
+/*
+content        : Before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır.
+normal         : Normal.
+none           : Değer Yok.
+string         : İçeriğe yeni bir dize ekler.
+open-quote     : İçeriğe açılış tırnak işareti ekler.
+close-quote    : İçeriğe açılış tırnak işareti ekler.
+no-open-quote  : İçeriğin açılış tırnak işaretini kaldırır.
+no-close-quote : İçeriğin kapanış tırnak işaretini kaldırır
+url            : İçeriğe media dosyası ekler.
+attr           : İçeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler .
+counter        : Belirtilecek olan herhangi bir elementin sataç bilgisine erişerek değerini ekler.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#bir::before {
+  content: normal;
+}
+#bir::after {
+  content: normal;
+}
+
+#iki::before {
+  content: none;
+}
+#iki::after {
+  content: none;
+}
+
+#uc::before {
+  content: "Ercan Çakır";
+  color: #f80;
+}
+
+#uc::after {
+  content: "Ercan Çakır";
+  color: #f80;
+}
+
+#dort::before {
+  content: open-quote;
+  color: #f80;
+}
+#dort::after {
+  content: close-quote;
+  color: #f80;
+}
+
+#bes::before {
+  content: no-open-quote;
+}
+#bes::after {
+  content: no-close-quote;
+}
+
+#alti::before {
+  content: url(../img/AnaLogo.png);
+}
+#alti::after {
+  content: url(../img/AnaLogo.png);
+}
+
+#yedi > a::before {
+  content: attr(href) " ---- ";
+}
+#yedi > a::after {
+  content: " ---- " attr(title);
+}
+
+#sekiz > p {
+  counter-increment: EğitimSetleriSayaci;
+}
+
+#sekiz > p::before {
+  content: counter(EğitimSetleriSayaci) ". ";
+}
+
+#dokuz > p::before {
+  content: "Ercan Çakır";
+  color: red;
+}
+#dokuz > p::after {
+  content: "CSS Eğitimi";
+  color: rebeccapurple;
+}
+
+p#deneme1::before {
+  content: initial;
+}
+p#deneme1::after {
+  content: initial;
+}
+
+/*
+attr()     : HTML Elementinin belirtilecek olan herhangi bir özellik bilgisine erişmek için kullanılır .
+*/
+
+#on::after {
+  content: "(ID Değeri : " attr(id) ")";
+}
+
+#onbir::after {
+  content: "(Contenteditable Değeri : " attr(contenteditable) ")";
+}
+
+#oniki > p::after {
+  content: "(Data Değeri : " attr(data-Renkler) ")";
+}
+
+#onuc > p::after {
+  content: "(Yön Değeri : " attr(dir) ")";
+}
+
+#ondort > a::after {
+  content: "(Href Değeri : " attr(href) ")";
+}
+
+#onbes::after {
+  content: "(Öğrenci Adı : " attr(ogrenci) ")";
+}
+
+/*
+quotes    : HTML'in q tag'ı (etiketi) için tırnak işareti türü değerini belirler.
+
+none      : Değer Yok.
+string    : Harf - rakam -simge vs.
+initial   : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit   : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#onalti {
+  quotes: none;
+}
+
+.onyedi {
+  quotes: none;
+}
+
+#onsekiz {
+  quotes: "x" "X";
+}
+
+#ondokuz {
+  quotes: "x" "X" "q" "Q";
+}
+
+#yirmi {
+  quotes: "-" "_";
+}
+
+#yirmibir {
+  quotes: "*" "**" "&" "&&";
+}
+
+#yirmiiki {
+  quotes: "\05D0""\05D0";
+}
+#yirmiuc {
+  quotes: "\05D0""\05D0""\058D""\058D";
+}
+
+#yirmidort > q {
+  quotes: "\058D""\058D";
+}
+
+q#deneme2 {
+  quotes: initial;
+}
+
+#yirmibes {
+  quotes: "\058D""\058D";
+}
+
+#yirmibes > q {
+  quotes: initial;
+}
+
+q#deneme3 {
+  quotes: inherit;
+}
+
+/*
+font-size  : Metnin yazı tipi botutunu belirler.
+length     : Uzunluk Değeri.
+%          : Yüzde Değeri.
+xx-small   : En Küçük.
+x-small    : Çok Küçük
+small      : Küçük.
+medium     : Orta
+large      : Büyük.
+x-large    : Çok Büyük
+xx-large   : En Büyük
+smaller    : Daha Küçük
+larger     : Daha Büyük
+initial    : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yirmialti {
+  font-size: 30px;
+}
+
+#yirmiyedi {
+  font-size: 200%;
+}
+
+#yirmisekiz {
+  font-size: xx-small;
+}
+
+#yirmidokuz {
+  font-size: x-small;
+}
+
+#otuz {
+  font-size: small;
+}
+
+#otuzbir {
+  font-size: medium;
+}
+
+#otuziki {
+font-size: large;
+}
+
+#otuziki {
+  font-size: x-large;
+}
+
+#otuzuc {
+  font-size: xx-large;
+}
+#otuzuc > p {
+  font-size: smaller;
+}
+
+#otuzdort {
+  font-size: larger;
+
+}
+#otuzbes {
+  font-size: xx-large;
+}
+#deneme5 {
+  font-size: initial;
+}
+
+#otuzalti {
+  font-size: xx-small;
+}
+#otuzalti > p {
+  font-size: initial;
+}
+p#deneme4{
+  font-size: inherit;
+}
