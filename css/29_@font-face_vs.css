@@ -1,0 +1,362 @@
+/*
+@font-face     : Metinler için sisytemde yüklü olmayan fontların kullanılabilme durumlarını belirler.
+font-famly     : Metnin yazı tipi ailesi.
+local          : Yerel.
+src            : Dosya adresi.
+font-style     : Metnin yazı tipi sitili.
+font-weight    : Metnin yazı tipi kalınlığı.
+
+Font- Dosya Türleri:
+
+EOT       : İnternet Explorer - Microsoft Edge.
+WOFF2     : Chrome - Firefox - Opera.
+WOFF      : Tüm Tarayıcılar.
+TTF & OTF : Tüm Tarayıcılar.
+SVG       : Chrome - Safari - Opera.
+*/
+
+@font-face {
+  font-family: "Walt Disney Script v41 Regular";
+  src: url("../fonts/Walt_Disney_Script_v41_Regular.eot"); /*EOT : İnternet Explorer - Microsoft Edge.*/
+  src: url("../fonts/Walt_Disney_Script_v41_Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* İnternet Explorer 6-8 */
+      url("../fonts/Walt_Disney_Script_v41_Regular.woff2") format("woff2"),
+    /* Modern tarayıcılar (süper)*/
+      url("../fonts/Walt_Disney_Script_v41_Regular.woff") format("woff"),
+    /* Modern tarayıcılar */ url("../fonts/Walt_Disney_Script_v41_Regular.ttf")
+      format("truetype"),
+    /* Safari , android . İOS*/
+      url("../fonts/Walt_Disney_Script_v41_Regular.svg#walt_disney_script_v4.1Rg")
+      format("svg"); /*İOS*/
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Hickory Jack";
+  src: url("../fonts/Hickory_Jack.eot"); /*EOT : İnternet Explorer - Microsoft Edge.*/
+  src: url("../fonts/Hickory_Jack.eot?#iefix") format("embedded-opentype"),
+    /* İnternet Explorer 6-8 */ url("../fonts/Hickory_Jack.woff2")
+      format("woff2"),
+    /* Modern tarayıcılar (süper)*/ url("../fonts/Hickory_Jack.woff")
+      format("woff"),
+    /* Modern tarayıcılar */ url("../fonts/Hickory_Jack.ttf") format("truetype"),
+    /* Safari , android . İOS*/
+      url("../fonts/Hickory_Jack.svg#hickory_jackregular") format("svg"); /*İOS*/
+}
+@font-face {
+  font-family: "Angilla Tattoo Personal Use Regular";
+  src: url("../fonts/Angilla_Tattoo_Personal_Use_Regular.eot"); /*EOT : İnternet Explorer - Microsoft Edge.*/
+  src: url("../fonts/Angilla_Tattoo_Personal_Use_Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* İnternet Explorer 6-8 */
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.woff2") format("woff2"),
+    /* Modern tarayıcılar (süper)*/
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.woff") format("woff"),
+    /* Modern tarayıcılar */
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.ttf") format("truetype"),
+    /* Safari , android . İOS*/
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.svg#angilla_tattoo_personal_useRg")
+      format("svg"); /*İOS*/
+}
+@font-face {
+  font-family: "Fiolex Girls Regular";
+  src: url("../fonts/Fiolex_Girls_Regular.eot"); /*EOT : İnternet Explorer - Microsoft Edge.*/
+  src: url("../fonts/Fiolex_Girls_Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* İnternet Explorer 6-8 */ url("../fonts/Fiolex_Girls_Regular.woff2")
+      format("woff2"),
+    /* Modern tarayıcılar (süper)*/ url("../fonts/Fiolex_Girls_Regular.woff")
+      format("woff"),
+    /* Modern tarayıcılar */ url("../fonts/Fiolex_Girls_Regular.ttf")
+      format("truetype"),
+    /* Safari , android . İOS*/
+      url("../fonts/Fiolex_Girls_Regular.svg#fiolex_girlsregular") format("svg"); /*İOS*/
+}
+
+@font-face {
+  font-family: "Angilla Tattoo Personal Use Regular";
+  src: url("../fonts/Angilla_Tattoo_Personal_Use_Regular.eot"); /*EOT : İnternet Explorer - Microsoft Edge.*/
+  src: local("Angilla Tattoo Personal Use Regular"),
+    local("Angilla Tattoo Personal Use"); /* Kullanıcı cihazının font klasörü kontrol edilir.*/
+  src: url("../fonts/Angilla_Tattoo_Personal_Use_Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* İnternet Explorer 6-8 */
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.woff2") format("woff2"),
+    /* Modern tarayıcılar (süper)*/
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.woff") format("woff"),
+    /* Modern tarayıcılar */
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.ttf") format("truetype"),
+    /* Safari , android . İOS*/
+      url("../fonts/Angilla_Tattoo_Personal_Use_Regular.svg#angilla_tattoo_personal_useRg")
+      format("svg"); /*İOS*/
+}
+
+#bir {
+  font-family: "Walt Disney Script v41 Regular";
+  font-size: 30px;
+}
+
+#iki {
+  font-family: "Hickory Jack";
+  font-size: 50px;
+}
+#uc {
+  font-family: "Angilla Tattoo Personal Use Regular";
+  font-size: 30px;
+}
+
+#dort {
+  font-family: "Fiolex Girls Regular";
+  font-size: 50px;
+}
+#bes {
+  font-family: "Angilla Tattoo Personal Use Regular";
+  font-size: 30px;
+}
+
+#alti {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+}
+
+#yedi {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+
+#sekiz {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Roboto+Mono:ital@1&family=Trispace:wght@500&display=swap");
+
+#dokuz {
+  font-family: "Jura", sans-serif;
+  font-size: 30px;
+}
+
+#on {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+
+#onbir {
+  font-family: "Trispace", sans-serif;
+  font-size: 30px;
+}
+
+#oniki {
+  font-family: "Newsreader", serif;
+  font-size: 30px;
+}
+
+#onuc {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+#ondort {
+  font-family: "Truculenta", sans-serif;
+  font-size: 30px;
+}
+
+/*
+list-style-type      : Listedeki madde işaretçisinin türünü belirler.
+
+disc                 : İçidi dolu daire.
+circle               : İçidi boş daire.
+square               : İçidi dolu kare.
+decimal              : Ondalıklı Sayı.
+decimal-leading-zero : Ondalıklı Sayı. (Tek haneli sayılarda 0 takısı eklenir)
+lower-alpha          : Küçük harf.
+upper-alpha          : Büyük harf.
+lower-roman          : Küçük harfli roma rakamı.
+upper-roman          : Büyük Harfli roma rakamı.
+none                 : Değer yok.
+initial              : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit              : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#onbes {
+  list-style-type: disc;
+}
+
+#onalti {
+  list-style-type: circle;
+}
+
+.onyedi {
+  list-style-type: square;
+}
+
+#onsekiz {
+  list-style-type: decimal;
+}
+
+#ondokuz {
+  list-style-type: decimal-leading-zero;
+}
+
+#yirmi {
+  list-style-type: lower-alpha;
+}
+
+#yirmibir {
+  list-style-type: upper-alpha;
+}
+
+#yirmiiki {
+  list-style-type: lower-roman ;
+}
+#yirmiuc {
+  list-style-type: upper-roman ;
+}
+
+#yirmidort {
+  list-style-type: none;
+}
+
+#yirmibes {
+  list-style-type: initial;
+}
+
+#yirmialti {
+  list-style-type: square;
+}
+#yirmialti {
+  list-style-type: decimal;
+}
+
+#icliste{
+  list-style-type: inherit;
+}
+
+#yirmiyedi {
+  list-style-type: circle;
+}
+
+/*
+list-style-position   : Listedeki madde işaretçisinin içerik akışındaki konum özelliklerini belirler.
+
+outside              : Dışında.
+inside               : İçinde.
+initial              : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit              : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+
+#yirmisekiz {
+  list-style-position: outside;
+}
+#yirmidokuz {
+  list-style-position: inside;
+}
+
+#otuz {
+  list-style-position: initial;
+}
+
+#otuzbir {
+  list-style-position: inside;
+}
+
+ .sinif{
+  list-style-position: initial;
+}
+
+#icliste2{
+  list-style-position: inherit;
+}
+
+
+/*
+list-style-image  : Listedeki madde işaretçisinin resim özelliklerini belirler.
+
+none              : Değer yok.
+url               : Dosya Adresi.
+initial           : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit           : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+
+#otuziki {
+list-style-image: none;
+}
+
+
+#otuzuc {
+list-style-image: url(../img/Yildiz.png);
+}
+
+#otuzdort {
+  list-style-image: initial;
+}
+
+#otuzbes {
+  list-style-image: url(../img/Yildiz.png);
+}
+
+.sinif2 {
+  list-style-image: initial;
+}
+
+#icliste3 {
+  list-style-image: inherit;
+}
+
+#otuzalti {
+  list-style-image: url(../img/Yildiz.png);
+}
+
+/*
+list-style           : Listedeki madde işaretçisinin tüm özelliklerini belirler.
+
+list-style-type      : Listedeki madde işaretçisinin türü.
+list-style-position  : Listedeki madde işaretçisinin içerik akışındaki konumu.
+list-style-image     : Listedeki madde işaretçisinin resmi.
+initial              : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit              : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#otuzyedi {
+ list-style: square;
+}
+
+#otuzsekiz {
+  list-style: square inside;
+}
+
+#otuzdokuz {
+  list-style: square inside url(../img/Yildiz.png);
+}
+
+#kirk {
+  list-style: url(../img/Yildiz.png);
+}
+
+#kirkbir {
+  list-style: inside;
+}
+
+#kirkiki {
+  list-style: initial;
+}
+
+#kirkuc {
+  list-style:disc inside url(../img/Yildiz.png);
+}
+.sinif3{
+  list-style: initial;
+}
+
+#icliste4 {
+  list-style: inherit;
+}
+
+#kirkdort {
+  list-style:disc inside url(../img/Yildiz.png);
+}
