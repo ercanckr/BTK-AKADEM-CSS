@@ -1,0 +1,682 @@
+/*
+border-collapse  : HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+separate         : Kaydırma.
+collapse         : Otomatik Değer alır.
+initial          : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit          : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#bir > table {
+  border: 2px solid red;
+  border-collapse: separate;
+}
+
+#bir th,
+#bir td {
+  border: 2px solid red;
+}
+
+#iki > table {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#iki th,
+#iki td {
+  border: 2px solid red;
+}
+
+#uc > table {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#uc th,
+#uc td {
+  border: 4px dashed blue;
+}
+
+#dort > table {
+  border: 2px solid red;
+  border-collapse: initial;
+}
+
+#dort th,
+#dort td {
+  border: 2px solid red;
+}
+
+#bes > #AnaTablo {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#bes th,
+#bes td {
+  border: 2px solid red;
+}
+
+table#icTablo1,
+table#icTablo2 {
+  border: 2px solid blue;
+  border-collapse: inherit;
+}
+
+#alti > #AnaTablo2 {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#alti th,
+#alti td.AnaTabloStunu {
+  border: 2px solid red;
+}
+
+#alti td.icTabloStunu {
+  border: 2px dashed blue;
+}
+
+table#icTablo3,
+table#icTablo4 {
+  border: 2px solid blue;
+  border-collapse: inherit;
+}
+
+/*
+border-spacing   : HTML table (tablo) elementinde bulunan bitişik hücrelerin arasındaki mesafeyi belirler.
+length           : Uzunluk değeri.
+initial          : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit          : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yedi > table {
+  border: 2px solid red;
+  border-spacing: 20px;
+}
+
+#yedi th,
+#yedi td {
+  border: 2px solid red;
+}
+
+#sekiz > table {
+  border: 2px solid red;
+  border-spacing: 20px 50px;
+}
+
+#sekiz th,
+#sekiz td {
+  border: 2px solid red;
+}
+
+#dokuz > table {
+  border: 2px solid red;
+  border-collapse: collapse;
+  border-spacing: 20px 50px;
+}
+
+#dokuz th,
+#dokuz td {
+  border: 2px solid red;
+}
+
+#on > table {
+  border: 2px solid red;
+  border-spacing: initial;
+}
+
+#on th,
+#on td {
+  border: 2px solid red;
+}
+table#BirinciTablo {
+  border: 2px solid red;
+  border-spacing: 50px 20px;
+}
+table#ikinciTablo {
+  border: 2px solid red;
+  border-spacing: inherit;
+}
+
+#onbir th,
+#onbir td {
+  border: 2px solid red;
+}
+
+/*
+empty-cells  : HTML'in table (tablo) elementinde bulunan ve içeriği boş hücrelerin
+ görüntülenme özelliklerini belirler
+  
+show         : Göster.
+hide         : Gizle.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#oniki > table {
+  empty-cells: show;
+}
+#oniki th,
+#oniki td {
+  border: 2px solid red;
+}
+
+#onuc > table {
+  empty-cells: hide;
+}
+#onuc th,
+#onuc td {
+  border: 2px solid red;
+}
+
+#ondort > table {
+  empty-cells: initial;
+}
+#ondort th,
+#ondort td {
+  border: 2px solid red;
+}
+
+#onbes > #TabloDis {
+  empty-cells: hide;
+}
+#onbes th,
+#onbes td {
+  border: 2px solid red;
+}
+
+.Deneme1 {
+  empty-cells: initial;
+  empty-cells: inherit;
+}
+
+/*
+table-layout  : HTML'in table (tablo) elementinde bulunan sutunların genişlikleri için
+düzen algoritması özelliklerini belirler.
+
+auto         : Otomatik değer alır.
+fixed        : Sabit.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#onalti > table {
+  border: 2px solid red;
+  width: 100%;
+  table-layout: auto;
+}
+
+#onalti td {
+  border: 2px solid blue;
+}
+
+#aa {
+  width: 10%;
+}
+
+#bb {
+  width: 90%;
+}
+
+#onyedi > table {
+  border: 2px solid red;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#onyedi td {
+  border: 2px solid blue;
+}
+
+#cc {
+  width: 10%;
+}
+
+#dd {
+  width: 90%;
+}
+
+#onsekiz > table {
+  border: 2px solid red;
+  width: 100%;
+  white-space: nowrap;
+  table-layout: fixed;
+}
+
+#onsekiz td {
+  border: 2px solid blue;
+}
+
+#cc {
+  width: 10%;
+}
+
+#dd {
+  width: 90%;
+}
+
+#ondokuz > table {
+  border: 2px solid red;
+  width: 100%;
+  white-space: nowrap;
+  table-layout: auto;
+}
+
+#ondokuz td {
+  border: 2px solid blue;
+}
+
+#cc {
+  width: 10%;
+}
+
+#dd {
+  width: 90%;
+}
+
+#yirmi > table {
+  border: 2px solid red;
+  width: 100%;
+  table-layout: initial;
+}
+
+#yirmi td {
+  border: 2px solid blue;
+}
+
+#ee {
+  width: 10%;
+}
+
+#ff {
+  width: 90%;
+}
+
+/*
+caption-side  : HTML'in table (tablo) elementinde bulunan başlık elementinin konum özelliklerini belirler.
+
+top           : Üstte.
+bottom        : Altta.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yirmibir > table {
+  border: 2px solid red;
+  width: 500px;
+  caption-side: top;
+}
+
+#yirmibir td {
+  border: 2px solid red;
+}
+
+#yirmiiki > table {
+  border: 2px solid red;
+  width: 500px;
+  caption-side: bottom;
+}
+
+#yirmiiki td {
+  border: 2px solid red;
+}
+
+#yirmiuc > table {
+  border: 2px solid red;
+  width: 500px;
+  caption-side: initial;
+}
+
+#yirmiuc td {
+  border: 2px solid red;
+}
+
+table#Distable {
+  border: 2px solid red;
+  width: 500px;
+  caption-side: bottom;
+}
+
+#yirmidort td {
+  border: 2px solid red;
+}
+table#ictable {
+  border: 2px solid red;
+  width: 300px;
+  caption-side: initial;
+}
+
+/* Responsive (Duyarlı) Tablolar oluşturma.*/
+
+#yirmibes {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#yirmibes > table {
+  border: 1px solid grey;
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+#yirmibes th,
+#yirmibes td {
+  border: 1px solid grey;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+#BaslikSatiri {
+  background-color: rgb(99, 85, 85);
+}
+
+#yirmibes tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+
+
+/*
+fload      : HTML elementinin bulunduğu konumdan kayma özelliklerini belirler.
+
+none      : Değer Yok.
+left      : Sola Kay.
+right     : Sağa Kay.
+initial   : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit   : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+
+#yirmialti > div {
+width: 150px;
+border: 1px solid red;
+margin: 2px;
+float: none;
+}
+
+
+
+#yirmiyedi > div {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+  float: left;
+ }
+  
+  
+
+ #yirmisekiz > div {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+  float: right;
+ }
+  
+
+
+ #yirmidokuz > div {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+ }
+  
+ #floaddort ,  #floadbes{
+   float: left;
+ }
+
+ #otuz > div {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+ }
+  
+ #floaddort4 ,  #floadbes5{
+   float: right;
+ }
+
+ #otuzbir > div {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+ }
+
+ #floadiki22 ,  #floaduc33{
+  float: right;
+}
+
+
+ #floaddort44 ,  #floadbes55{
+   float: left;
+ }
+
+
+#otuziki >span {
+font-size: 80px;
+float: left;
+line-height: 53px;
+}
+
+
+#otuzuc {
+width: 597px;
+margin: 0 auto;
+
+}
+
+
+#otuzuc > ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 597px;
+height: 19px;
+background: yellow;
+}
+
+
+
+#otuzuc li{
+float: left;
+padding: 0 30px;
+}
+  
+  #otuzuc li:hover{
+background: aqua;
+height: 19px;
+}
+      
+
+
+ul a{
+  color: black;
+  text-decoration: none;
+  width: 100px;
+}
+
+ul a:hover{
+  color: rgb(87, 180, 241);
+
+}
+
+
+
+
+#otuzdort > div {
+width: 150px;
+border: 1px solid red;
+margin: 2px;
+float: left;
+}
+
+div#floaddort444 , div#floadbes555{
+  float: initial;
+}
+
+
+#otuzbes {
+float: left;
+}
+
+#otuzbes > p {
+  width: 150px;
+  border: 1px solid red;
+  margin: 2px;
+  float: inherit;
+  }
+  
+
+
+
+/* 
+clear   : HTML elementine atanmiş olan kayma özelliğinin temizlenme durumunu belirler.
+
+nonne   : Değer yok.
+left    : Sol.
+right   : Sağ.
+both    : Her ikiside
+initial : HTML Elementi Varsayılan biçimlendirme değerine döner.
+*/
+
+
+#otuzalti > div {
+width: 150px;
+border: 1px solid blue;
+margin: 2px;
+float: left;
+}
+
+div#a3 , div#a4 , div#a5{
+float: initial;
+clear: none;
+}
+
+#otuzyedi > div {
+  width: 150px;
+  border: 1px solid blue;
+  margin: 2px;
+  float: left;
+  }
+  
+  div#b3{
+  clear: left;
+  }
+
+
+  #otuzsekiz > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+    float: left;
+    }
+    
+    div#c3 , div#c4 , div#c5{
+    clear: left;
+  }
+
+
+  #otuzdokuz > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+    float: right;
+    }
+    
+    div#d3{
+    clear: right;
+  }
+  #kirk > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+    float: right;
+    }
+    
+    div#e3 , div#e4 , div#e5{
+    clear: right;
+  }
+
+
+  #kirkbir > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+    float: left;
+    }
+    
+    div#f3 {
+    clear: both;
+  }
+
+  #kirkiki > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+    float: right;
+    }
+    
+    div#g3 {
+    clear: both;
+  }
+
+
+  #kirkuc > div {
+    width: 150px;
+    border: 1px solid blue;
+    margin: 2px;
+  }
+    
+    div#h2 , div#h4  {
+    float: right;
+  }
+  div#h3 , div#h5  {
+    float: left;
+  }
+
+
+#kirkdort > div {
+width: 150px;
+border: 1px solid red;
+margin: 2px;
+}
+
+div#j1 ,div#j2 ,div#j3 ,div#j4 ,div#j5 {
+  float: left;
+}
+
+div#Temizle{
+  border: initial;
+  margin: 0px;
+  clear: both;
+}
+
+div#k1 ,div#k2 ,div#k3 ,div#k4 ,div#k5 {
+ width: 150px;
+ border: 1px solid blue;
+ margin: 2px;
+}
+
+div#k2 ,div#k3{
+  float: left;
+}
+
+div#k4 ,div#k5{
+  float: right;
+}
+
+div#Temizle1{
+  clear: left;
+}
+div#Temizle2{
+  clear: right;
+}
+
+#kirkalti > div {
+  width: 150px;
+  border: 1px solid blue;
+  margin: 2px;
+  float: left;
+  }
+  
+  div#l3 , div#l4 , div#l5{
+  clear: left;
+}
