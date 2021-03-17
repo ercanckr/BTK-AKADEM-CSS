@@ -1,0 +1,771 @@
+/*
+display             : HTML elementinin görüntülenme özelliklerini belirler belirler.
+Değerler            :
+inline              : HTML Elementi satır düzeyli element olarak kabul edilir ve görüntülenir. (Elemente 
+                      içerik alanından fazla genişlik veya yükseklik atanmasına izin verilmez.)
+block               : HTML Elementi blok düzeyli element olarak kabul edilir ve görüntülenir.
+inline-block        : HTML Elementi hem satır düzeyli hemde blok düzeyli  element olarak kabul edilir ve 
+                      görüntülenir. (Elemente içerik alanından fazla genişlik veya yükseklik
+                      atanmasına izin verir.)
+none                : Değer yok.(HTML Elementi görüntülenmez)
+run-in              : HTML Elementi ya satır düzeyli yada blok düzeyli element olarak kabul edilir ve görüntülenir.
+list-item           : HTML Elementi liste elementi (li) olarak kabul edilir ve görüntülenir.
+table               : HTML Elementi tablo elementi (table) olarak kabul edilir ve görüntülenir.
+table-row           : HTML Elementi tablo satır elementi (tr) olarak kabul edilir ve görüntülenir.
+table-cell          : HTML Elementi tablo sütün elementi (td) olarak kabul edilir ve görüntülenir.
+table-caption       : HTML Elementi tablo kısa başlık elementi (caption) olarak kabul edilir ve görüntülenir.
+table-row-group     : HTML Elementi tablo gövde elementi (tbody) olarak kabul edilir ve görüntülenir.
+table-header-group  : HTML Elementi tablo içi başlık elementi (thead) olarak kabul edilir ve görüntülenir.
+table-footer-group  : HTML Elementi tablo içi altlık elementi (tfoot) olarak kabul edilir ve görüntülenir.
+table-column        : HTML Elementi tablo içi sutun ortak özellikleri belirleme elementi (col) olarak kabul edilir ve görüntülenir.
+table-column-group  : HTML Elementi tablo içi sutun ortak özellikleri belirleme grubu elementi (colgroup) olarak kabul edilir ve görüntülenir.
+inline-table        : HTML Elementi satır düzeyli tablo elementi (table) olarak kabul edilir ve görüntülenir.
+flex                : HTML Elementi blok düzeyli esnek element olarak kabul edilir ve görüntülenir.
+inline-flex         : HTML Elementi satır düzeyli esnek element olarak kabul edilir ve görüntülenir.
+grid                : HTML Elementi blok düzeyli ızgara elementi olarak kabul edilir ve görüntülenir.
+inline-grid         : HTML Elementi satır düzeyli ızgara elementi olarak kabul edilir ve görüntülenir.
+initial             : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#bir > div {
+  border: 1px solid red;
+  margin: 2px;
+  display: inline;
+}
+
+#iki > span {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+  display: block;
+}
+
+#uc > span {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+  display: inline-block;
+}
+
+#dort > p {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+}
+
+p#ornek {
+  display: none;
+}
+
+#bes > p {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+}
+
+p#p1 {
+  display: inline;
+}
+p#p2 {
+  display: run-in;
+}
+
+p#p3 {
+  display: inline;
+}
+
+#alti > span {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+}
+
+span#s1 {
+  display: block;
+}
+span#s2 {
+  display: run-in;
+}
+
+span#s3 {
+  display: block;
+}
+
+#yedi div {
+  display: list-item;
+}
+#yedi span {
+  display: list-item;
+}
+
+#sekiz > table {
+  border: 1px solid red;
+}
+#sekiz td {
+  border: 1px solid red;
+}
+
+div#Tablomuz {
+  width: 1014px;
+  height: 124px;
+  display: inline-table;
+  border: 1px double grey;
+  padding: 2px;
+}
+
+div#TablomuzunHeaderGurubu {
+  display: table-header-group;
+  text-align: center;
+  background-color: #ccc;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div.TabloSatirlari {
+  display: table-row;
+  line-height: 19px;
+}
+
+div.TabloSutunlari {
+  display: table-cell;
+  border: 1px solid white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+div#TablomuzunBodyGurubu {
+  display: table-row-group;
+}
+
+div#TablomuzunFooterGurubu {
+  display: table-footer-group;
+}
+
+div#TabloBasligi {
+  display: table-caption;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div#TabloSutunOzellikGurubu {
+  display: table-column-group;
+  background-color: yellow;
+}
+
+div#TabloSutunOzellikBir {
+  display: table-column;
+  width: 100px;
+}
+
+div#TabloSutunOzellikIki {
+  display: table-column;
+  width: 150px;
+}
+
+div#TabloSutunOzellikUc {
+  display: table-column;
+  width: 200px;
+}
+
+div#TabloSutunOzellikDort {
+  display: table-column;
+  width: 250px;
+}
+
+div#TabloSutunOzellikBes {
+  display: table-column;
+  width: 300px;
+}
+
+div[name="TabloTutarAlani"],
+div[name="TabloToplamTutarAlani"] {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div[name="TabloToplamTutarAlani"] {
+  color: red;
+}
+
+#dokuz > p {
+  display: inline;
+}
+
+#on > span {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+  display: flex;
+}
+
+#onbir > div {
+  width: 250px;
+  border: 1px solid red;
+  margin: 2px;
+  display: inline-flex;
+}
+
+#oniki div {
+  display: list-item;
+}
+
+div#ornekdiv {
+  display: initial;
+}
+
+ul#ProgramlamaMenu {
+  display: none;
+}
+
+ul#GrafikMenu {
+  display: none;
+}
+
+ul#ModellemeMenu {
+  display: none;
+}
+
+li#ProgramlamaMenuAlani:hover ul#ProgramlamaMenu {
+  display: block;
+}
+
+li#GrafikMenuAlani:hover ul#GrafikMenu {
+  display: block;
+}
+
+li#ModellemeMenuAlani:hover ul#ModellemeMenu {
+  display: block;
+}
+
+/*
+visibility   : HTML elementinin görüntülenme ve gizlenme özelliklerini belirler.
+
+visible      : Görünür(Element gösterilir).
+hidden       : Gizli (Element gösterilmez ve elementin kapladığı alan değeri korunarak boş bir alan oluşur.)
+collapse     : Bitişik. (Element gösterilmez ve elementin kapladığı alan değeri korunarak boş bir alan oluşur.
+              Fakat element bir table (tablo) elementi ise kapladığı alan değeri korunmaz.)
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML Elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#ondort > div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+div#OBir {
+  visibility: visible;
+}
+
+#onbes > div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid blue;
+  margin: 10px;
+}
+
+div#OIki {
+  visibility: hidden;
+}
+
+#onalti > div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid brown;
+  margin: 10px;
+}
+
+div#OUc {
+  visibility: collapse;
+}
+
+#onyedi > div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid brown;
+}
+
+#onyedi > table {
+  border: 2px solid brown;
+}
+
+#onyedi th,
+#onyedi td {
+  border: 2px solid brown;
+}
+
+table#ODort {
+  visibility: collapse;
+}
+
+#onsekiz > div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid blue;
+  margin: 10px;
+  visibility: hidden;
+}
+
+div#OBes {
+  visibility: initial;
+}
+
+#ondokuz {
+  width: 500px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 10px;
+  visibility: hidden;
+}
+
+#ondokuz > p {
+  visibility: visible;
+  border: 2px solid red;
+}
+
+p#OAlti {
+  visibility: inherit;
+}
+
+/*
+Position     : HTML Elementinin konumlandırma özelliklerini belirler.
+
+Değerler     : static | relative | absolute | fixed | sticky | initial | inherit
+
+static       : Durağan.
+relative     : Göreceli.
+absolute     : Mutlak / Kesin.
+fixed        : Sabit.
+sticky       : Yapışkan.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML Elementi üst elementinin biçimlendirme değerini alır.
+
+
+top          : Konumlandırılmış bir HTML Elementinin, üstten hizalama konumunu belirler.
+right        : Konumlandırılmış bir HTML Elementinin, sağdan hizalama konumunu belirler.
+bottom       : Konumlandırılmış bir HTML Elementinin, alttan hizalama konumunu belirler.
+left         : Konumlandırılmış bir HTML Elementinin, soldan hizalama konumunu belirler.
+
+Değerler     : auto | length | initial
+
+auto         : Otomatik değer alır.
+auto         : Uzunluk Değeri.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+
+*/
+
+#yirmi {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: static;
+}
+
+#yirmibir {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+
+#yirmiiki {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 20px;
+  right: 100px;
+}
+
+#yirmiuc {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: -20px;
+  left: -100px;
+}
+
+#yirmidort {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  float: right;
+  left: 100px;
+  top: 100px;
+}
+
+#yirmibes {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  float: right;
+  right: 200px;
+}
+
+#yirmialti {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#yirmialti > div {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+#yirmiyedi {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#yirmiyedi > div {
+  width: 250px;
+  border: 2px solid red;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#yirmisekiz {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#yirmisekiz > div {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+#Dbir {
+  top: 50px;
+  left: 75px;
+  border: 2px solid red;
+}
+
+#Diki {
+  top: 60px;
+  left: 175px;
+  border: 2px solid blue;
+}
+
+#yirmidokuz {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#yirmidokuz > div {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+}
+
+#Duc {
+  top: 50px;
+  left: 75px;
+  border: 2px solid red;
+}
+
+#Ddort {
+  top: 50px;
+  left: 175px;
+  border: 2px solid blue;
+}
+
+#otuz {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#otuz div {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+}
+
+div#Dbes {
+  top: 50px;
+  left: 75px;
+  border: 2px solid red;
+}
+
+div#Dalti {
+  top: 50px;
+  left: 175px;
+  border: 2px solid blue;
+}
+
+#otuzbir {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#otuzbir div {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+div#Dyedi {
+  top: 50px;
+  left: 75px;
+  border: 2px solid red;
+}
+
+div#Dsekiz {
+  top: 50px;
+  left: 175px;
+  border: 2px solid blue;
+}
+
+#otuziki {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#otuziki div {
+  text-align: center;
+}
+
+div#Ddokuz {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+div#Don {
+  width: 250px;
+  border: 2px solid blue;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+#otuzuc {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#otuzuc div {
+  text-align: center;
+}
+
+div#Donbir {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+div#Doniki {
+  width: 250px;
+  border: 2px solid blue;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#otuzdort > div {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+#otuzdort span {
+  width: 250px;
+  text-align: center;
+  border: 2px solid red;
+  position: fixed;
+  top: 75px;
+  left: 75px;
+}
+
+#otuzdort > img {
+  position: fixed;
+  top: calc(50% - 17.5px);
+  right: calc(50% - 96px);
+}
+
+#otuzbes {
+  width: 100%;
+  height: 500px;
+  border: 2px solid red;
+}
+
+#otuzbes > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid red;
+  background-color: yellow;
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+#otuzalti {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+.Elementler {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid red;
+  position: absolute;
+}
+
+div[name="bir"] {
+  top: 50px;
+  left: 50px;
+}
+
+div[name="iki"] {
+  top: 150px;
+  left: 200px;
+}
+
+div#ornekk {
+  position: initial;
+}
+
+#otuzyedi {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+}
+
+.Elementler1 {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid red;
+  position: absolute;
+}
+
+div[name="uc"] {
+  top: 50px;
+  left: 50px;
+}
+
+div[name="dort"] {
+  top: 150px;
+  left: 200px;
+}
+
+div#ornekkbir {
+  top: initial;
+  left: initial;
+}
+
+
+
+
+#otuzsekiz  {
+  width: 100%;
+  height: 650px;
+  border: 2px solid red;
+  position: relative;
+}
+
+
+#otuzsekiz > div {
+  width: 500px;
+  height: 500px;
+  border: 2px solid blue;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+#otuzsekiz  p {
+  border: 2px solid red;
+  margin: 2px;
+}
+
+p#ornekkiki {
+  position: inherit;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+
+#otuzdokuz span {
+font-size: 25px;
+font-weight: bold;
+color: red;
+} 
+
+
+span i{
+  display: none;
+  padding: 10px;
+} 
+
+
+span:hover {
+  position: relative;
+} 
+
+span:hover  i{
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: -5px;
+} 
+
+i > img{
+  border: 4px double grey;
+  background-color: yellow;
+}
