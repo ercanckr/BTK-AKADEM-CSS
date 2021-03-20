@@ -1,0 +1,621 @@
+/*
+z-index   : Konumlandırılmış bir HTML elementinin katman /yığın sırasını belirler.
+Değerler   : auto  |  number  | initial
+auto       : Otomatik Değer alır.
+number     : Rakam değeri. (En büyük rakam değeri daima en üstte olacaktır.)
+initial    : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+#bir {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#bir > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#ABir {
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+#BBir {
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+}
+#CBir {
+  top: 80px;
+  left: 80px;
+  background-color: red;
+  z-index: auto;
+}
+#DBir {
+  top: 120px;
+  left: 120px;
+  background-color: green;
+}
+#EBir {
+  top: 160px;
+  left: 160px;
+  background-color: grey;
+}
+
+#iki {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#iki > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#Aiki {
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+#Biki {
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+}
+#Ciki {
+  top: 80px;
+  left: 80px;
+  background-color: red;
+  z-index: 1;
+}
+#Diki {
+  top: 120px;
+  left: 120px;
+  background-color: green;
+}
+#Eiki {
+  top: 160px;
+  left: 160px;
+  background-color: grey;
+}
+
+#Uc {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#Uc > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#AUc {
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+#BUc {
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+}
+#CUc {
+  top: 80px;
+  left: 80px;
+  background-color: red;
+  z-index: 1;
+}
+#DUc {
+  top: 120px;
+  left: 120px;
+  background-color: green;
+}
+#EUc {
+  top: 160px;
+  left: 160px;
+  background-color: grey;
+  z-index: 2;
+}
+
+#dort {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#dort > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#Adort {
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  z-index: 5;
+}
+#Bdort {
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+  z-index: 4;
+}
+#Cdort {
+  top: 80px;
+  left: 80px;
+  background-color: red;
+  z-index: 3;
+}
+#Ddort {
+  top: 120px;
+  left: 120px;
+  background-color: green;
+  z-index: 2;
+}
+#Edort {
+  top: 160px;
+  left: 160px;
+  background-color: grey;
+  z-index: 1;
+}
+
+#bes {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#bes > div {
+  position: absolute;
+  font-size: 48px;
+}
+
+#Abes {
+  top: 50px;
+  left: 50px;
+  z-index: 3;
+}
+#Bbes {
+  top: 52px;
+  left: 52px;
+  color: rgba(102, 102, 102, 0.5);
+  z-index: 2;
+}
+#Cbes {
+  top: 54px;
+  left: 54px;
+  color: rgba(204, 204, 204, 0.5);
+  z-index: 1;
+}
+
+#alti {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#alti > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#Aalti {
+  background-color: yellow;
+}
+#Balti {
+  background-color: blue;
+}
+#Calti {
+  background-color: red;
+  z-index: 1;
+}
+#Dalti {
+  background-color: green;
+}
+#Ealti {
+  background-color: grey;
+}
+
+#yedi {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#yedi > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+.Ayedi {
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+.Byedi {
+  top: 40px;
+  left: 40px;
+  background-color: blue;
+}
+.Cyedi {
+  top: 80px;
+  left: 80px;
+  background-color: red;
+  z-index: 1;
+}
+.Dyedi {
+  top: 120px;
+  left: 120px;
+  background-color: green;
+}
+.Eyedi {
+  top: 160px;
+  left: 160px;
+  background-color: grey;
+}
+#ornek1 {
+  z-index: initial;
+}
+
+/*
+box-sizing    : HTML elementinin  genişlik ve yukseklik değerlerinin ne şekilde hesaplanması gerektiğini belirler.
+Değerler      : content-box  |  border-box  | initial | inherit
+
+content-box   : İçerik Kutusu.
+border-box    : Kenarlık Kutusu.
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit       : HTML Elementi üst elementinin biçimlendirme değerini alır .
+*/
+
+#sekiz {
+  width: 500px;
+  height: 300px;
+  border: 10px solid red;
+  padding: 50px;
+  box-sizing: content-box;
+}
+
+#dokuz {
+  width: 500px;
+  height: 300px;
+  border: 10px solid red;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#on > div {
+  width: 500px;
+  height: 150px;
+  border: 10px solid red;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+div#Deneme {
+  box-sizing: initial;
+}
+
+#onbir {
+  width: 750px;
+  height: 950px;
+  border: 10px solid red;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#onbir > div {
+  width: 500px;
+  height: 150px;
+  border: 10px solid red;
+  padding: 50px;
+}
+
+div#Deneme1 {
+  box-sizing: inherit;
+}
+
+/*
+box-decoration-break  : HTML elementinin kenarlık / çerçeve özelliklerinin, kutu parçalandığındaki satır
+veya sayfa sonları için davranış özelliklerini belirler.
+
+Değerler              : slice  |  clone  | initial
+
+slice                 : Dilimle.
+clone                 : Klonla.
+initial               : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#oniki > span {
+  border: 2px solid red;
+  line-height: 25px;
+  -webkit-box-decoration-break: slice;
+  -moz-box-decoration-break: slice;
+  -o-box-decoration-break: slice;
+  -ms-box-decoration-break: slice;
+  box-decoration-break: slice;
+}
+
+#onuc > span {
+  border: 2px solid red;
+  line-height: 25px;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#onuc > span {
+  border: 2px solid red;
+  line-height: 25px;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#ondort > span {
+  border: 2px solid red;
+  line-height: 25px;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/*
+box-shadow    : HTML elementinin gölgelendirme özelliklerini belirler.
+
+Parametreler  : horizontal shadow (yatay gölge)  |  vertical shadow (dikey gölge)  |
+ blur spread (bulanıklık yayma) | spread radius (yayma yarıçapı) | color (renk)
+
+Değerler      :
+
+none          : Değer yok.
+length        : Uzunluk değeri.
+inset         : İlave. (içerisinde)
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#onbes{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: none;
+}
+
+#onalti{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px;
+}
+#onyedi{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: -5px -5px;
+}
+
+#onsekiz{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px grey;
+}
+
+#ondokuz{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 15px grey;
+}
+
+#yirmi{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 15px 2px grey;
+}
+#yirmibir{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 15px grey inset;
+}
+
+#yirmiiki {
+  width: 300px;
+  height: 350px;
+  border: 2px solid red;
+
+}
+
+#yirmiiki > div{
+  width: 200px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 15px grey;
+}
+div#ornekid1{
+  box-shadow: initial;
+}
+
+#yirmiuc{
+  width: 1000px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px red ,10px 10px yellow,15px 15px blue,20px 20px purple,25px 25px green,30px 30px orange ;
+}
+
+#yirmidort{
+  width: 1000px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid red;
+  box-shadow: 5px 5px 5px red ,10px 10px 10px yellow,15px 15px 15px blue;
+}
+
+/*
+resize     : HTML elementinin  kullanıcı tarafından yeniden boyutlandırılabilir olup olmadığı durumunu belirler.
+
+Deperler   : none  |  both  | horizontal | vertical | initial | inherit
+
+none       : Değer yok.
+both       : Her ikiside.
+horizontal : Yatay
+vertical   : Dikey
+initial    : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit    : HTML Elementi üst elementinin biçimlendirme değerini alır .
+*/
+
+#yirmibes{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  overflow: auto;
+  resize: none;
+}
+#yirmialti >textarea{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  resize: none;
+}
+
+#yirmiyedi{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  overflow: auto;
+  resize: both;
+}
+#yirmisekiz >textarea{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  resize: both;
+}
+#yirmidokuz{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  overflow: auto;
+  resize: horizontal;
+}
+#otuz >textarea{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  resize: horizontal;
+}
+
+#otuzbir{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  overflow: auto;
+  resize: vertical;
+}
+#otuziki >textarea{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  resize: vertical;
+}
+
+#otuzuc {
+  width: 250px;
+  height: 150px;
+  border: 2px solid red;
+  padding: 25px;
+}
+
+
+#otuzuc > div{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  overflow: auto;
+  resize: both;
+}
+
+div#AOtuzuc{
+  resize: initial;
+}
+
+
+#otuzdort {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  padding: 25px;
+}
+
+
+#otuzdort > textarea{
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  resize: none;
+}
+
+
+textarea#AOtuzdort{
+  resize: both;
+}
+
+
+#otuzbes {
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  padding: 25px;
+  overflow: auto;
+  resize: both;
+}
+
+
+#otuzbes > p{
+  width: 200px;
+  height: 50px;
+  border: 2px solid red;
+  overflow: auto;
+}
+
+p#Aotuzbes{
+  resize: inherit;
+}
