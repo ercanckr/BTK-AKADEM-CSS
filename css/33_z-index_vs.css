@@ -1,5 +1,5 @@
 /*
-z-index   : Konumlandırılmış bir HTML elementinin katman /yığın sırasını belirler.
+z-index    : Konumlandırılmış bir HTML elementinin katman /yığın sırasını belirler.
 Değerler   : auto  |  number  | initial
 auto       : Otomatik Değer alır.
 number     : Rakam değeri. (En büyük rakam değeri daima en üstte olacaktır.)

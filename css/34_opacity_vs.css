@@ -1,0 +1,623 @@
+/*
+opacity    : HTML Elementinin opaklık / şeffaflık özelliklerini belirler.
+Değerler   : number | initial
+number     : Rakam Değeri. (0.0 ila 1.0 arasında).(0.0 en şeffaf değer) (1.0 en şeffaflık yok)
+initial    : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+#bir > div {
+  width: 500px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: darkblue;
+}
+
+#ABir {
+opacity: 1.0;
+}
+#BBir {
+    opacity: 0.8;
+}
+#CBir {
+    opacity: 0.6;
+}
+#DBir {
+    opacity: 0.4;
+}
+#EBir {
+    opacity: 0.2;
+}
+#FBir {
+    opacity: 0.0;
+}
+
+
+#iki > div {
+    width: 500px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: darkblue;
+    opacity: 0.6;
+}
+
+
+div#Biki {
+    opacity: initial;
+}
+
+
+
+/*
+filter        : HTML Elementine uygulanacak olan efekt özelliklerini belirler.
+
+Değerler      : none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() 
+| opacity() | saturate() | sapia() 
+
+none          : Değer yok.
+blur()        : Bulanıklık. (pixel değeri alır.)
+brightness()  : Parlaklık. (0% ila 100% arası.)
+contrast()    : Kontrast. (0% ila 100% arası.)
+drop-shadow() : Gölge düşürme.(horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | 
+blur spread (bulanıklık yayma) | color (renk) 
+grayscale()   : Gri tonlama. (0% ila 100% arası.)
+hue-rotate()  : Renk döndürme. (0 derece ila 360 derece arası.)
+invert()      : Ters çevirme. (0% ila 100% arası.)
+opacity()     : Opaklık. (0% ila 100% arası.)
+saturate()    : Doyma. (0% ila 100% arası.)
+sepia()       : Sepya. (Kahve rengi ağırlıklı antik tonlama) (0% ila 100% arası.)
+*/
+
+
+#Uc > img{
+  width: 500px;
+  height: 320px;
+  filter: none;
+
+}
+
+
+#dort > img{
+    width: 500px;
+    height: 320px;
+    filter: blur(5px);
+}
+
+#bes  > img{
+    width: 500px;
+    height: 320px;
+    filter: brightness(50%);
+}
+
+
+#alti > img {
+    width: 500px;
+    height: 320px;
+    filter: contrast(50%);
+}
+
+
+#yedi > img{
+    width: 500px;
+    height: 320px;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+
+
+#sekiz > img{
+    width: 500px;
+    height: 320px;
+    filter: grayscale(100%);
+}
+
+#dokuz > img{
+    width: 500px;
+    height: 320px;
+    filter: hue-rotate(180deg);
+}
+
+#on  > img{
+    width: 500px;
+    height: 320px;
+    filter: invert(100%);
+}
+
+#onbir > img{
+    width: 500px;
+    height: 320px;
+    filter: opacity(50%);
+}
+
+
+#oniki > img{
+    width: 500px;
+    height: 320px;
+    filter: saturate(10%) ;
+}
+
+#onuc > img {
+    width: 500px;
+    height: 320px;
+    filter: sepia(100%);
+}
+
+
+#Aondort{
+    filter: blur(3px);
+}
+
+
+#onbes > img{
+    width: 500px;
+    height: 320px;
+    filter:invert(100%) blur(2px) hue-rotate(100deg) sepia(100%);
+}
+
+
+/*
+clip      : absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin kırpma / maskeleme özelliğini belirler.
+
+Değerler  : auto | shape | initial 
+
+auto      : Otomatik değer alır.
+shape     : Şekil. rect() fonksiyonunu kullanır. (Rectangle : dikdörtgen)
+initial   : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+#onalti {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+
+#onalti > div{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: auto;
+}
+
+#onyedi {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+
+#onyedi > div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: rect( 0px, 50px, 50px, 0px); /* 1. parametre : Üst, 2. parametre : Sağ, 3. parametre : Alt, 4. parametre : Sol, */
+
+}
+
+#onsekiz {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+
+#onsekiz > div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: rect( 0px, 150px, 100px, 50px); /* 1. parametre : Üst, 2. parametre : Sağ, 3. parametre : Alt, 4. parametre : Sol, */
+}
+
+#ondokuz {
+  position: relative;
+  width: 502px;
+  height: 322px;
+  border: 1px solid red;
+}
+
+
+#ondokuz > img {
+  position: absolute;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: rect( 130px, 350px, 280px, 50px); /* 1. parametre : Üst, 2. parametre : Sağ, 3. parametre : Alt, 4. parametre : Sol, */
+}
+
+
+
+#yirmi > div{
+  position: relative;
+  width: 502px;
+  height: 322px;
+  border: 1px solid red;
+}
+
+.imgbir {
+  position: absolute;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: rect( 130px, 350px, 280px, 50px); /* 1. parametre : Üst, 2. parametre : Sağ, 3. parametre : Alt, 4. parametre : Sol, */
+}
+
+.imgiki {
+  position: absolute;
+  border: 1px solid red;
+  background-color: yellow;
+  clip: rect( 130px, 350px, 280px, 50px); /* 1. parametre : Üst, 2. parametre : Sağ, 3. parametre : Alt, 4. parametre : Sol, */
+}
+
+#imgiki{
+  clip: initial;
+
+}
+
+
+/*
+clip-path      : absolute (mutlak / kesin) değeri ile konumlandırılmış bir HTML elementinin gelişmiş kırpma / maskeleme özelliğini belirler.
+
+Değerler       : auto | shape | initial 
+
+auto           : Otomatik değer alır.
+shape          : Şekil. 
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+
+shape değerleri: inset | circle | ellipse | polygon
+
+inset          : İlave.
+circle         : Daire.
+ellipse        : Elips.
+polygon        : Poligon. 
+*/
+
+
+#yirmibir {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border: 1px solid red;
+  padding: 20px;
+}
+
+
+#yirmibir > div {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color: yellow;
+  clip-path: auto;
+}
+
+#yirmiiki  {
+  border: 1px solid red;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+}
+
+#yirmiiki > div {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color: yellow;
+  clip-path: inset(0px 50px 100px 60px); /* 1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol */
+
+}
+#yirmiuc {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 320px;
+  padding: 20px;
+}
+
+#yirmiuc > img {
+  position: absolute;
+  width: 500px;
+  height: 320px;
+  background-color: yellow;
+  clip-path: inset(150px 200px 100px 80px); /* 1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol */
+}
+#yirmidort {
+  position: relative;
+  width: 1000;
+  height: 320px;
+  border: 1px solid red;
+ }
+
+div#Ayirmidort{
+  position: relative;
+  float: left;
+  width: 500px;
+}
+div#Byirmidort{
+  position: relative;
+  float: right;
+  width: 500px;
+}
+
+#yirmidort img{
+ position: absolute;
+}
+
+.resimbir{
+  width: 500px;
+  height: 320px;
+  clip-path: inset(150px 10px 90px 5px); /* 1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol */
+}
+
+.resimiki{
+  width: 500px;
+  height: 320px;
+  clip-path: inset(150px 10px 90px 5px); /* 1. parametre : üst, 2. parametre : sağ, 3. parametre : alt, 4. parametre : sol */
+}
+
+#ornekclip{
+  clip-path: initial;
+
+}
+
+
+
+#yirmibes {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#yirmibes > img {
+  position: absolute;
+  clip-path: circle(50% at 50% 50% ); /* 1. parametre : Şekil  yarıçapı,  2. parametre : yatay pozisyon,  3. parametre : dikey pozisyon */
+}
+
+
+#yirmialti {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#yirmialti > img {
+  position: absolute;
+  clip-path: ellipse(50% 25% at 50% 60% ); /* 1. parametre : Şekil yatay yarıçapı, 2. parametre : şeklin dikey yarıçapı ,  3. parametre : yatay pozisyon,  4. parametre : dikey pozisyon */
+}
+
+
+#yirmiyedi {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#yirmiyedi > img {
+  position: absolute;
+  clip-path: polygon(50% 0%,0% 100%, 100% 100% ); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+
+#yirmisekiz {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#yirmisekiz > img {
+  position: absolute;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+
+#yirmidokuz {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#yirmidokuz > img {
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#otuz {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuz > img {
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+#otuzbir {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzbir > img {
+  position: absolute;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100% , 0% 70% , 0% 30%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+
+#otuziki {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuziki > img {
+  position: absolute;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100% , 0% 80% , 0% 20%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+#otuzuc {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzuc > img {
+  position: absolute;
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15% , 100% 85% , 85% 85% , 85% 100% , 15% 100% , 15% 85% , 0% 85%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+#otuzdort {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzdort > img {
+  position: absolute;
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100% , 0% 50% ); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+
+
+#otuzbes {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzbes > img {
+  position: absolute;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80% , 0% 80% ); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#otuzalti {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzalti > img {
+  position: absolute;
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#otuzyedi {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzyedi > img {
+  position: absolute;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#otuzsekiz {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzsekiz > img {
+  position: absolute;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%,0% 50%, 25% 0%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+#otuzdokuz {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#otuzdokuz > img {
+  position: absolute;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%,25% 50%, 0% 0%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#kirk {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#kirk > img {
+  position: absolute;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%,39% 35%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#kirkbir {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#kirkbir > img {
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+#kirkiki {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#kirkiki > img {
+  position: absolute;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
+
+#kirkuc {
+  border: 1px solid red;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+#kirkuc > img {
+  position: absolute;
+  clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%); /* (Path (yol) / Doldurma kuralı) (Yatay Pozisyon | Dikey pozisyon) */
+}
