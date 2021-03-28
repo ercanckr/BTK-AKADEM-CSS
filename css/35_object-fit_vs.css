@@ -1,0 +1,783 @@
+/*
+object-fit  : HTML Elementinin boyutlandırılmış alanına sığmıyacak kadar büyük resim veya video 
+              içeriklerinin yeniden nasıl boyutlandırılacağını belirler.
+Değerler    : fill | cover | contain | none | scale-down | initial
+
+fill        : Doldurma. (Genişlik ve yükseklik değerlerine bakılmaksızın resim veya video, elementin 
+              içerisine sığacak şekilde daraltılır veya uzatılır.)
+cover       : Kapak. (Genişlik ve yükseklik değerleri korunarak resim veya video, elementin 
+              içerisine sığacak halde kırpılır. Fakat resim veya video genişlik yada yükseklik değeri,
+              elementin genişlik yada yükseklik değerinden az ise uzatılır.)
+contain     : İçerme. (Genişlik ve yükseklik değerleri korunarak resim veya video, elementin 
+              içerisine sığacak halde orantılı bir şekilde yeniden boyutlandırılır.)
+none        : Değer yok. (Genişlik ve yükseklik değerleri korunarak resim veya video, elementin 
+              içerisine sığdırılmaya çalışılmaz. Fakat elementin içerisine sığpmayan / taşan kısım kırpılır.)
+scale-down  : Azaltma. (Resim veya video nesnesinin en uygun boyutlandırılmasını bulmak için contain ve none 
+              değerlerini karşılaştırarak en uygun olanını uygular.)
+initial     : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+h2{
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+
+#bir > img {
+  width: 200px;
+  height: 400px;
+  object-fit: fill;
+}
+
+#iki > img {
+  width: 1000px;
+  height: 800px;
+  object-fit: fill;
+}
+
+#Uc > img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#dort > img {
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+}
+
+#bes > img {
+  width: 200px;
+  height: 400px;
+  object-fit: contain;
+}
+
+#alti > img {
+  width: 200px;
+  height: 200px;
+  object-fit: none;
+}
+
+#yedi > img {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+#sekiz > img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}
+
+img#ornekbir {
+  object-fit: initial;
+}
+
+/*
+object-position : HTML Elementinin boyutlandırılmış alanına sığmıyacak kadar büyük resim veya video 
+                 içeriklerinin, object-fit özelliği kullanılarak yeniden boyutlandırılma sonrasındaki resmin
+                 veya videonun konum özelliklerini belirler.
+Parametreler    : Horizontal value (yatay değer)   |  vertical value (dikey değer)     
+Değerler        : length | % | center | top | right | bottom | left | initial
+
+length          : Uzunluk değeri.
+%               : Yüzde değeri.
+center          : Orta.
+top             : Üst.
+right           : Sağ.
+bottom          : Alt.
+left            : Sol.
+initial         : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#dokuz > img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50px 100px;
+}
+
+#on > img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#onbir > img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: left;
+}
+
+#oniki > img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: right;
+}
+
+#onuc > img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+
+#ondort > img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#onbes > img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#onalti > img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: left top;
+}
+
+#onyedi > img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: right top;
+}
+
+#onsekiz > img {
+  width: 200px;
+  height: 400px;
+  object-fit: none;
+  object-position: right top;
+}
+
+#ondokuz > img {
+  width: 200px;
+  height: 400px;
+  object-fit: none;
+  object-position: right bottom;
+}
+
+img#ornekiki {
+  object-position: initial;
+}
+
+/*
+column-count   : HTML elementinin çok sutunlu düzeni için bölünmesi gereken sütün sayısı özelliğini belirler.
+
+Değerler       : number | auto | initial | inherit 
+
+number         : Rakam değeri.
+auto           : Otomatik değer alır.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML elementi üst elementinin biçimlendirme değerini alır.
+
+*/
+
+#yirmi > p {
+  border: 2px solid red;
+  padding: 10px;
+  column-count: 3;
+}
+
+#yirmibir > p {
+  border: 2px solid red;
+  padding: 10px;
+  column-count: auto;
+}
+
+#yirmiiki > p {
+  border: 2px solid red;
+  padding: 10px;
+  column-count: 4;
+}
+
+p#ornekuc {
+  column-count: initial;
+}
+
+#yirmiuc {
+  border: 2px solid red;
+  padding: 10px;
+  column-count: 2;
+}
+
+p#ornekdort {
+  column-count: inherit;
+}
+
+/*
+column-width   : HTML elementinin çok sutunlu düzeni için bölünmesi gereken sütünların genişliğini belirler.
+
+Değerler       : auto | length | initial | inherit 
+
+auto           : Otomatik değer alır.
+length         : Uzunluk değeri.
+initial        : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit        : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yirmidort {
+  column-width: auto;
+}
+
+#yirmibes {
+  column-width: 500px;
+}
+
+#yirmialti > div {
+  column-width: 500px;
+}
+
+div#ornekbes {
+  column-width: initial;
+}
+
+#yirmiyedi {
+  column-width: 500px;
+}
+
+p#ornekalti {
+  column-width: inherit;
+}
+
+/*
+columns      : HTML elementinin çok sutunlu düzeni için bölünmesi gereken sütünların minumum genişlik
+              ve maximum sutun sayısı özelliklerini belirler.
+Parametreler : column-width | column-count
+Değerler     : auto | column-width | column-count | initial | inherit 
+  
+auto         : Otomatik değer alır.
+column-width : Sütün genişlik değeri.
+column-count : Sütun adeti değeri.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#yirmisekiz {
+  columns: auto;
+}
+
+#yirmidokuz {
+  columns: 500px;
+}
+
+#otuz {
+  columns: 500px;
+}
+
+#otuzbir {
+  columns: 300px 4;
+}
+
+#otuziki > p {
+  columns: 300px 4;
+}
+
+p#ornekyedi {
+  columns: initial;
+}
+
+#otuzuc {
+  columns: 3;
+}
+
+p#orneksekiz {
+  columns: inherit;
+}
+
+/*
+column-fill  : HTML elementinin çok sutunlu düzeni için bölünen sutunların nasıl doldurulacağı durumunu belirler.
+Değerler     : balanca | auto | initial | inherit 
+  
+auto         : Dengeli.
+auto         : Otomatik değer alır.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#otuzdort > p {
+  border: 2px solid red;
+  height: 150px;
+  column-count: 3;
+  column-fill: balance;
+}
+
+#otuzbes > p {
+  border: 2px solid red;
+  height: 150px;
+  column-count: 3;
+  column-fill: auto;
+}
+
+#otuzalti > p {
+  border: 2px solid red;
+  height: 150px;
+  column-count: 3;
+  column-fill: auto;
+}
+
+p#ornekdokuz {
+  column-fill: initial;
+}
+
+#otuzyedi {
+  border: 2px solid red;
+  height: 330px;
+  column-fill: auto;
+}
+
+.Denemeotuzyedi {
+  border: 2px solid blue;
+  height: 150px;
+  column-count: 4;
+}
+
+#ornekon {
+  column-fill: inherit;
+}
+
+/*
+column-span  : HTML elementinin çok sutunlu düzeni için bölünen sutunların içerisindeki bir elementin sütün 
+               vaya sutunlara yayılması durumunu belirler.
+Değerler     : none | all | initial | inherit 
+  
+none         : Değer yok..
+all          : Tümü..
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#otuzsekiz {
+  column-count: 3;
+}
+#otuzsekiz > h1 {
+  column-span: none;
+}
+
+#otuzdokuz {
+  column-count: 3;
+}
+
+#otuzdokuz > h1 {
+  column-span: all;
+}
+
+#kirk {
+  column-count: 3;
+}
+
+#kirk > h1 {
+  column-span: all;
+}
+
+h1#ornekonbir {
+  column-span: initial;
+}
+
+#kirkbir {
+  column-count: 3;
+  column-span: all;
+}
+
+#kirkbir > p {
+  column-count: 3;
+}
+
+#kirkbir > h3 {
+  column-count: 3;
+}
+
+#AnaElemanbir {
+  column-count: 8;
+  column-span: all;
+}
+
+#islembir {
+  column-span: inherit;
+}
+
+/*
+column-gap   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki boşluk değerlerini belirler
+Değerler     : normal | length | initial | inherit 
+  
+normal       : Normal.
+length       : Uzunluk Değeri.
+initial      : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit      : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#kirkuc {
+  column-count: 3;
+  column-gap: normal;
+}
+
+#kirkdort {
+  column-count: 3;
+  column-gap: 200px;
+}
+
+#kirkbes > p {
+  column-count: 3;
+  column-gap: 100px;
+}
+
+p#ornekonuc {
+  column-gap: initial;
+}
+
+#kirkalti {
+  column-count: 4;
+  column-gap: 100px;
+}
+
+p#ornekondort {
+  column-count: 2;
+  column-gap: inherit;
+}
+
+/*
+column-rule-style   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki dikey 
+                      ayraç sitilini belirler
+Değerler            : none | hidden | solid | dashed | dotted | double | groove | ridge | inset | outset | initial | inherit   
+
+none                : Değer yok.
+hidden              : Gizli.
+solid               : Düz çizgi.
+dashed              : Kesikli çizgi.
+dotted              : Noktalı çizgi.
+double              : Çift çizgi.
+groove              : İçe dönük gölgeli çizgi.
+ridge               : Dışa dönük gölgeli çizgi.
+inset               : İçe dönük derin çizgi.
+outset              : Dışa dönük derin çizgi.
+initial             : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit             : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#kirkyedi {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: none;
+}
+
+#kirksekiz {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: hidden;
+}
+
+#kirkdokuz {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: solid;
+}
+
+#elli {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: dashed;
+}
+
+#ellibir {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: dotted;
+}
+
+#elliiki {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: double;
+}
+
+#elliuc {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: groove;
+}
+
+#ellidort {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: ridge;
+}
+
+#ellibes {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: inset;
+}
+
+#ellialti {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: outset;
+}
+
+#elliyedi > p {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule-style: dashed;
+}
+
+p#ornekonbes {
+  column-rule-style: initial;
+}
+
+#ellisekiz {
+  column-rule-style: dashed;
+}
+
+#ellisekiz > p {
+  column-count: 3;
+  column-rule-style: inherit;
+}
+
+/*
+column-rule-width   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki dikey 
+                      ayraç genişliğini belirler
+Değerler            : length | thin | medium | thick | initial | inherit   
+
+length              : Uzunluk Değeri.
+thin                : İnce.
+medium              : Orta.
+thick               : Kalın.
+initial             : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit             : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#ellidokuz {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: dashed;
+  column-rule-width: 5px;
+}
+
+#atmis {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: dashed;
+  column-rule-width: thin;
+}
+#atmisbir {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: dashed;
+  column-rule-width: medium;
+}
+#atmisiki {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: dashed;
+  column-rule-width: thick;
+}
+#atmisuc > p {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: solid;
+  column-rule-width: 25px;
+}
+p#ornekonalti {
+  column-rule-width: initial;
+}
+
+#atmisdort {
+  column-rule-style: solid;
+  column-rule-width: 25px;
+}
+
+#atmisdort > p {
+  columns: 3;
+  column-gap: 100px;
+  column-rule-style: solid;
+}
+
+p#ornekonyedi {
+  column-rule-width: inherit;
+}
+
+/*
+column-rule-color   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki dikey 
+                      ayraç rengini belirler
+Değerler            : color | initial | inherit   
+
+color               : Renk.
+initial             : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit             : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#atmisbes > p {
+  column-width: 300px;
+  column-gap: 100px;
+  column-rule-style: solid;
+  column-rule-width: 10px;
+  column-rule-color: blue;
+}
+
+#atmisalti > p {
+  column-width: 300px;
+  column-gap: 50px;
+  column-rule-style: dashed;
+  column-rule-width: 5px;
+  column-rule-color: red;
+}
+p#ornekonsekiz {
+  column-rule-color: initial;
+}
+
+#atmisyedi {
+  column-rule-color: orange;
+}
+
+#atmisyedi > p {
+  column-width: 300px;
+  column-gap: 50px;
+  column-rule-style: dashed;
+  column-rule-width: 5px;
+  column-rule-color: inherit;
+}
+
+/*
+column-rule   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki dikey 
+                ayraç özelliklerini belirler
+Parametreler  : column-rule-width | column-rule-style | column-rule-color          
+Değerler      : rule value | initial | inherit   
+
+rule value    : Kural Değeri.
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+inherit       : HTML elementi üst elementinin biçimlendirme değerini alır.
+*/
+
+#atmissekiz > p {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule: dashed;
+}
+
+#atmisdokuz > p {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule: 10px dashed;
+}
+
+#yetmis > p {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule: 10px dashed red;
+}
+
+#yetmisbir > p {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule: dashed red;
+}
+
+#yetmisiki > p {
+  column-count: 4;
+  column-gap: 50px;
+  column-rule:4px double red;
+}
+p#ornekyirmi{
+  column-rule:initial;
+}
+
+#yetmisuc {
+  column-rule:8px double blueviolet;
+}
+
+#yetmisuc > p {
+  column-count: 3;
+  column-gap: 100px;
+  column-rule:inherit;
+}
+
+
+/*
+break-before  : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki belirtilecek olan
+                elementin öncesinde bölünme davranış özelliklerini belirler        
+Değerler      : auto | column | innitial   
+
+auto          : Otomatik değer alır.
+column        : Sütün bölünür.
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+#yetmisdort  {
+  column-count: 2;
+
+}
+
+h3#ornekyirmibir{
+break-before: auto;
+}
+
+#yetmisbes  {
+  column-count: 2;
+
+}
+
+h3#ornekyirmiiki{
+break-before: column;
+}
+
+#yetmisalti  {
+  column-count: 4;
+
+}
+
+h3.Deneme1{
+break-before: column;
+}
+h3#ornekyirmiuc{
+  break-before: initial;
+}
+
+
+/*
+break-after   : HTML elementinin çok sutunlu düzeni için bölünen sutunların aralarındaki belirtilecek olan
+                elementin sonrasında bölünme davranış özelliklerini belirler        
+Değerler      : auto | column | innitial   
+
+auto          : Otomatik değer alır.
+column        : Sütün bölünür.
+initial       : HTML Elementi Varsayılan biçimlendirme değerine döner. 
+*/
+
+#yetmisyedi {
+  columns: 2;
+}
+
+p#ornekyirmidort{
+break-after: auto;
+}
+
+#yetmissekiz {
+  columns: 2;
+}
+
+p#ornekyirmibes{
+break-after: column;
+}
+
+#yetmisdokuz {
+  columns: 3;
+}
+
+p.Deneme2{
+break-after: column;
+}
+
+p#ornekyirmialti,p#ornekyirmiyedi,p#ornekyirmisekiz{
+
+  break-after: initial;
+}
