@@ -1,0 +1,771 @@
+/* 
+grid-auto-flow  : Izgara düzeni içerisindeki element veya elementler için, otomatik yerleşim algoritması
+                  özelliklerini belirler
+Değerler:       : row | column | row dense | column dense | initial
+
+row             : Satır.
+column          : Sütun.
+row dense       : Satır yoğunluğu.
+column dense    : Sütun yoğunluğu
+initial         : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+#AnaEleman {
+  display: grid;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+}
+.icEleman {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+
+#AnaEleman1 {
+  display: grid;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
+
+.icEleman1 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+
+#AnaEleman2 {
+  display: grid;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-flow: row dense;
+}
+.icEleman2 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deneme2{
+  grid-column: 2 /3;
+}
+
+#AnaEleman3 {
+  display: grid;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-flow: column dense;
+}
+.icEleman3 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deneme3{
+  grid-column: 2 /3;
+}
+
+.AnaEleman4 {
+  display: grid;
+  width: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
+.icEleman4 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+#islem4{
+  grid-auto-flow: initial;
+}
+
+/*
+  grid-auto-columns  : Izgara düzeni içerisindeki element veya elementlerin, oluştrulması gereken sutunların
+                        varsayılan genişliğini belirler.
+  Değerler           : auto | max-content | min-content | length | initial
+
+  auto               : Otomatik değer alır.
+  max-content        : Maksimum içerik.
+  min-content        : Minimum İçerik.
+  length             : Uzunluk Değeri
+  initial            : HTML Elementi varsayılan biçimlendirme değerine döner.  
+  */
+
+
+
+#AnaEleman5 {
+  display: grid;
+  width: 500px;
+  border: thin solid red;
+  padding: 10px;
+  grid-auto-columns: auto ;
+}
+.icEleman5 {
+  border: thin solid blue;
+  padding: 10px;
+}
+
+#AnaEleman6 {
+  display: grid;
+  width: 500px;
+  border: thin solid red;
+  padding: 10px;
+  grid-auto-columns: max-content;
+}
+.icEleman6 {
+  border: thin solid blue;
+  padding: 10px;
+}
+
+.AnaDiv {
+  display: grid;
+  width: 500px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-columns: min-content;
+}
+.icDiv {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.AnaDiv1 {
+  display: grid;
+  width: 500px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-columns: 250px;
+}
+.icDiv1 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.AnaDiv2 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: 150px;
+}
+.icDiv2 {
+  border: thin solid red;
+  padding: 10px;
+}
+.AnaDiv3 {
+  display: grid;
+  width: 500px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-columns: 400px;}
+
+.icDiv3 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+#islem3{
+  grid-auto-columns: initial;
+}
+
+/*
+  grid-auto-rows : Izgara düzeni içerisindeki element veya elementlerin, oluştrulması gereken satırların
+                   varsayılan yüksekliğini belirler.
+  Değerler       : auto | max-content | min-content | length | initial
+
+  auto           : Otomatik değer alır.
+  max-content    : Maksimum içerik.
+  min-content    : Minimum İçerik.
+  length         : Uzunluk Değeri
+  initial        : HTML Elementi varsayılan biçimlendirme değerine döner.  
+  */
+
+.AnaDiv4 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-rows: auto;
+}
+.icDiv4 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+
+.AnaDiv5 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-rows: max-content;
+}
+.icDiv5 {
+  border: thin solid red;
+  padding: 10px;
+  writing-mode: vertical-lr;
+}
+
+.AnaDiv6 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-rows: min-content;
+}
+.icDiv6 {
+  border: thin solid red;
+  padding: 10px;
+  writing-mode: vertical-lr;
+}
+.AnaDiv7 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-rows: 100px;
+}
+.icDiv7 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.AnaDiv8 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-flow: column;
+  grid-auto-rows: 100px;
+}
+.icDiv8 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.AnaDiv9 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-auto-rows: 100px;
+}
+.icDiv9 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+#islem9{
+  grid-auto-rows: initial;
+}
+
+
+/*
+  grid-column-start : Izgara düzeni içerisindeki elementin kaçıncı sutunda başlaması gerektiğini belirler.
+  Değerler          : auto | column-line | initial
+
+  auto              : Otomatik değer alır.
+  column-line       : Sutun çizgisi.
+  initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  
+*/
+
+
+
+.AnaDiv10 {
+  display: grid;
+  width: 500px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+.icDiv10 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer10 {
+  grid-column-start: auto;
+}
+
+.AnaDiv11 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv11 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer11 {
+  grid-column-start: 4;
+}
+
+.AnaDiv12 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv12 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer12 {
+  grid-column-start: span 4;
+}
+
+
+.AnaDiv13 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv13 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer13 {
+  grid-column-start: 4;
+}
+
+
+.AnaDiv14 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv14 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer14 {
+  grid-column-start: span 3;
+}
+
+.AnaDiv15 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv15 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer15 {
+  grid-column-start: span 3;
+}
+.Değer15-1 {
+  grid-column-start: span 2;
+}
+.Değer15-2 {
+  grid-column-start: 3;
+}
+
+
+.AnaDiv16 {
+  display: grid;
+  width: 1000px;
+  border: thin solid blue;
+  padding: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.icDiv16 {
+  border: thin solid red;
+  padding: 10px;
+}
+
+.Değer16 {
+  grid-column-start: span 5;
+}
+
+#islem16{
+  grid-column-start: initial;
+}
+
+
+
+/*
+  grid-column-end   : Izgara düzeni içerisindeki elementin kaçıncı sutunda bitmesi gerektiğini belirler.
+  Değerler          : auto | column-line | initial
+
+  auto              : Otomatik değer alır.
+  column-line       : Sutun çizgisi.
+  initial           : HTML Elementi varsayılan biçimlendirme değerine döner.  
+*/
+
+
+
+
+
+.AnaDiv17 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv17 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer17{
+  grid-column-end: auto;
+}
+
+
+.AnaDiv18 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv18 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer18{
+  grid-column-end: 4;
+}
+
+.AnaDiv19 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv19 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer19{
+  grid-column-end: span 4;
+}
+
+
+.AnaDiv20 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv20 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer20{
+  grid-column-end: 4;
+}
+
+.AnaDiv21 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv21 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer21{
+  grid-column-end: 4;
+}
+
+.Değer21-1{
+  grid-column-end: 5;
+}
+
+.Değer21-2{
+  grid-column-end: 6;
+}
+
+
+
+.AnaDiv22 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv22 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer22{
+  grid-column-end: span 3;
+}
+
+.Değer22-1{
+  grid-column-end:span 2;
+}
+
+.Değer22-2{
+  grid-column-end: span 5;
+}
+
+
+.AnaDiv23 {
+  display: grid;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto auto auto;
+}
+.icDiv23 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Değer23{
+  grid-column-end: span 4;
+}
+
+#islem23{
+  grid-column-end: initial;
+}
+
+
+/*
+  grid-column   : Izgara düzeni içerisindeki elementin kaçıncı sutundan başlaması gerektiğini ve kaçıncı 
+                  sütünda bitmesi gerektiğini belirler.
+
+  Parametreler  : grid-column-start (Başlangıç) | grid-column-end (Bitiş)
+
+  Değerler      : auto | column-line | initial
+
+  auto          : Otomatik değer alır.
+  column-line   : Sutun çizgisi.
+  initial       : HTML Elementi varsayılan biçimlendirme değerine döner.  
+*/
+
+.AnaDiv24 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv24 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem24{
+  grid-column: auto;
+}
+
+
+
+.AnaDiv25 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv25 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem25{
+  grid-column: 2;
+}
+
+
+
+.AnaDiv26 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv26 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem26{
+  grid-column: span 2;
+}
+
+
+.AnaDiv27 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv27 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem27{
+  grid-column: 2 / 5;
+}
+
+
+.AnaDiv28 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv28 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem28{
+  grid-column: 2 / span 4;
+}
+
+.AnaDiv29 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv29 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem29{
+  grid-column: span 2 / 4;
+}
+
+.AnaDiv30 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv30 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem30{
+  grid-column: 4 /  6;
+}
+
+.AnaDiv31 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv31 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem31{
+  grid-column: 1 /  6;
+}
+#Deger31{
+  grid-column: initial;
+}
+
+.AnaDiv32 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv32 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem32{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.AnaDiv33 {
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid red;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+.icDiv33 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.islem33{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+#Deger33{
+  grid-column: initial;
+}
