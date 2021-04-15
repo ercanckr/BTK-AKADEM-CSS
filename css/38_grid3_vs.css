@@ -1,0 +1,816 @@
+/* 
+grid-row-start  : Izgara düzeni içerisindeki elementin kaçıncı satırdan başlaması gerektiğini belirler.
+Değerler:       : auto | row-line | initial
+auto            : Satır.
+row-line        : Sütun.
+initial         : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#AnaEleman {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+.icEleman {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger {
+  grid-row-start: auto;
+}
+
+#AnaEleman1 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman1 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger1 {
+  grid-row-start: 3;
+}
+
+#AnaEleman2 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman2 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deder2 {
+  grid-row-start: span 3;
+}
+
+#AnaEleman3 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman3 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger3 {
+  grid-row-start: span 3;
+}
+
+#AnaEleman4 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman4 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger4 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#AnaEleman5 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman5 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger5 {
+  grid-column-start: 1;
+  grid-row-start: span 2;
+}
+
+#AnaEleman6 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman6 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger6 {
+  grid-row-start: span 4;
+}
+
+#Deneme6 {
+  grid-row-start: initial;
+}
+
+/* 
+grid-row-end    : Izgara düzeni  içerisindeki elementin kaçıncı satırdan bitmesi gerektiğini belirler.
+Değerler:       : auto | row-line | initial
+auto            : Satır.
+row-line        : Sütun.
+initial         : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#AnaEleman7 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman7 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger7 {
+  grid-row-end: auto;
+}
+
+#AnaEleman8 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman8 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger8 {
+  grid-row-end: 4;
+}
+
+#AnaEleman9 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman9 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger9 {
+  grid-row-end: span 6;
+}
+
+#AnaEleman10 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman10 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger10 {
+  grid-row-end: 3;
+}
+
+#AnaEleman11 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman11 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger11 {
+  grid-row-end: span 2;
+}
+
+#AnaEleman12 {
+  display: grid;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman12 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger12 {
+  grid-row-end: span 2;
+}
+
+#Deneme12 {
+  grid-row-end: initial;
+}
+
+/* 
+
+grid-row    : Izgara düzeni  içerisindeki elementin kaçıncı satırda başlaması gerektiğini ve kaçıncı 
+              satırda bitmesi gerektiğini belirler.
+Parametreler: grid-row-start (Başlangıç) | grid-row-end (Bitiş)
+Değerler:   : auto | row-line | initial
+auto        : Satır.
+row-line    : Sütun.
+initial     : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#AnaEleman13 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman13 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger13 {
+  grid-row: auto;
+}
+
+#AnaEleman14 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman14 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger14 {
+  grid-row: 4;
+}
+
+#AnaEleman15 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman15 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger15 {
+  grid-row: span 4;
+}
+
+#AnaEleman16 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.icEleman16 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger16 {
+  grid-row: 3 / 6;
+}
+/*
+  grid-area    : Izgara düzeni içerisindeki elementin tüm satır ve sütün işlemleri için alan yerleştirme
+                 özelliklerini belirler. Ayni zamanda ızgara düzeni içerisindeki elementin alan adı değerini
+                 belirler.
+  Parametreler : grid-row-start (Satır Başlangıcı) | grid-column-start (Sütun Başlangıcı) 
+                 grid-row-end (Satır Bitişi) | grid-column-end (sütun Bitişi) 
+  Değerler     : areaname | initial
+
+  areaname     : Alan Adı.
+  initial      : HTML Elementi varsayılan biçimlendirme değerine döner.  
+*/
+
+#AnaEleman17 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+}
+
+.icEleman17 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger17 {
+  grid-area: 2 / 3 / 5 / 5;
+}
+
+#AnaEleman18 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+}
+
+.icEleman18 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger18 {
+  grid-area: 2 / 3 / 5 / 5;
+}
+
+#Deneme18 {
+  grid-area: initial;
+}
+
+#AnaEleman19 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-areas: ". Isim Isim Isim  .";
+  grid-gap: 5px;
+}
+
+.icEleman19 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger19 {
+  grid-area: Isim;
+}
+
+/*
+  grid-template-areas : Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütün 
+                        işlemleri için alan yerleştirme özelliklerini belirler. 
+  Değerler            : none | area name
+  none                : Değer yok
+  area name           : Alan Adı.
+ 
+*/
+
+#AnaEleman20 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-template-areas: none;
+  grid-gap: 10px;
+}
+
+.icEleman20 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger20 {
+  grid-area: Isim;
+}
+
+#AnaEleman21 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim";
+}
+
+.icEleman21 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger21 {
+  grid-area: Isim;
+}
+
+#AnaEleman22 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim Isim Isim Isim Isim";
+}
+
+.icEleman22 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger22 {
+  grid-area: Isim;
+}
+
+#AnaEleman23 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim Isim Isim";
+}
+
+.icEleman23 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger23 {
+  grid-area: Isim;
+}
+
+#AnaEleman24 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim Isim . . . . .";
+}
+
+.icEleman24 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger24 {
+  grid-area: Isim;
+}
+
+#AnaEleman25 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: ". . . . .Isim Isim Isim . . .";
+}
+
+.icEleman25 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger25 {
+  grid-area: Isim;
+}
+
+#AnaEleman26 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim Isim . . ." "Isim Isim Isim . . .";
+}
+
+.icEleman26 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger26 {
+  grid-area: Isim;
+}
+
+#AnaEleman27 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim Isim Isim . . ." "Isim Isim Isim . . ." "Isim Isim Isim . . ." "Isim Isim Isim . . .";
+}
+
+.icEleman27 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger27 {
+  grid-area: Isim;
+}
+
+#AnaEleman28 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim1 Isim1 . . . Isim2 Isim2 Isim2 Isim2 Isim2";
+}
+
+.icEleman28 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger28 {
+  grid-area: Isim1;
+}
+.Deger28-1 {
+  grid-area: Isim2;
+}
+
+#AnaEleman29 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: ". Isim1 Isim1 . . . Isim2 Isim2 Isim2 . .";
+}
+
+.icEleman29 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger29 {
+  grid-area: Isim1;
+}
+.Deger29-1 {
+  grid-area: Isim2;
+}
+
+#AnaEleman30 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "Isim1 Isim1 . . . Isim2 Isim2 Isim2 . ." "Isim1 Isim1 . . . Isim2 Isim2 Isim2 . .";
+}
+
+.icEleman30 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger30 {
+  grid-area: Isim1;
+}
+.Deger30-1 {
+  grid-area: Isim2;
+}
+
+#AnaEleman31 {
+  display:grid;
+  grid-template-areas: "Header Header Header Header Header Header Header Header Header Header Header Header"
+  "Menuler Menuler Menuler Icerik Icerik Icerik Icerik Icerik Icerik Icerik Icerik Icerik"
+  "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.HeaderAlani {
+  grid-area: Header;
+  background-color: brown;
+  height: 200px;
+}
+
+.MenuAlani {
+  grid-area: Menuler;
+  background-color: burlywood;
+  height: 500px;
+}
+
+.IcerikAlani {
+  grid-area: Icerik;
+  background-color: cornflowerblue;
+  height: 500px;
+}
+
+.FooterAlani {
+  grid-area: Footer;
+  background-color: yellowgreen;
+  height: 250px;
+}
+
+
+/*
+  grid-template : Izgara düzeni içerisindeki element veya elementler için, tüm satır ve sütün işlemlerinin 
+                  yanı sıra alan yerleştirme özelliklerini belirler.
+
+  Parametreler  : grid-template-rows (satır adedi ve boyutu) | grid-template-columns (Sutun adedi ve boyutu)
+                  | grid-template-areas (Tüm satır ve sutun için alan yerleştirme)
+
+  Değerler      : none | initial
+
+  none          : Değer yok
+  initial       : HTML Elementi varsayılan biçimlendirme değerine döner.
+ 
+*/
+
+
+
+#AnaEleman32 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template: none;
+}
+
+.icEleman32 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+
+
+#AnaEleman33 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template: 100px / auto auto auto auto auto;
+}
+
+.icEleman33 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#AnaEleman34 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template: 100px 200px 300px/ auto auto auto auto auto;
+}
+
+.icEleman34 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+
+
+#AnaEleman35 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template: "Ercan Ercan . ." "Ercan Ercan . .";
+}
+
+.icEleman35 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger35{
+  grid-area: Ercan;
+}
+
+
+.AnaEleman36 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template: 100px / auto auto auto auto;
+}
+
+.icEleman36 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#Deneme36{
+  grid-template: initial;
+}
+
+
+
+/*
+  grid          : Izgara düzeni içerisindeki element veya elementler için, gelişmiş tüm satır ve sutun işlemlerinin
+                  yanı sıra alan yerleştirme özelliklerini belirler.
+
+  Parametreler  : grid-template-rows (satır adedi ve boyutu) | grid-template-columns (Sutun adedi ve boyutu)
+                  | grid-template-areas (Tüm satır ve sutun için alan yerleştirme)
+  Parametreler  : grid-template-rows  | [grid-auto-flow] | grid-template-columns
+  Parametreler  : [grid-auto-flow] | grid-template-rows  | grid-template-columns
+
+  Değerler      : none | initial
+
+  none          : Değer yok
+  initial       : HTML Elementi varsayılan biçimlendirme değerine döner.
+ 
+*/
+
+
+
+#AnaEleman37 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid: none;
+}
+
+.icEleman37 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+
+#AnaEleman38 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid: 50px 100px 150px / auto auto auto auto auto;
+}
+
+.icEleman38 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+
+
+#AnaEleman39 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid: ". Ercan Ercan Ercan . .";
+  grid-template-rows: 100px 125px 150px 175px;
+}
+
+.icEleman39 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger39{
+  grid-area: Ercan;
+}
+
+
+
+
+#AnaEleman40 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid:50px 75px 100px 125px / repeat(6,auto);
+  grid-auto-flow: row dense;
+}
+
+.icEleman40 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.Deger40{
+  grid-column-start: 3;
+}
+
+
+.AnaEleman41 {
+  display: grid;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid: 50px 100px 150px / auto auto auto auto auto;
+}
+
+.icEleman41 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#Deneme41{
+grid: initial;
+}
