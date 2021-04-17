@@ -1,0 +1,992 @@
+/* 
+align-item  : Izgara düzeni içerisinde bulunan elementlerin, dikey hizalama özelliğini belirler.
+Değerler:   : stretch | center | start | and |initial
+stretch     : Uzat / Esne.
+center      : Orta.
+start       : Başlangıç.
+and         : Bitiş.
+initial     : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#AnaEleman {
+  display: grid;
+  height: 750px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, auto);
+  align-items: stretch;
+}
+.icEleman {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+
+
+#AnaEleman1 {
+    display: grid;
+    height: 750px;
+    border: 1px solid red;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+}
+
+.icEleman1 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+
+
+#AnaEleman2 {
+    display: grid;
+    height: 750px;
+    border: 1px solid red;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    align-items: start;
+}
+
+.icEleman2 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+
+
+#AnaEleman3 {
+    display: grid;
+    height: 750px;
+    border: 1px solid red;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    align-items: end;
+}
+
+.icEleman3 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.AnaEleman4 {
+    display: grid;
+    height: 300px;
+    border: 1px solid red;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+}
+
+.icEleman4 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+#Deneme4{
+    align-items: initial;
+}
+
+
+/* 
+align-self  : Izgara düzeni içerisinde bulunan seçilen element veya elementlerin, dikey hizalama 
+              özelliklerini belirler.
+Değerler:   : auto | stretch | center | start | and |initial
+auto        : Otomatik değer alır.
+stretch     : Uzat / Esne.
+center      : Orta.
+start       : Başlangıç.
+and         : Bitiş.
+initial     : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+#AnaEleman5 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.icEleman5 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger5 {
+align-self: auto;
+}
+
+
+
+#AnaEleman6 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: start;
+}
+
+.icEleman6 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger6 {
+align-self: auto;
+}
+
+
+
+#AnaEleman7 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.icEleman7 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger7 , .Deger7-2{
+align-self: stretch;
+}
+
+#AnaEleman8 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: start;
+}
+
+.icEleman8 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger8 {
+align-self: center;
+}
+
+#AnaEleman9 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.icEleman9 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger9 {
+align-self: start;
+}
+
+
+#AnaEleman10 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.icEleman10 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger10 {
+align-self: end;
+}
+
+
+
+#AnaEleman11 {
+  display: grid;
+  height: 500px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.icEleman11 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger11 , .Deger11-1 ,.Deger11-2, .Deger11-3{
+align-self: end;
+}
+
+.Deger11 {
+  align-self: initial;
+  }
+
+
+/* 
+align-content : Izgara düzeni içerisinde bulunan elementler tüm alanı kullandığında, elementlerin dikey
+                hizalama özelliklerini belirler.
+Değerler      : stretch | center | start | and | space-between | space-around | space-evenly | initial
+
+stretch       : Uzat / Esne.
+center        : Orta.
+start         : Başlangıç.
+and           : Bitiş.
+space-between : Boşluk Arasında.
+space-around  : Boşluk Etrafında.
+space-evenly  : Eşit Boşluk.
+initial       : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+#AnaEleman12 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: stretch;
+}
+
+.icEleman12 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman13 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: center;
+}
+
+.icEleman13 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+
+#AnaEleman14 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: start;
+}
+
+.icEleman14 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman15 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: end;
+}
+
+.icEleman15 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+
+#AnaEleman16 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: space-between;
+}
+
+.icEleman16 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+
+#AnaEleman17 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: space-around;
+}
+
+.icEleman17 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman18 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: space-evenly;
+}
+
+.icEleman18 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+.AnaEleman19 {
+  display: grid;
+  width: 800px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: repeat(3, auto);
+  align-content: space-evenly;
+}
+
+.icEleman19 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+#Islem19{
+  align-content: initial;
+}
+
+/* 
+justify-items : Izgara düzeni içerisinde bulunan elementlerin yatay hizalama özelliklerini belirler.
+Değerler      : stretch | center | start | and | initial
+
+stretch       : Uzat / Esne.
+center        : Orta.
+start         : Başlangıç.
+and           : Bitiş.
+initial       : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#AnaEleman20 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-items: stretch;
+}
+
+.icEleman20 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman21 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.icEleman21 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman22 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-items: start;
+}
+
+.icEleman22 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+#AnaEleman23 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-items: end;
+}
+
+.icEleman23 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+
+
+.AnaEleman24 {
+  display: grid;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-items: end;
+}
+
+.icEleman24 {
+  width: 100px;
+  border: 1px solid blue;
+}
+
+#Islem24{
+  justify-items: initial;
+}
+
+
+
+/* 
+justify-self  : Izgara düzeni içerisinde bulunan ve seçilen element veya elementlerin yatay hizalama özelliklerini belirler.
+Değerler      : auto | stretch | center | start | and | initial
+
+auto          : Otomatik değer alır.
+stretch       : Uzat / Esne.
+center        : Orta.
+start         : Başlangıç.
+and           : Bitiş.
+initial       : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+
+#AnaEleman25 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.icEleman25 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger25 {
+ justify-self: auto;
+}
+
+
+
+#AnaEleman26 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: start;
+}
+
+.icEleman26 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger26 {
+ justify-self: auto;
+}
+
+
+
+
+#AnaEleman27 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.icEleman27 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger27 {
+ justify-self: stretch;
+}
+
+
+#AnaEleman28 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: end;
+}
+
+.icEleman28 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger28 {
+ justify-self: center;
+}
+
+
+#AnaEleman29 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.icEleman29 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger29 {
+ justify-self: start;
+}
+
+
+
+#AnaEleman30 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.icEleman30 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger30 {
+ justify-self: end;
+}
+
+#AnaEleman31 {
+  display: grid;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.icEleman31 {
+  width: 200px;
+  border: 1px dashed blue;
+}
+
+.Deger31 {
+ justify-self: end;
+}
+ 
+#Deger31 , #Deger31-1 , #Deger31-2 , #Deger31-3 , #Deger31-4 {
+  justify-self: initial;
+}
+
+
+
+/* 
+justify-content  : Izgara düzeni içerisinde bulunan elementler tüm alanı kullanmadığında, elementlerin
+                   yatay hizalama özelliklerini belirler.
+Değerler         : stretch | center | start | and | space-between | space-around | space-evenly | initial
+
+stretch          : Uzat / Esne.
+center           : Orta.
+start            : Başlangıç.
+and              : Bitiş.
+space-between    : Boşluk Arasında.
+space-around     : Boşluk Etrafında.
+space-evenly     : Eşit Boşluk.
+initial          : HTML Elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+
+#AnaEleman32 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: stretch;
+}
+
+.icEleman32 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+
+
+#AnaEleman33 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.icEleman33 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+#AnaEleman34 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: start;
+}
+
+.icEleman34 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+#AnaEleman35 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: end;
+}
+
+.icEleman35 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+
+.AnaEleman36 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: space-between;
+}
+
+.icEleman36 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+
+#AnaEleman37 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: space-around;
+}
+
+.icEleman37 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+#AnaEleman38 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: space-evenly;
+}
+
+.icEleman38 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+
+
+.AnaEleman39 {
+  display: grid;
+  width: 1000px;
+  height: 250px;
+  border: 1px solid red;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: space-evenly;
+}
+
+.icEleman39 {
+  width: 100px;
+  border: 1px dashed blue;
+  padding: 5px;
+}
+
+#Islem39 {
+  justify-content: initial;
+}
+
+
+
+/* 
+order      : Izgara düzeni içerisindeki element veya elementlerin, diğer elementlere göre sıralama 
+             özelliklerini belirler.
+Değerler   : number |  initial
+
+number     : Rakam değeri.
+initial    : HTML Elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+#AnaEleman40 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman40 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger40 {
+  order: 1;
+}
+
+
+
+
+.AnaEleman41 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman41 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger41 {
+  order: -1;
+}
+
+.AnaEleman42 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman42 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger42 {
+  order: 1;
+}
+
+.Deger42-1 {
+  order: 2;
+}
+
+.AnaEleman43 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman43 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger43 {
+  order: -1;
+}
+
+.Deger43-1 {
+  order: -2;
+}
+
+
+.AnaEleman44 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman44 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger44-1 {
+  order: 8;
+}
+.Deger44-2 {
+  order: 5;
+}
+.Deger44-3 {
+  order: 10;
+}
+.Deger44-4 {
+  order: 2;
+}
+.Deger44-5 {
+  order: 1;
+}
+.Deger44-6 {
+  order: 4;
+}
+.Deger44-7 {
+  order: 6;
+}
+.Deger44-8 {
+  order: 7;
+}
+.Deger44-9 {
+  order: 3;
+}
+.Deger44-10 {
+  order: 9;
+}
+
+.AnaEleman45 {
+  display: grid;
+  width: 500px;
+  border: 2px solid red;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.icEleman45 {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.Deger45-8 {
+  order: -1;
+}
+
+#Islem45{
+  order: initial;
+}
