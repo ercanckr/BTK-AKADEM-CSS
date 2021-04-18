@@ -1,0 +1,863 @@
+/*
+transform       :  HTML elementinin 2D veya 3D dönüştürme özelliklerini belirler.
+Değerler        :  none | translate() | translate3d() | translateX() | translateY() | translateZ()
+                   skew() | skewX() | skewY() | scale() | scale3d() | scaleX() | scaleY() | scaleZ()
+                   rotate() | rotate3d() | rotateX() | rotateY() | rotateZ() | perspective() 
+                   matrix() | matrix3d() | initial 
+none            :  Değer Yok.
+translate()     :  HTML elementinin x ve y ekseni doğrıltusunda konumunu değiştirir.
+translate3d()   :  HTML elementinin x, y ve z ekseni doğrıltusunda konumunu değiştirir.
+translateX()    :  HTML elementinin x ekseni doğrıltusunda konumunu değiştirir.
+translateY()    :  HTML elementinin y ekseni doğrıltusunda konumunu değiştirir.
+translateZ()    :  HTML elementinin z ekseni doğrıltusunda konumunu değiştirir.
+skew()          :  HTML elementini x ve y ekseni doğrultusunda eğer.
+skewX()         :  HTML elementini x ekseni doğrultusunda eğer.
+skewY()         :  HTML elementini y ekseni doğrultusunda eğer.
+scale()         :  HTML elementini x ve y ekseni doğrultusunda boyutunu değiştirir.
+scale3d()       :  HTML elementini x, y ve z ekseni doğrultusunda boyutunu değiştirir.
+scaleX()        :  HTML elementini x ekseni doğrultusunda boyutunu değiştirir.
+scaleY()        :  HTML elementini y ekseni doğrultusunda boyutunu değiştirir.
+scaleZ()        :  HTML elementini z ekseni doğrultusunda boyutunu değiştirir.
+rotate()        :  HTML elementini saat yönü doğrultusunda döndürür.
+rotate3d()      :  HTML elementini x, y ve z ekseni doğrultusunda döndürür.
+rotateX()       :  HTML elementini x ekseni doğrultusunda döndürür.
+rotateY()       :  HTML elementini y ekseni doğrultusunda döndürür.
+rotateZ()       :  HTML elementini z ekseni doğrultusunda döndürür.
+perspective()   :  HTML elementinin perspektif görünüşünü belirler.
+matrix()        :  HTML elementine 6 farklı dönüşüm özelliği belirler.( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+matrix3d()      :  HTML elementine 4x4 dönüşüm özelliği belirler.(https://codepen.io/fta/pen/ifnqH)
+initial         :  HTML elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+#Bir{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform: none;
+}
+#Iki{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform: translate(100px);
+}
+#Uc{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform: translate(100px, 50px);
+}
+
+#Dort{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform: translate(-30px, 50px);
+}
+#Bes{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) translate3d(10px, 20px, 200px);
+}
+
+#Alti{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) translate3d(10px, 20px, -200px);
+}
+#Yedi{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:translateX(300px);
+}
+#Sekiz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:translateX(-50px);
+}
+#Dokuz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:translateY(50px);
+}
+#On{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:translateY(-50px);
+}
+#OnBir{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) translateZ(100px);
+}
+#OnIki{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) translateZ(-100px);
+}
+#Ortak{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+#OnUc{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skew(10deg);
+}
+#OnDort{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skew(10deg, 25deg);
+}
+#OnBes{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skew(-10deg, -25deg);
+}
+#OnAlti{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skewX(20deg);
+}
+#OnYedi{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skewX(-20deg);
+}
+
+#OnSekiz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skewY(20deg);
+}
+#OnDokuz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:skewY(-20deg);
+}
+#Yirmi{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scale(0.5);
+}
+#YirmiBir{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scale(0.5, 1);
+}
+#YirmiIki{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scale(1, 0.5);
+}
+#YirmiUc{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) scale3d(1.0, 1.0, 0.8) translateZ(100px);
+}
+
+#YirmiDort{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) scale3d(1.0, 1.0, -0.8) translateZ(100px);
+}
+
+#YirmiBes{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scaleX(0.5);
+}
+
+#YirmiAlti{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scaleY(0.5);
+}
+#YirmiYedi{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:perspective(1000px) scaleZ(0.8) translateZ(100px);
+}
+#YirmiSekiz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate(90deg);
+}
+#YirmiDokuz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate(-90deg);
+}
+
+
+
+#Otuz{
+  width: 200px;
+  height: 2000px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+#Otuz > #Islem1{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 10deg);
+}
+#Otuz > #Islem2{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 20deg);
+}
+#Otuz > #Islem3{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 30deg);
+}
+#Otuz > #Islem4{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 40deg);
+}
+#Otuz > #Islem5{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 50deg);
+}
+#Otuz > #Islem6{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 60deg);
+}
+#Otuz > #Islem7{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 70deg);
+}
+#Otuz > #Islem8{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 80deg);
+}
+#Otuz > #Islem9{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 90deg);
+}
+#Otuz > #Islem10{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 100deg);
+}
+#Otuz > #Islem11{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 110deg);
+}
+#Otuz > #Islem12{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 120deg);
+}
+#Otuz > #Islem13{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 130deg);
+}
+#Otuz > #Islem14{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 140deg);
+}
+#Otuz > #Islem15{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 150deg);
+}
+#Otuz > #Islem16{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 160deg);
+}
+#Otuz > #Islem17{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 170deg);
+}
+#Otuz > #Islem18{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(1, 0, 0, 180deg);
+}
+
+
+#OtuzBir{
+  width: 200px;
+  height: 2000px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+#OtuzBir > #Islem1{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 10deg);
+}
+#OtuzBir > #Islem2{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 20deg);
+}
+#OtuzBir > #Islem3{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 30deg);
+}
+#OtuzBir > #Islem4{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 40deg);
+}
+#OtuzBir > #Islem5{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 50deg);
+}
+#OtuzBir > #Islem6{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 60deg);
+}
+#OtuzBir > #Islem7{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 70deg);
+}
+#OtuzBir > #Islem8{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 80deg);
+}
+#OtuzBir > #Islem9{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 90deg);
+}
+#OtuzBir > #Islem10{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 100deg);
+}
+#OtuzBir > #Islem11{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 110deg);
+}
+#OtuzBir > #Islem12{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 120deg);
+}
+#OtuzBir > #Islem13{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 130deg);
+}
+#OtuzBir > #Islem14{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 140deg);
+}
+#OtuzBir > #Islem15{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 150deg);
+}
+#OtuzBir > #Islem16{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 160deg);
+}
+#OtuzBir > #Islem17{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 170deg);
+}
+#OtuzBir > #Islem18{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 1, 0, 180deg);
+}
+
+#OtuzIki{
+  width: 200px;
+  height: 2000px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+#OtuzIki > #Islem1{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 10deg);
+}
+#OtuzIki > #Islem2{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 20deg);
+}
+#OtuzIki > #Islem3{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 30deg);
+}
+#OtuzIki > #Islem4{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 40deg);
+}
+#OtuzIki > #Islem5{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 50deg);
+}
+#OtuzIki > #Islem6{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 60deg);
+}
+#OtuzIki > #Islem7{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 70deg);
+}
+#OtuzIki > #Islem8{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 80deg);
+}
+#OtuzIki > #Islem9{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 90deg);
+}
+#OtuzIki > #Islem10{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 100deg);
+}
+#OtuzIki > #Islem11{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 110deg);
+}
+#OtuzIki > #Islem12{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 120deg);
+}
+#OtuzIki > #Islem13{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 130deg);
+}
+#OtuzIki > #Islem14{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 140deg);
+}
+#OtuzIki > #Islem15{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 150deg);
+}
+#OtuzIki > #Islem16{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 160deg);
+}
+#OtuzIki > #Islem17{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 170deg);
+}
+#OtuzIki > #Islem18{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotate3d(0, 0, 1, 180deg);
+}
+
+#OtuzUc{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotateX(180deg);
+}
+#OtuzDort{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotateY(180deg);
+}
+#OtuzBes{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:rotateZ(45deg);
+}
+#OtuzAlti{
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  padding: 10px;
+  border: 2px solid red;
+  perspective: 150px;
+}
+
+#Deger36{
+  padding: 30px;
+  border: 1px solid blue;
+  background-color: yellow;
+  transform: rotateY(45deg);
+}
+
+#OtuzYedi{
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  padding: 10px;
+  border: 2px solid red;
+  perspective: 150px;
+}
+
+#Deger37{
+  padding: 30px;
+  border: 1px solid blue;
+  background-color: yellow;
+  transform: rotateX(22deg);
+}
+
+
+#OtuzSekiz{
+  perspective: 1000px;
+}
+
+#Zar{
+  font-size: 100px;
+  width: 130px;
+  margin: 97.5px;
+  transform-style: preserve-3d;
+  transform: rotateX(-40deg)rotateY(45deg);
+}
+.Yuzey{
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(255, 0, 4, 0.6);
+  border:1px solid  rgba(255,0,4, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 130px;
+}
+
+.Birli{
+  transform: translateZ(65px);
+}
+.Ikili{
+  transform:rotateX(-90deg) translateZ(65px);
+}
+.Uclu{
+  transform:rotateY(-90deg) translateZ(65px);
+}
+.Dortlu{
+  transform:rotateY(90deg) translateZ(65px);
+}
+.Besli{
+  transform:rotateX(90deg) translateZ(65px);
+}
+.Altili{
+  transform:rotateY(-180deg) translateZ(65px);
+}
+
+#OtuzDokuz{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:matrix(1.5, 0.5, 0.5, 0.8, 10, 10);
+}
+#Kirk{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:matrix3d(0.55682553882389,	0.015584828250827071,	0,	0.00013057139542444322,-2.508475939599322,	0.03993860507956171,	0, -0.0037055391088052936, 0,	0,	1,	0,566, 41,	0,1);
+}
+
+.KirkBir{
+  width: 81px;
+  height: 81px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  transform:scaleX(0.5);
+}
+#Deger41{
+  transform:initial;
+}
