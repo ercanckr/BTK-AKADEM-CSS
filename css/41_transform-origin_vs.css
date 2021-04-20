@@ -1,0 +1,563 @@
+/*
+transform-origin :  HTML elementinin dönüştürme sonrasındaki konum özelliklerini belirler.
+Parametreler     :  x | y | z
+Varsayılan       :  50% 50% 0;
+Değerler         :  length | % | initial 
+length           :  Değer Yok.
+%                :  HTML elementinin x ve y ekseni doğrıltusunda konumunu değiştirir.
+initial          :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+#Bir {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform: rotate(40deg);
+  transform-origin: 50% 50% 0;
+}
+
+#Iki {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform: rotate(40deg);
+  transform-origin: 75% 50% 0;
+}
+#Uc {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform: rotate(40deg);
+  transform-origin: 50% 200% 0;
+}
+
+#Dort {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform: rotate(40deg);
+  transform-origin: 150% 300% 0;
+}
+#Bes {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform:perspective(1000px) rotate(45deg) translateZ(200px);
+  transform-origin: 100% 500% 0;
+}
+
+#Alti {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform:scale(1.5);
+  transform-origin: -200% 75% 0;
+}
+.Yedi {
+  width: 81px;
+  padding: 50px;
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin: 50px;
+  transform:scale(1.5);
+  transform-origin: -200% 75% 0;
+}
+
+#Deneme7{
+  transform-origin: initial;
+}
+
+
+
+
+/*
+transform-style  :  İç içe geçmiş HTML elementlerinin 3D dönüştürme sonrasındaki, 3D boşluğunda 
+                    konumlandırılmış veya element düzleminde düzleştirilmiş olup olmadığı durumunu belirler.
+
+Değerler         :  flat | preserve-3d | initial 
+flat             :  Düz.
+preserve-3d      :  3D Perspektif.
+initial          :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+#Sekiz {
+ position: relative;
+ width: 200px;
+ height: 200px;
+ margin: 100px;
+}
+
+#BirinciEleman {
+  position: absolute;
+  width: 200px;
+  padding: 100px;
+  border: 1px solid black;
+  background-color: yellow;
+  transform: rotate(60deg);
+  transform-style: flat;
+ }
+ #IkinciEleman {
+  position: absolute;
+  padding: 100px;
+  border: 1px solid grey;
+  background-color: burlywood;
+  transform: rotateY(-45deg);
+ }
+ 
+
+
+ #Dokuz {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+ }
+ 
+ #BirinciEleman1 {
+   position: absolute;
+   width: 200px;
+   padding: 100px;
+   border: 1px solid black;
+   background-color: yellow;
+   transform: rotate(60deg);
+   transform-style: preserve-3d;
+  }
+  #IkinciEleman1 {
+   position: absolute;
+   padding: 100px;
+   border: 1px solid grey;
+   background-color: burlywood;
+   transform: rotateY(-45deg);
+  }
+
+
+
+  .On{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 120px;
+   }
+   
+   .BirinciEleman1 {
+     position: absolute;
+     width: 200px;
+     padding: 100px;
+     border: 1px solid black;
+     background-color: yellow;
+     transform: rotate(60deg);
+     transform-style: preserve-3d;
+    }
+    .IkinciEleman1 {
+     position: absolute;
+     padding: 100px;
+     border: 1px solid grey;
+     background-color: burlywood;
+     transform: rotateY(-45deg);
+    }
+
+    #Deneme10{
+      transform-style: initial;
+    }
+
+
+/*
+perspective  :  HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği özelliklerini belirler.
+
+Değerler     :  none | length | initial 
+none         :  Düz.
+length       :  3D Perspektif.
+initial      :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+#OnBir {
+position: relative;
+width: 150px;
+height: 150px;
+padding: 50px;
+margin: 50px;
+border: 1px solid red;
+perspective: none;
+}
+
+#IcEleman11{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid blue;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+
+
+#OnIki {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 50px;
+  margin: 50px;
+  border: 1px solid red;
+  perspective: 100px;
+  }
+  
+  #IcEleman12{
+    position: absolute;
+    padding: 50px;
+    border: 1px solid blue;
+    background-color: yellow;
+    transform: rotateX(45deg);
+  }
+
+
+
+#OnUc{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 50px;
+  margin: 50px;
+  border: 1px solid red;
+  perspective: 100px;
+  }
+  
+  #IcEleman13{
+    position: absolute;
+    padding: 50px;
+    border: 1px solid blue;
+    background-color: yellow;
+    transform: rotateY(-45deg);
+  }
+
+
+  .OnDort{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    margin: 50px;
+    border: 1px solid red;
+    perspective: 100px;
+    }
+    
+    .IcEleman14{
+      position: absolute;
+      padding: 50px;
+      border: 1px solid blue;
+      background-color: yellow;
+      transform: rotateY(-45deg);
+    }
+
+    #Deneme14{
+      perspective: initial;
+    }
+
+
+
+/*
+perspective-origin :  HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği konum özelliklerini belirler.
+Parametreler       :  x | y 
+Varsayılan         :  50% 50%
+Değerler           :  length | % | initial 
+length             :  Değer Yok.
+%                  :  HTML elementinin x ve y ekseni doğrıltusunda konumunu değiştirir.
+initial            :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+#OnBes {
+position: relative;
+width: 250px;
+height: 250px;
+margin: 50px;
+padding: 50px;
+border: 1px solid black;
+perspective: 150px;
+perspective-origin: 50% 50%;
+}
+
+#IcEleman15{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+
+#OnAlti {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px;
+}
+
+#IcEleman16{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+
+#OnYedi {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: -100px;
+}
+#IcEleman17{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+
+#OnSekiz {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px 200px;
+}
+#IcEleman18{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+#OnDokuz {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px -50px;
+}
+
+#IcEleman19{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateX(45deg);
+}
+
+
+
+#Yirmi {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px;
+}
+
+#IcEleman20{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateY(45deg);
+}
+
+
+#YirmiBir {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px 50px;
+}
+#IcEleman21{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateY(45deg);
+}
+
+
+.YirmiIki {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid black;
+  perspective: 150px;
+  perspective-origin: 100px 50px;
+}
+
+.IcEleman22{
+  position: absolute;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: yellow;
+  transform: rotateY(45deg);
+}
+
+#Islem22{
+  perspective-origin: initial;
+}
+
+
+
+/*
+backface-visibility  :  Belirtilen HTML Elementinin dönüştürme, Geçiş veya animasyon işlemlerinde arka 
+                      yüzeyinin görüntülenme veya gizlenme özelliklerini belirler.
+
+Değerler             :  visible | hidden | initial 
+visible              :  Göster.
+hidden               :  Gizle.
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+
+#YirmiUcA {
+border: 1px solid red;
+width: 81px;
+padding: 25px;
+background-color: red;
+color: white;
+}
+
+#YirmiUcB {
+  border: 1px solid red;
+  width: 81px;
+  padding: 25px;
+  background-color: red;
+  color: white;
+  transform: rotateY(180deg);
+  backface-visibility: visible;
+}
+
+#YirmiDortA {
+  border: 1px solid blue;
+  width: 81px;
+  padding: 25px;
+  background-color: blue;
+  color: white;
+} 
+
+#YirmiDortB {
+  border: 1px solid blue;
+  width: 81px;
+  padding: 25px;
+  background-color: blue;
+  color: white;
+  transform: rotateX(180deg);
+  backface-visibility: visible;
+}
+
+
+#YirmiBesA {
+  border: 1px solid red;
+  width: 81px;
+  padding: 25px;
+  background-color: red;
+  color: white;
+  }
+  
+  #YirmiBesB {
+    border: 1px solid red;
+    width: 81px;
+    padding: 25px;
+    background-color: red;
+    color: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  
+  #YirmiAltiA {
+    border: 1px solid blue;
+    width: 81px;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+  } 
+  
+  #YirmiAltiB {
+    border: 1px solid blue;
+    width: 81px;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+  }
+
+
+
+  .YirmiYediA {
+    border: 1px solid blue;
+    width: 81px;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+  } 
+  
+  .YirmiYediB {
+    border: 1px solid blue;
+    width: 81px;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+  }
+
+#Islem27{
+  backface-visibility: initial;
+}
