@@ -1,0 +1,963 @@
+/*
+transition                  :  HTML elementinin tüm geçiş özelliklerini belirler.
+Parametreler                :  transition-property | transition-duration | transition-timing-function | transition-delay
+Varsayılan Değerler         :  all 0s ease 0s
+Değerler                    :  property value (özellik değeri) | initial 
+transition-property         :  CSS özellik adı.
+transition-duration         :  Geçiş Süresi.
+transition-timing-function  :  Hız eğrisi.
+transition-delay            :  Duraksama süresi.
+initial                     :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+#Bir {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 3s;
+}
+
+#Bir:hover{
+  width: 1000px;
+}
+
+
+#iki {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 3s, height 3s;
+}
+
+#iki:hover{
+  width: 1000px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+
+
+#Uc {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 2s, height 5s;
+}
+
+
+#Uc:hover{
+  width: 1000px;
+  height: 500px;
+}
+
+
+
+#Dort {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 4s ease;
+}
+
+#Dort:hover{
+  width: 1000px;
+}
+
+#Dort-1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 4s linear;
+}
+
+#Dort-1:hover{
+  width: 1000px;
+}
+
+
+
+#Bes {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 4s ease, height 8s ease;
+}
+
+#Bes:hover{
+  width: 1000px;
+  height: 500px;
+}
+
+#Bes-1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 4s linear, height 8s linear;
+}
+
+#Bes-1:hover {
+  width: 1000px;
+  height: 500px;
+}
+
+
+
+#Alti {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 4s ease 3s;
+}
+
+#Alti:hover {
+  width: 1000px;
+}
+
+
+.Yedi {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: yellow;
+  color: red;
+  text-align: center;
+  line-height: 100px;
+  transition: width 2s, height 3s, background-color 2s, border 4s, color 1s, line-height 4s;
+}
+
+.Yedi:hover {
+  width: 1000px;
+  height: 300px;
+  background-color: red;
+  border: 5px solid yellow;
+  color: yellow;
+  line-height: 300px;
+}
+
+
+#Sekiz {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  border: 1px solid red;
+  background-color: yellow;
+  transition:transform 5s;
+}
+
+#Sekiz:hover {
+transform: translateX(500px);
+}
+
+
+
+#Dokuz {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  border: 1px solid red;
+  background-color: yellow;
+  transition:transform 5s;
+}
+
+#Dokuz:hover {
+transform: rotate(1800deg);
+}
+
+
+
+#On {
+  width: 100px;
+  height: 100px;
+  margin: 200px;
+  border: 1px solid red;
+  background-color: yellow;
+  transition:transform 5s;
+}
+
+#On:hover {
+transform: rotate(900deg) scale(2) translateY(100px);
+}
+
+#OnBir {
+  width: 300px;
+  height: 22px;
+  border: 1px solid black;
+  background-color: gray;
+  transition: width 3s, border 3s, background-color 3s, color 3s;
+}
+
+#OnBir:focus {
+  width: 800px;
+  border: 1px dashed red;
+  background-color: yellow;
+  color: red;
+}
+
+#OnIki {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: yellow;
+  transition:border-radius 1s;
+}
+
+#OnIki:hover {
+border-radius: 50%;
+}
+
+
+#OnUc{
+  margin: 50px;
+}
+
+
+#KisiKartiAlani {
+cursor: pointer;
+width: 150px;
+height: 150px;
+perspective: 600px;
+}
+
+
+#KisiKarti {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: all 1s linear;
+}
+
+#KisiKarti:hover{
+  transform: rotateY(180deg);
+}
+
+.OnYuz{
+position: absolute;
+width: 100%;
+height: 100%;
+overflow: hidden;
+backface-visibility: hidden;
+border-radius: 8px;
+}
+
+.ArkaYuz{
+  position: absolute;
+  line-height: 150px;
+  text-align: center;
+  background-color: gray;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+
+#OnDort{
+  margin: 50px;
+}
+
+
+#KisiKartiAlani2 {
+cursor: pointer;
+width: 150px;
+height: 150px;
+perspective: 600px;
+}
+
+
+#KisiKarti2 {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: all 1s linear;
+}
+
+#KisiKarti2:hover{
+  transform: rotateX(180deg);
+}
+
+.OnYuz2{
+position: absolute;
+width: 100%;
+height: 100%;
+overflow: hidden;
+backface-visibility: hidden;
+border-radius: 8px;
+}
+
+.ArkaYuz2{
+  position: absolute;
+  line-height: 150px;
+  text-align: center;
+  background-color: gray;
+  font-size: 20px;
+  color: white;
+  transform: rotateX(180deg);
+
+}
+
+
+.OnBes {
+width: 760px;
+margin: 150px auto;
+border: 4px double black;
+padding: 50px;
+}
+
+.Alan{
+  width: 250px;
+  display: inline-block;
+}
+
+.OnBes h1{
+  color: gray;
+  font-size: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.Kutu{
+  width: 40px;
+  height: 40px;
+  margin: 50px auto;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.Kutu1{
+  background-color: aquamarine;
+  transition: all 1s;
+}
+
+.Kutu2{
+  background-color: burlywood;
+  transition: all 2s;
+}
+  
+.Kutu3{
+  background-color: bisque;
+  transition: all 3s;
+}
+
+.OnBes:hover .Alan .Kutu1, .OnBes:hover .Alan .Kutu2, .OnBes:hover .Alan .Kutu3 {
+  transform: scale(4);
+}
+
+#OnAlti{
+  width: 300px;
+  height: 300px;
+}
+
+#Bir1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 3px;
+  transition: transform 1s;
+}
+
+#Iki2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 3px;
+  transition: transform 1s;
+}
+
+#Iki2:hover{
+  transform: translate(50px, 50px);
+}
+
+#OnYedi {
+width: 100px;
+height: 100px;
+margin: 100px auto;
+background: skyblue;
+border: 1px solid gray;
+border-radius: 5px 50%;
+transition: transform 2s;
+transform-origin: 0 0;
+}
+
+#OnYedi:hover {
+  transform: rotate(3600deg);
+}
+
+
+
+div.OnSekiz {
+position: relative;
+width: 100%;
+height: 400px;
+background-color: #00506c;
+}
+
+
+.Alan18{
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+padding-top: 100px;
+margin-left:450px;
+}
+
+.Kutular{
+position: relative;
+display: inline-block;
+width: 200px;
+height: 200px;
+text-align: center;
+line-height: 200px;
+font-size: 20px;
+transition: all 500ms;
+transform: scale(1) rotate(0deg);
+}
+
+
+.Kutular:hover{
+transform: scale(1.5) rotate(360deg);
+box-shadow: 0px 0px 150px black;
+z-index: 2;
+}
+
+
+.OnDokuz {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: yellow;
+  transition: width 3s;
+}
+
+.OnDokuz:hover{
+  width: 1000px;
+}
+
+#Deneme19{
+  transition: initial;
+}
+
+
+
+/*
+transition-property  :  HTML elementinin tanımlanmış olan geçiş özelliği için, kullanılması gereken
+                        CSS'de tanımlı olan özellik adını belirler.
+Değerler             :  all | property | initial 
+all                  :  Hepsi.
+property             :  Özellik.
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+
+
+#Yirmi {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s;
+  transition-property: all;
+}
+
+#Yirmi:hover {
+  width: 1000px;
+}
+
+
+
+
+
+#YirmiBir {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s;
+  transition-property: width;
+}
+
+
+#YirmiBir:hover {
+  width: 1000px;
+}
+
+
+.YirmiIki {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s;
+  transition-property: width, height;
+}
+
+.YirmiIki:hover {
+  width: 1000px;
+  height: 600px;
+}
+
+
+
+#YirmiUc {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s, 2s;
+  transition-property: width, height;
+}
+
+#YirmiUc:hover {
+  width: 1000px;
+  height: 600px;
+}
+
+
+#YirmiDort{
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s ;
+  transition-property: transform;
+}
+
+#YirmiDort:hover{
+transform: rotate(1800deg);
+}
+
+
+.YirmiBes {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: gray;
+  border: 1px solid black;
+  transition: 5s ;
+  transition-property: transform;
+}
+
+.YirmiBes:hover{
+  transform: rotate(1800deg);
+}
+
+
+#Islem25{
+  transition-property: initial;
+}
+
+
+
+
+/*
+transition-duration  :  HTML elementinin tanımlanmış olan geçiş özelliğinin, kaç saniye veya kaç milisaniye
+                        sonunda tamamlanacağını belirler.
+Değerler             :  time | initial 
+time                 :  Zaman, (Saniye : s. Milisaiye : ms).
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+#YirmiAlti {
+width: 200px;
+height: 200px;
+border: 4px double black;
+background-color: skyblue;
+font-size: 25px;
+line-height: 200px;
+color: gray;
+text-align: center;
+transition-property: all;
+transition-duration: 3s;
+}
+
+#YirmiAlti:hover{
+  width: 1000px;
+  color: black;
+}
+
+
+
+.YirmiYedi {
+  width: 200px;
+  height: 200px;
+  border: 4px double black;
+  background-color: skyblue;
+  font-size: 25px;
+  line-height: 200px;
+  color: gray;
+  text-align: center;
+  transition-property: width, color;
+  transition-duration: 3s, 1ms;
+}
+
+.YirmiYedi:hover{
+  width: 1000px;
+  color: black;
+}
+
+.YirmiSekiz {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 4px double black;
+  background-color: skyblue;
+  font-size: 25px;
+  line-height: 200px;
+  color: gray;
+  text-align: center;
+  transition-property:width, transform;
+  transition-duration:100ms, 3000ms;
+}
+
+.YirmiSekiz:hover{
+  width: 300px;
+ transform: skew(10deg);
+}
+
+.YirmiDokuz {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 4px double black;
+  background-color: skyblue;
+  font-size: 25px;
+  line-height: 200px;
+  color: gray;
+  text-align: center;
+  transition-property:width, transform;
+  transition-duration:100ms, 3000ms;
+}
+
+.YirmiDokuz:hover{
+  width: 300px;
+ transform: skew(10deg);
+}
+
+#Islem29{
+  transition-duration:initial;
+}
+
+
+/*
+transition-delay     :  HTML elementinin tanımlanmış olan geçiş özelliğinin, kaç saniye veya kaç milisaniye
+                        sonra başlayacağını belirler.
+Değerler             :  time | initial 
+time                 :  Zaman, (Saniye : s. Milisaiye : ms).
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+.Otuz{
+  width: 150px;
+  height: 100px;
+  border: thin solid red;
+  background-color: #990000;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+
+.Otuz:hover{
+  width: 1000px;
+}
+
+.OtuzBir{
+  width: 150px;
+  height: 100px;
+  border: thin solid red;
+  background-color: #990000;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  transition-property: width, border, background-color, color;
+  transition-duration: 5s;
+  transition-delay: 1s, 2s, 3s, 4s;
+}
+
+.OtuzBir:hover{
+  width: 1000px;
+  border: 5px dashed yellow;
+  background-color: skyblue;
+  color: yellow;
+}
+
+.OtuzIki{
+  width: 150px;
+  height: 100px;
+  border: thin solid red;
+  background-color: #990000;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  transition-property: width, border, background-color, color;
+  transition-duration: 5s;
+  transition-delay: 1s, 2s, 3s, 4s;
+}
+
+.OtuzIki:hover{
+  width: 1000px;
+  border: 5px dashed yellow;
+  background-color: skyblue;
+  color: yellow;
+}
+
+#Islem32{
+  transition-delay: initial;
+}
+
+
+/*
+transition-timing-function :  HTML elementinin tanımlanmış olan geçiş özelliğinin, hız eğrisi özelliklerini  belirler.
+Değerler                   :  ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps |
+                              cubic-bezier | initial 
+ease                       :  Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+linear                     :  Başlangıçtan sona kadar aynı hız.
+ease-in                    :  Yavaş olarak başlayarak sona doğru hızlanır.
+ease-out                   :  Hızlı olarak başlayarak sona doğru yavaşlar.
+ease-in-out                :  Yavaş olarak başlayarak ortada hızlanır ve sona doğru tekrar yavaşalar.
+step-start                 :  Geçiş süresine bakılmaksızın doğrudan sona ulaşır.
+step-end                   :  Geçiş süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+steps                      :  Başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar.
+cubic-bezier               :  Bezier eğrisi. (http://cubic-bezier.com)
+initial                    :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+.OtuzUc{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+}
+.OtuzUc:hover{
+  width: 1500px;
+}
+
+.OtuzDort{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+}
+.OtuzDort:hover{
+  width: 1500px;
+}
+
+.OtuzBes{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+}
+.OtuzBes:hover{
+  width: 1500px;
+}
+
+
+.OtuzAlti{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+.OtuzAlti:hover{
+  width: 1500px;
+}
+
+.OtuzYedi{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+.OtuzYedi:hover{
+  width: 1500px;
+}
+
+.OtuzSekiz{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: step-start;
+}
+.OtuzSekiz:hover{
+  width: 1500px;
+}
+
+.OtuzDokuz{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: step-end;
+}
+.OtuzDokuz:hover{
+  width: 1500px;
+}
+
+.Kirk{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: steps(10);
+}
+.Kirk:hover{
+  width: 1500px;
+}
+
+.KirkBir{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: steps(10, end);
+}
+.KirkBir:hover{
+  width: 1500px;
+}
+
+.KirkIki{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: steps(10, start);
+}
+.KirkIki:hover{
+  width: 1500px;
+}
+
+.KirkUc{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: cubic-bezier(0,1,1,0);
+}
+.KirkUc:hover{
+  width: 1500px;
+}
+
+
+.KirkDort{
+  width: 100px;
+  height: 100px;
+  border: thin solid black;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: cubic-bezier(0,1,1,0);
+}
+.KirkDort:hover{
+  width: 1500px;
+}
+
+#Islem44{
+  transition-timing-function: initial;
+}
+
+.Islem45{
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border: thin solid black;
+  border-radius: 50%;
+  background-color: gray;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+#aa{
+  background-color: red;
+  transition-timing-function: ease;
+}
+#bb{
+  background-color: blue;
+  transition-timing-function: linear;
+}
+#cc{
+  background-color: burlywood;
+  transition-timing-function: ease-in;
+}
+#dd{
+  background-color: brown;
+  transition-timing-function: ease-out;
+}
+#ee{
+  background-color: bisque;
+  transition-timing-function: ease-in-out;
+}
+#ff{
+  background-color: yellow;
+  transition-timing-function: step-start;
+}
+#gg{
+  background-color: orange;
+  transition-timing-function: step-end;
+}
+#hh{
+  background-color: steelblue;
+  transition-timing-function: steps(5, end);
+}
+#jj{
+  background-color: sienna;
+  transition-timing-function: steps(5, start);
+}
+#kk{
+  background-color: green;
+  transition-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+
+.KirkBes:hover .Islem45{
+  transform: translateX(1800px);
+}
