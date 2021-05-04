@@ -1,0 +1,1472 @@
+/*
+animation           :  HTML elementinin tüm animasyon özelliklerini belirler.
+Parametreler        :  animation-name | animation-duration | animation-timing-function | animation-delay
+                       animation-iteration-count | animation-direction | animation-fill-mode | animation-play-state
+Varsayılan Değerler :  all 0 ease 0 1 normal none running
+Değerler            :  animation value  | initial 
+animation value     :  Animasyon özelliği değerleri.
+initial             :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+#Bir {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: red;
+  animation: CssEgitimi 1s linear 0s infinite normal none running;
+}
+
+@keyframes CssEgitimi {
+  from{
+    left: 0px;
+  }
+  to{
+    left: 1500px;
+  }
+}
+
+
+#iki {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background: red;
+  animation: CssEgitimi2 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi2 {
+  from{
+    left: 0px;
+  }
+  to{
+    left: 1500px;
+  }
+}
+
+
+
+
+#Uc {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation: CssEgitimi3 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi3 {
+  from{
+    transform: rotate(0deg) scale(1.0);
+    background-color: red;
+  }
+  to{
+    transform: rotate(180deg) scale(2.5);
+    background-color: yellow;
+  }
+}
+
+
+#Dort {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation: CssEgitimi4 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi4 {
+  from{
+width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#Bes {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation: CssEgitimi5 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi5 {
+  from{
+width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#Bes-1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation: CssEgitimi6 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi6 {
+  from{
+width: 1500px;
+  }
+  to{
+    width: 100px;
+  }
+}
+
+
+.Alti {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation: CssEgitimi66 1s linear 0s infinite alternate none running;
+}
+
+@keyframes CssEgitimi66 {
+  from{
+width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+#Islem6{
+  animation: initial;
+}
+
+
+
+/*
+@keyframe  :  HTML elementine tanımlanmış olan animasyonun, animasyon sırasındaki ara aşamalarını belirler.
+Değerler   :  from | to | % 
+from       :  Başlangıç.
+to         :  Bitiş.
+to         :  Yüzde değeri.
+*/
+
+
+.Yedi {
+position: relative;
+width: 500px;
+height: 500px;
+border: 4px double gray;
+margin: 8px auto;
+}
+
+#Top{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  border-radius: 50%;
+  left:calc(50% - 25px);
+  animation: CssEgitimi7 5s ease 0s infinite normal none running;
+}
+
+@keyframes CssEgitimi7{
+  from{
+    transform: translateY(0px)
+  }
+  to{
+    transform: translateY(450px)
+  }
+}
+
+
+
+#Sekiz {
+  position: relative;
+  width: 200px;
+  height: 500px;
+  border: 4px double gray;
+  margin: 0px auto;
+}
+
+#Top2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  border-radius: 50%;
+  left:calc(50% - 25px);
+  animation: CssEgitimi8 4s linear 0s 1 normal forwards running;
+}
+
+
+@keyframes CssEgitimi8{
+  25%{
+    transform: translateY(450px)
+  }
+  35%{
+    transform: translateY(300px)
+  }
+  50%{
+    transform: translateY(450px)
+  }
+  60%{
+    transform: translateY(375px)
+  }
+  70%{
+    transform: translateY(450px)
+  }
+  75%{
+    transform: translateY(425px)
+  }
+  85%{
+    transform: translateY(440px)
+  }
+  90%{
+    transform: translateY(450px)
+  }
+  95%{
+    transform: translateY(450px)
+  }
+  100%{
+    transform: translateY(450px)
+  }
+
+}
+
+
+#Dokuz {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 4px double gray;
+  margin: 200px;
+  background-color: skyblue;
+  animation: CssEgitimi9 5s ease 0s infinite normal none running;
+}
+@keyframes CssEgitimi9{
+  25%{
+    transform: rotate(90deg)
+  }
+  50%{
+    transform: skewX(45deg)
+  }
+  75%{
+    transform: scale(2)
+  }
+  100%{
+    transform: skewX(0deg)
+  }
+
+}
+
+
+
+
+/*
+animasyon-name     :  HTML elementine atanmış olan animasyonun, @keyframes özelliği için isim tanımlamasını belirler.
+Değerler           :  none | keyframes name | initial
+
+none               :  Değer yok.
+keyframes name     :  Animasyon aşamaları adı.
+initial            :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+
+
+#On {
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellow;
+  background-color: red;
+  animation: 5s;
+  animation-name: none;
+}
+
+@keyframes CssEgitimi10{
+  from{
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+
+
+#OnBir {
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellow;
+  background-color: red;
+  animation: 5s infinite;
+  animation-name: CssEgitimi11;
+}
+
+@keyframes CssEgitimi11{
+  from{
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+
+#OnIki {
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellow;
+  background-color: red;
+  animation: 5s;
+  animation-name: CssEgitimi12;
+}
+
+@keyframes CssEgitimi12{
+0%{
+  width: 100px;
+}
+25%{
+  width: 500px;
+}
+35%{
+  width: 300px;
+}
+65%{
+  width: 1000px;
+}
+80%{
+  width: 0px;
+}
+100%{
+  width: 100px;
+}
+}
+
+.OnUc {
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellow;
+  background-color: red;
+  animation: 5s;
+  animation-name: CssEgitimi13;
+}
+
+@keyframes CssEgitimi13{
+  0%{
+    width: 100px;
+  }
+  25%{
+    width: 500px;
+  }
+  35%{
+    width: 300px;
+  }
+  65%{
+    width: 1000px;
+  }
+  80%{
+    width: 0px;
+  }
+  100%{
+    width: 100px;
+  }
+  }
+  
+#Islem13{
+  animation-name: initial;
+}
+
+
+/*
+animation-duration :  HTML elementine tanımlanmış olan animasyon döngüsünün, kaç saniye veya kaç milisaniye
+                      sonunda tamamlanacağını belirler.
+Değerler           :  time | initial
+
+time               :  Zaman. (Saniye : s, Milisaniye : ms).
+initial            :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+#OnDort {
+  width: 100px;
+  height: 100px;
+  margin: 0 350px;
+  background-color: yellow;
+  animation-name: CssEgitimi14;
+  animation-duration: 5s;
+}
+
+@keyframes CssEgitimi14 {
+  from{
+    transform: scale(1) rotate(0deg);
+  }
+  to{
+    transform: scale(2) rotate(360deg);
+  }
+}
+
+
+.OnBes {
+  width: 100px;
+  height: 100px;
+  margin: 0 350px;
+  border: 1px solid red;
+  border-radius: 5px 50%;
+  background-color: yellow;
+  animation-name: CssEgitimi15;
+  animation-duration: 5000ms;
+}
+
+@keyframes CssEgitimi15 {
+  from{
+    transform: scale(1) rotate(0deg);
+  }
+  to{
+    transform: scale(2) rotate(3600deg);
+  }
+}
+
+
+
+
+.OnAlti {
+  width: 100px;
+  height: 100px;
+  margin: 0 350px;
+  border: 1px solid red;
+  border-radius: 5px 50%;
+  background-color: yellow;
+  animation-name: CssEgitimi16;
+  animation-duration: 5000ms;
+}
+
+@keyframes CssEgitimi16 {
+  from{
+    transform: scale(1) rotate(0deg);
+  }
+  to{
+    transform: scale(2) rotate(3600deg);
+  }
+}
+
+#Islem16{
+  animation-duration: initial;
+}
+
+
+
+
+
+/*
+animation-delay    :  HTML elementine tanımlanmış olan animasyonun, kaç saniye veya kaç milisaniye
+                      gecikme sonunda başlıyacağını belirler.
+Değerler           :  time | initial
+
+time               :  Zaman. (Saniye : s, Milisaniye : ms).
+initial            :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+#OnYedi {
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+  text-align: center;
+  animation-name: CssEgitimi17;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+
+@keyframes CssEgitimi17{
+  0%{
+    width: 100%;
+    background-color: yellow;
+  }
+  50%{
+    width: 50%;
+    background-color: red;
+  }
+  75%{
+    width: 75%;
+    background-color: blue;
+  }
+  100%{
+    width: 125%;
+    background-color: transparent;
+  }
+}
+
+
+
+#OnSekiz {
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+  text-align: center;
+  animation-name: CssEgitimi18;
+  animation-duration: 5s;
+  animation-delay: 2000ms;
+}
+
+@keyframes CssEgitimi18{
+  0%{
+    width: 100%;
+    background-color: yellow;
+  }
+  50%{
+    width: 50%;
+    background-color: red;
+  }
+  75%{
+    width: 75%;
+    background-color: blue;
+  }
+  100%{
+    width: 125%;
+    background-color: transparent;
+  }
+}
+
+.OnDokuz{
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+  text-align: center;
+  animation-name: CssEgitimi19;
+  animation-duration: 5s;
+  animation-delay: 2000ms;
+}
+
+@keyframes CssEgitimi19{
+  0%{
+    width: 100%;
+    background-color: yellow;
+  }
+  50%{
+    width: 50%;
+    background-color: red;
+  }
+  75%{
+    width: 75%;
+    background-color: blue;
+  }
+  100%{
+    width: 125%;
+    background-color: transparent;
+  }
+}
+
+
+#Islem19{
+  animation-delay: initial;
+}
+
+
+
+
+
+
+/*
+animation-timing-function  :  HTML elementine tanımlanmış olan animasyon döngüsünün, hız eğrisi özelliklerini  belirler.
+Değerler                   :  ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps |
+                              cubic-bezier | initial 
+ease                       :  Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+linear                     :  Başlangıçtan sona kadar aynı hız.
+ease-in                    :  Yavaş olarak başlayarak sona doğru hızlanır.
+ease-out                   :  Hızlı olarak başlayarak sona doğru yavaşlar.
+ease-in-out                :  Yavaş olarak başlayarak ortada hızlanır ve sona doğru tekrar yavaşalar.
+step-start                 :  Animasyon süresine bakılmaksızın doğrudan sona ulaşır.
+step-end                   :  Animasyon süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+steps                      :  Başlangıç ve bitiş arasında adımlamalı animasyon işlemi yapar. 
+                              (1. Parametre : Adım sayısı, 2. Parametre : end | start)
+cubic-bezier               :  Bezier eğrisi. (http://cubic-bezier.com)
+initial                    :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+
+#Yirmi {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi20;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+@keyframes CssEgitimi20{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+
+#YirmiBir {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi21;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes CssEgitimi21{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#YirmiIki {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi22;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes CssEgitimi22{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#YirmiUc {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi23;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes CssEgitimi23{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+#YirmiDort {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi24;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes CssEgitimi24{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#YirmiBes {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi21;
+  animation-duration: 5s;
+  animation-timing-function: step-start;
+}
+
+@keyframes CssEgitimi25{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+#YirmiAlti {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi26;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-end;
+}
+
+@keyframes CssEgitimi26{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+#YirmiYedi {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi27;
+  animation-duration: 5s;
+  animation-timing-function: steps(10);
+}
+
+@keyframes CssEgitimi27{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+#YirmiSekiz {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi28;
+  animation-duration: 5s;
+  animation-timing-function: steps(10, end);
+}
+
+@keyframes CssEgitimi28{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+.YirmiDokuz {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi29;
+  animation-duration: 5s;
+  animation-timing-function: steps(10, start);
+}
+
+@keyframes CssEgitimi29{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+.Otuz {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi30;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+@keyframes CssEgitimi30{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+
+.OtuzBir {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  line-height: 50px;
+  text-align: center;
+  color: gray;
+  animation-name: CssEgitimi31;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+@keyframes CssEgitimi31{
+  from {
+    width: 100px;
+  }
+  to{
+    width: 1500px;
+  }
+}
+
+#Islem31{
+  animation-timing-function: initial;
+}
+
+
+
+
+#OtuzIki {
+width: 1500px;
+height: 555px;
+border: 1px solid black;
+}
+
+.IcElemanlar{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  color: white;
+  font-size: 20px;
+}
+
+.Bir1{
+  background-color: red;
+  animation-name: Bir1;
+  animation-timing-function: ease;
+}
+@keyframes Bir1{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.Iki2{
+  background-color: navy;
+  animation-name: Iki2;
+  animation-timing-function: linear;
+}
+@keyframes Iki2{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.Uc3{
+  background-color: brown;
+  animation-name: Uc3;
+  animation-timing-function: ease-in;
+}
+@keyframes Uc3{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.Dort4{
+  background-color: yellow;
+  animation-name: Dort4;
+  animation-timing-function: ease-out;
+}
+@keyframes Dort4{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.Bes5{
+  background-color: orangered;
+  animation-name: Bes5;
+  animation-timing-function: ease-in-out;
+}
+@keyframes Bes5{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.Alti6{
+  background-color: slateblue;
+  animation-name: Alti6;
+  animation-timing-function: step-start;
+}
+@keyframes Alti6{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+
+.Yedi7{
+  background-color: green;
+  animation-name: Yedi7;
+  animation-timing-function: step-end;
+}
+@keyframes Yedi7{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+
+.Sekiz8{
+  background-color: blue;
+  animation-name: Sekiz8;
+  animation-timing-function: steps(10, end);
+}
+@keyframes Sekiz8{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+
+.Dokuz9{
+  background-color: burlywood;
+  animation-name: Dokuz9;
+  animation-timing-function: steps(10, start);
+}
+@keyframes Dokuz9{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+.On10{
+  background-color: slategray;
+  animation-name: On10;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+@keyframes On10{
+  from{
+    width: 0px;
+  }
+  to{
+    width: 1490px;
+  }
+}
+
+
+
+
+/*
+animation-iteration-count  :  HTML elementine tanımlanmış olan animasyonun kaç defa oynatılacağını belirler.
+Değerler                   :  number | infinite | initial 
+number                     :  Rakam.
+infinite                   :  Sonsuz.
+initial                    :  HTML elementi varsayılan biçimlendirme değerine döner.
+*/
+
+
+
+
+.OtuzUc {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin-left: 100px;
+  transform: rotate(360deg);
+  animation-name: CssEgitimi33;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes CssEgitimi33{
+  from{
+    transform: rotate(0deg);
+    background-color: skyblue;
+  }
+  to{
+    transform: rotate(360deg);
+    background-color: black;
+  }
+}
+
+
+
+
+.OtuzDort {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin-left: 100px;
+  transform: rotate(360deg);
+  animation-name: CssEgitimi34;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes CssEgitimi34{
+  from{
+    transform: rotate(0deg);
+    background-color: skyblue;
+  }
+  to{
+    transform: rotate(360deg);
+    background-color: black;
+  }
+}
+
+.OtuzBes {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin-left: 100px;
+  transform: rotate(360deg);
+  animation-name: CssEgitimi35;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes CssEgitimi35{
+  from{
+    transform: rotate(0deg);
+    background-color: skyblue;
+  }
+  to{
+    transform: rotate(360deg);
+    background-color: black;
+  }
+}
+
+#Islem35{
+  animation-iteration-count: initial;
+}
+
+
+
+/*
+animation-direction  :  HTML elementine tanımlanmış olan animasyonun oynatma yönü özelliklerini belirler.
+Değerler             :  normal | reverse  | alternate | alternate-reverse | initial
+normal               :  Normal.
+reverse              :  Ters.
+alternate-reverse    :  Ters Alternatif.
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+
+.OtuzAlti {
+  width: 250px;
+  height: 50px;
+  background-color: skyblue;
+  border: grey;
+  text-align: center;
+  line-height: 50px;
+  animation-name: CssEgitimi36;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes CssEgitimi36{
+from{
+  width: 250px;
+}
+to{
+  width: 1750px;
+}
+}
+
+
+
+
+.OtuzYedi {
+  width: 250px;
+  height: 50px;
+  background-color: skyblue;
+  border: grey;
+  text-align: center;
+  line-height: 50px;
+  animation-name: CssEgitimi37;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes CssEgitimi37{
+  from{
+    width: 250px;
+  }
+  to{
+    width: 1750px;
+  }
+  }
+  
+.OtuzSekiz {
+  width: 250px;
+  height: 50px;
+  background-color: skyblue;
+  border: grey;
+  text-align: center;
+  line-height: 50px;
+  animation-name: CssEgitimi38;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes CssEgitimi38{
+  from{
+    width: 250px;
+  }
+  to{
+    width: 1750px;
+  }
+  }
+
+
+
+.OtuzDokuz {
+  width: 250px;
+  height: 50px;
+  background-color: skyblue;
+  border: grey;
+  text-align: center;
+  line-height: 50px;
+  animation-name: CssEgitimi39;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes CssEgitimi39{
+  from{
+    width: 250px;
+  }
+  to{
+    width: 1750px;
+  }
+  }
+
+.Kirk {
+  width: 250px;
+  height: 50px;
+  background-color: skyblue;
+  border: grey;
+  text-align: center;
+  line-height: 50px;
+  animation-name: CssEgitimi40;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes CssEgitimi40{
+  from{
+    width: 250px;
+  }
+  to{
+    width: 1750px;
+  }
+  }
+#Islem40{
+  animation-direction: initial;
+}
+
+
+
+/*
+animation-fill-mode  :  HTML elementine tanımlanmış olan animasyonun oynatma işlemi tamamlandığında,
+                        HRML elementinin konum özelliklerini belirler.
+Değerler             :  none | forwards  | backwards | both | initial
+
+none                 :  Değer yok.
+forwards             :  İleride.
+backwards            :  Geride.
+both                 :  Her ikiside.
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+
+
+.KirkBir {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi41;
+  animation-duration: 5s;
+  animation-fill-mode: none;
+}
+
+@keyframes CssEgitimi41{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+
+
+.KirkIki {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi42;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes CssEgitimi42{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+
+.KirkUc {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi43;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes CssEgitimi43{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+.KirkDort {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi44;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+@keyframes CssEgitimi44{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+
+.KirkBes {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi45;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+@keyframes CssEgitimi45{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+#Islem45{
+  animation-fill-mode: initial;
+}
+
+.KirkAlti {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: CssEgitimi46;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#Aaa{
+  animation-fill-mode: forwards;
+}
+
+#Bbb{
+  animation-fill-mode: backwards;
+}
+#Ccc{
+  animation-fill-mode: both;
+}
+
+
+@keyframes CssEgitimi46{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(1000px);
+  }
+}
+
+
+
+/*
+animation-play-state :  HTML elementine tanımlanmış olan animasyonun çalışıp çalışmadığını veya 
+                        duraklatılmış olup olmadığını belirler.
+
+Değerler             :  running | paused  | initial
+running              :  Çalışır.
+paused               :  Duraklatılmış.
+initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+.KirkYedi{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  animation-name: CssEgitimi47;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes CssEgitimi47{
+  from{
+    width: 100px;
+    height: 50px;
+  }
+  to{
+    width: 1500px;
+    height: 200px;
+  }
+}
+
+.KirkSekiz{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  animation-name: CssEgitimi48;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+@keyframes CssEgitimi48{
+  from{
+    width: 100px;
+    height: 50px;
+  }
+  to{
+    width: 1500px;
+    height: 200px;
+  }
+}
+
+.KirkDokuz{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  animation-name: CssEgitimi49;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+@keyframes CssEgitimi49{
+  from{
+    width: 100px;
+    height: 50px;
+  }
+  to{
+    width: 1500px;
+    height: 200px;
+  }
+}
+
+#Islem49{
+  animation-play-state: initial;
+}
