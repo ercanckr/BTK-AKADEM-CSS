@@ -1,5 +1,5 @@
 /*
-page-break-before  : Sayfa yazdırma işlemlerinde belirtilecek olan HTML elementinden önce sayfa sonlandırma
+page-break-after   : Sayfa yazdırma işlemlerinde belirtilecek olan HTML elementinden sonra sayfa sonlandırma
                      durumunu belirler.
 Değerler           : auto | always | initial
 auto               : Otomatik değer alır.
@@ -7,7 +7,6 @@ always             : Daima.
 initial            : HTML elementi varsayılan biçimlendirme değerine döner.
 */
 
-p {
-  border: 2px solid red;
-  page-break-before: auto;
+.Sonlandir{
+  page-break-after: always;
 }
