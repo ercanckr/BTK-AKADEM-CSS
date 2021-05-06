@@ -1,0 +1,294 @@
+/*
+cursor   :  mause (fare) işaretcisinin sitilini belirler.
+
+Değerler :  auto | default | none | pointer | text | vertical-text | crosshair | cell | help | alias 
+            copy | progress | wait | zoom-in | zoom-out | grab | grabbing | move | no-drop | not-allowed 
+            all-scroll | row-resize | col-resize | nwse-resize | se-resize | nw-resize | nesw-resize 
+            sw-resize | ne-resize | ns-resize | s-resize | n-resize | ew-resize | e-resize | w-resize | url | initial 
+            inherit
+
+auto     :  Otomatik değer alır.
+default  :  Tüm elementlerde mause (fare) imleci OK şeklinde görünür.
+none     :  Deger yok.
+initial  :  HTML elementi varsayılan biçimlendirme değerine döner.
+inherit  :  HTML elementi üst elementinin biçimlendirme değerini alır.
+
+*/
+
+.Bir{
+    cursor: auto;
+}
+.Iki{
+    cursor: default;
+}
+.Uc{
+    cursor: none;
+}
+.Dort{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: pointer;
+}
+.Dort{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: pointer;
+}
+.Bes{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: text;
+}
+.Alti{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: vertical-text;
+}
+.Yedi{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: crosshair;
+}
+.Sekiz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: cell;
+}
+.Dokuz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: help;
+}
+.On{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: alias;
+}
+.OnBir{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: copy;
+}
+.OnIki{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: progress;
+}
+.OnUc{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: wait;
+}
+.OnDort{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: zoom-in;
+}
+.OnBes{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: zoom-out;
+}
+.OnAlti{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: grab;
+}
+.OnYedi{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: grabbing;
+}
+.OnSekiz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: move;
+}
+.OnDokuz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: no-drop;
+}
+.Yirmi{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: not-allowed;
+}
+.YirmiBir{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: all-scroll;
+}
+.YirmiIki{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: row-resize;
+}
+.YirmiUc{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: col-resize;
+}
+.YirmiDort{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: nwse-resize;
+}
+.YirmiBes{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: se-resize;
+}
+.YirmiAlti{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: nw-resize;
+}
+.YirmiYedi{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: nesw-resize;
+}
+.YirmiSekiz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: sw-resize;
+}
+.YirmiDokuz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: ne-resize;
+}
+.Otuz{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: s-resize;
+}
+.OtuzBir{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: n-resize;
+}
+.OtuzIki{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: ew-resize;
+}
+.OtuzUc{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: e-resize;
+}
+.OtuzDort{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: w-resize;
+}
+.OtuzBes{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: ns-resize;
+}
+.OtuzAlti{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: url(../img/Mouse.cur), auto;
+}
+.OtuzYedi{
+    width: 600px;
+    height: 100px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: pointer;
+}
+
+#Islem37{
+    cursor: initial;
+}
+.OtuzSekiz{
+    width: 400px;
+    height: 450px;
+    padding: 50px;
+    border: 1px solid brown;
+    text-align: center;
+    cursor: pointer;
+}
+
+.OtuzSekiz > p{
+    cursor: initial;
+    width: 400px;
+    height: 200px;
+    border: 1px solid brown;
+}
+
+#Islem38{
+    cursor: inherit;
+}
