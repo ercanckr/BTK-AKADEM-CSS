@@ -1,62 +1,64 @@
 @charset "utf-8";
+
 html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  direction: ltr;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  width: 100%; /*Genişlik*/
+  height: 100%; /*Yükseklik*/
+  margin: 0; /*Dış boşluk*/
+  padding: 0%; /*İç boşluk*/
+  direction: ltr; /*Sayfanın içerik yönü soldan sağa*/
+  overflow-x: hidden; /*Sayfanın yatay kaydirma çubuğunu gizler*/
+  overflow-y: scroll; /*Dikey kaydırma çubuğu herzaman gözükür*/
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #646464;
-  line-height: 1.5;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  text-align: center;
-  text-decoration: none;
+  width: 100%; /*Genişlik*/
+  height: 100%; /*Yükseklik*/
+  margin: 0; /*Dış boşluk*/
+  padding: 0%; /*İç boşluk*/
+  border: none; /*Kenarlık çizgisi yok */
+  outline: none; /*Anahat çizgisi yok */
+  background-color: white; /*Arkaplan rengi beyaz */
+  font-family: Arial, Helvetica, sans-serif; /*Font Ailesi */
+  color: #646464; /*Yazı rengi */
+  line-height: 1.5; /*Satır Yüksekliği*/
+  font-style: normal; /*Font Sitili*/
+  font-variant: normal; /*Metnin küçük büyük harf değeri*/
+  font-weight: normal; /*font kalınlığı*/
+  text-align: center; /*metni ortaya hizalar*/
+  text-decoration: none; /* metnin alt üst süsleme çizgisi yok*/
 }
+
 @media only screen and (min-width: 1200px) {
-  /*XL*/
+  /* XL */
   body {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /*L*/
+  /* L */
   body {
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*M*/
+  /* M */
   body {
     font-size: 12px;
   }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /*S*/
+  /* S */
   body {
     font-size: 12px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /*XS*/
+  /* XS */
   body {
     font-size: 12px;
   }
 }
+
 #TumSayfaAlani {
   position: relative;
   width: 100%;
@@ -75,6 +77,7 @@ body {
   outline: none;
   background-color: #fff;
 }
+
 #HeaderAlani {
   position: fixed;
   display: block;
@@ -84,7 +87,7 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 0%;
   top: 0;
   left: 0;
   border: none;
@@ -93,20 +96,21 @@ body {
   text-align: center;
 }
 #HeaderMesajAlani {
-  display: block;
+  display: inline-block;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0%;
   border: none;
   outline: none;
-  background-color: #353745;
   vertical-align: top;
   text-align: center;
+  background-color: #353745;
 }
+
 @media only screen and (min-width: 1200px) {
-  /*XL*/
+  /* XL */
   #HeaderMesajAlani {
     height: 40px;
     min-height: 40px;
@@ -114,7 +118,7 @@ body {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /*L*/
+  /* L */
   #HeaderMesajAlani {
     height: 40px;
     min-height: 40px;
@@ -122,16 +126,15 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*M*/
+  /* M */
   #HeaderMesajAlani {
     height: 30px;
     min-height: 30px;
     max-height: 30px;
   }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /*S*/
+  /* S */
   #HeaderMesajAlani {
     height: 30px;
     min-height: 30px;
@@ -139,21 +142,23 @@ body {
   }
 }
 @media only screen and (max-width: 575px) {
-  /*XS*/
+  /* XS */
   #HeaderMesajAlani {
     height: 25px;
     min-height: 25px;
     max-height: 25px;
   }
 }
-#HeaderMesajAlani img {
+
+#HeaderMesajAlani img{
   margin: 0 auto;
-  padding: 0;
+  padding: 0%;
   border: none;
   outline: none;
 }
+
 @media only screen and (min-width: 1200px) {
-  /*XL*/
+  /* XL */
   #HeaderMesajAlani img#HeaderMesajResmi1175x40 {
     display: block;
     width: 1175px;
@@ -176,8 +181,10 @@ body {
     display: none;
   }
 }
+  
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /*L*/
+  /* L */
   #HeaderMesajAlani img#HeaderMesajResmi965x40 {
     display: block;
     width: 965px;
@@ -200,8 +207,10 @@ body {
     display: none;
   }
 }
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*M*/
+  /* M */
   #HeaderMesajAlani img#HeaderMesajResmi740x30 {
     display: block;
     width: 740px;
@@ -211,10 +220,10 @@ body {
     min-height: 30px;
     max-height: 30px;
   }
-  #HeaderMesajAlani img#HeaderMesajResmi1175x40 {
+  #HeaderMesajAlani img#HeaderMesajResmi965x40 {
     display: none;
   }
-  #HeaderMesajAlani img#HeaderMesajResmi965x40 {
+  #HeaderMesajAlani img#HeaderMesajResmi1175x40 {
     display: none;
   }
   #HeaderMesajAlani img#HeaderMesajResmi500x30 {
@@ -224,33 +233,38 @@ body {
     display: none;
   }
 }
+
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /*S*/
+  /* S */
   #HeaderMesajAlani img#HeaderMesajResmi500x30 {
-    display: block;
-    width: 500px;
-    min-width: 500px;
-    max-width: 500px;
-    height: 30px;
-    min-height: 30px;
-    max-height: 30px;
-  }
-  #HeaderMesajAlani img#HeaderMesajResmi965x40 {
-    display: none;
-  }
-  #HeaderMesajAlani img#HeaderMesajResmi1175x40 {
-    display: none;
-  }
-  #HeaderMesajAlani img#HeaderMesajResmi740x30 {
-    display: none;
-  }
-  #HeaderMesajAlani img#HeaderMesajResmi295x25 {
-    display: none;
-  }
+  display: block;
+  width: 500px;
+  min-width: 500px;
+  max-width: 500px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
 }
+#HeaderMesajAlani img#HeaderMesajResmi965x40 {
+  display: none;
+}
+#HeaderMesajAlani img#HeaderMesajResmi740x30 {
+  display: none;
+}
+#HeaderMesajAlani img#HeaderMesajResmi1175x40 {
+  display: none;
+}
+#HeaderMesajAlani img#HeaderMesajResmi295x25 {
+  display: none;
+}
+}
+
+
 @media only screen and (max-width: 575px) {
-  /*XS*/
+  /* XS */
   #HeaderMesajAlani img#HeaderMesajResmi295x25 {
+
     display: block;
     width: 295px;
     min-width: 295px;
@@ -273,8 +287,8 @@ body {
   }
 }
 
-#HeaderMenuAlani {
-  display: block;
+#HeaderMenuAlani{
+  display: inline-block;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -287,8 +301,8 @@ body {
   vertical-align: top;
   text-align: center;
 }
-#HeaderMenuUstuAlani {
-  display: block;
+#HeaderMenuUstuAlani{
+  display: inline-block;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -299,14 +313,15 @@ body {
   padding: 0;
   overflow: hidden;
   border: none;
-  border-top: 2px solid #0077bb;
+  border-top: 2px solid #07b;
   outline: none;
-  background-color: #0088cc;
+  background-color: #08c;
   vertical-align: top;
   text-align: center;
 }
-#HeaderMenuUstuSinirlamaAlani {
-  display: block;
+
+#HeaderMenuUstuSinirlamaAlani{
+  display: inline-block;
   height: 30px;
   min-height: 30px;
   max-height: 30px;
@@ -315,13 +330,13 @@ body {
   overflow: hidden;
   border: none;
   outline: none;
-  background-color: #0088cc;
-  vertical-align: middle;
+  background-color: #08c;
+  vertical-align: top;
   text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
-  /*XL*/
+  /* XL */
   #HeaderMenuUstuSinirlamaAlani {
     width: 1175px;
     min-width: 1175px;
@@ -329,15 +344,16 @@ body {
   }
 }
 @media only screen and (max-width: 1199px) {
-  /*L,M,S,XS*/
+  /* L, M, S, XS*/
   #HeaderMenuUstuSinirlamaAlani {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
   }
 }
-#HeaderMenuUstuSeceneklerAlani {
-  display: inline-block;
+
+#HeaderMenuUstuSeceneklerAlani{
+  display: block;
   list-style: none;
   float: right;
   height: 30px;
@@ -349,8 +365,8 @@ body {
   outline: none;
   text-align: left;
 }
-.HeaderMenuUstuSecenekleri {
-  display: inline-block;
+.HeaderMenuUstuSecenekleri{
+  display: block;
   float: left;
   height: auto;
   margin: 0 auto;
@@ -369,36 +385,32 @@ body {
   text-align: left;
   text-decoration: none;
 }
-.HeaderMenuUstuSecenekleri a {
+.HeaderMenuUstuSecenekleri a{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 12px;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   text-decoration: none;
 }
-.HeaderMenuUstuSecenekleri a:link,
-.HeaderMenuUstuSecenekleri a:active,
-.HeaderMenuUstuSecenekleri a:visited {
+.HeaderMenuUstuSecenekleri a:link, .HeaderMenuUstuSecenekleri a:active, .HeaderMenuUstuSecenekleri a:visited {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 12px;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   text-decoration: none;
 }
-.HeaderMenuUstuSecenekleri a:hover {
+
+.HeaderMenuUstuSecenekleri a:hover{
   font-family: Arial, Helvetica, sans-serif;
   color: #ff0;
-  font-size: 12px;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   text-decoration: none;
 }
-.HeaderMenuUstuSecenekleri img {
+.HeaderMenuUstuSecenekleri img{
   display: block;
   width: 16px;
   min-width: 16px;
@@ -412,8 +424,8 @@ body {
   border: none;
   outline: none;
 }
-#HeaderMenuSinirlamaAlani {
-  display: block;
+#HeaderMenuSinirlamaAlani{
+  display: inline-block;
   height: 35px;
   min-height: 35px;
   max-height: 35px;
@@ -427,8 +439,9 @@ body {
   vertical-align: middle;
 }
 
+
 @media only screen and (min-width: 1200px) {
-  /*XL*/
+  /* XL */
   #HeaderMenuSinirlamaAlani {
     width: 1175px;
     min-width: 1175px;
@@ -438,7 +451,7 @@ body {
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /*L*/
+  /* L */
   #HeaderMenuSinirlamaAlani {
     width: 100%;
     min-width: 100%;
@@ -448,7 +461,7 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*M*/
+  /* M */
   #HeaderMenuSinirlamaAlani {
     width: 100%;
     min-width: 100%;
@@ -457,9 +470,8 @@ body {
     padding-bottom: 10px;
   }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /*S*/
+  /* S */
   #HeaderMenuSinirlamaAlani {
     width: 100%;
     min-width: 100%;
@@ -469,7 +481,7 @@ body {
   }
 }
 @media only screen and (max-width: 575px) {
-  /*XS*/
+  /* XS */
   #HeaderMenuSinirlamaAlani {
     width: 100%;
     min-width: 100%;
@@ -478,16 +490,15 @@ body {
     padding-bottom: 5px;
   }
 }
-
-#HeaderMenuLogoAlani {
-  display: inline-block;
+#HeaderMenuLogoAlani{
+  display: block;
   float: left;
   width: 195px;
-  min-width: 195px;
   max-width: 195px;
+  min-width: 195px;
   height: 35px;
-  min-height: 35px;
   max-height: 35px;
+  min-height: 35px;
   margin: 0 auto;
   padding: 0;
   padding-left: 5px;
@@ -496,62 +507,17 @@ body {
   vertical-align: middle;
   text-align: left;
 }
-#HeaderMenuLogoAlani img {
+
+#HeaderMenuLogoAlani img{
   display: block;
   width: 192px;
-  min-width: 192px;
   max-width: 192px;
+  min-width: 192px;
   height: 35px;
-  min-height: 35px;
   max-height: 35px;
+  min-height: 35px;
   margin: 0 auto;
   padding: 0;
   border: none;
   outline: none;
-}
-#HeaderMenuNavAlani {
-  display: inline-block;
-  float: right;
-  width: -webkit-calc(100%-235px);
-  width: -moz-calc(100%-235px);
-  width: -o-calc(100%-235px);
-  width: -ms-calc(100%-235px);
-  width: calc(100%-235px);
-  min-width: -webkit-calc(100%-235px);
-  min-width: -moz-calc(100%-235px);
-  min-width: -o-calc(100%-235px);
-  min-width: -ms-calc(100%-235px);
-  min-width: calc(100%-235px);
-  max-width: -webkit-calc(100%-235px);
-  max-width: -moz-calc(100%-235px);
-  max-width: -o-calc(100%-235px);
-  max-width: -ms-calc(100%-235px);
-  max-width: calc(100%-235px);
-  height: 35px;
-  min-height: 35px;
-  max-height: 35px;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  vertical-align: middle;
-  text-align: right;
-}
-#HeaderMenuNav {
-  float: right;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  height: 35px;
-  min-height: 35px;
-  max-height: 35px;
-  margin: 0 auto;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  vertical-align: middle;
-  text-align: left;
 }
