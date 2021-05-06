@@ -1,0 +1,153 @@
+/*
+all      :  direction ve unicode-bidi hariç, diğer tüm CSS özelliklerinin sıfırlanacağı veya devralınacağı
+            durumu belirler.
+Değerler :  initial | inherit | unset
+
+initial  :  Belirtilecek olan HTML elementinin, tüm CSS özellikleri varsayılan biçimlendirme değerine döner.
+inherit  :  Belirtilecek olan HTML elementinin üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır.
+unset    :  Belirtilecek olan HTML elementinin üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır.
+            Fakat üst elementinde tanımlı herhangi bir özellik yoksa, tüm css özellikleri varsayılan biçimlendirme
+            değerine döner.
+
+
+*/
+
+.Bir {
+  border: 2px solid red;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+
+#Islem1{
+ all: initial;
+}
+
+.Iki {
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+#Islem2{
+    all: initial;
+   }
+   
+
+#UstDiv3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+#Islem3{
+    font-size: 10px;
+    font-weight: normal;
+    color: blue;
+    all: inherit;
+ }
+
+ #UstDiv4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.Dort{
+    all: initial;
+    display: block;
+}
+
+#Islem4{
+    all: inherit;
+ }
+
+ #UstDiv5{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+ }
+
+ #Islem5{
+    font-size: small;
+    font-weight: normal;
+    color: orange;
+    all: unset;
+ }
+
+ #Islem6{
+    font-size: small;
+    font-weight: normal;
+    color: orange;
+    all: unset;
+ }
+
+
+
+ /*
+var()    :  Önceden tanımlanmış olan ve tüm CSS kodları içerisinde kullanılmak üzre belirli değerler 
+             içeren verilerin tutulduğu değişkenlerin çağrılma durumunu belirler.
+*/
+
+
+:root{
+    --KirmiziRenk:red;
+    --MaviBorder:2px solid blue;
+    --KalinYazi:bold;
+    --SariArkaplan:yellow;
+    --Genislik:700px;
+    --Yukseklik:100px;
+    --Yaziortalama:center;
+}
+
+.Yedi{
+    width: var(--Genislik);
+    height: var(--Yukseklik);
+    border: var(--MaviBorder);
+    color: var(--KirmiziRenk);
+    text-align: var(--Yaziortalama);
+    font-weight: var(--KalinYazi);
+    background-color: var(--SariArkaplan);
+}
+.Sekiz{
+    width: var(--Genislik);
+    height: var(--Yukseklik);
+    border: var(--MaviBorder);
+    color: var(--KirmiziRenk);
+    text-align: var(--Yaziortalama);
+    font-weight: var(--KalinYazi);
+    background-color: var(--SariArkaplan);
+}
+
+.Dokuz{
+    --KirmiziRenk:red;
+    --MaviBorder:2px solid blue;
+    --KalinYazi:bold;
+    --SariArkaplan:yellow;
+    --Genislik:700px;
+    --Yukseklik:100px;
+    --Yaziortalama:center;
+}
+#Islem9{
+    width: var(--Genislik);
+    height: var(--Yukseklik);
+    border: var(--MaviBorder);
+    color: var(--KirmiziRenk);
+    text-align: var(--Yaziortalama);
+    font-weight: var(--KalinYazi);
+    background-color: var(--SariArkaplan);
+}
+
+#Islem10{
+    width: var(--Genislik);
+    height: var(--Yukseklik);
+    border: var(--MaviBorder);
+    color: var(--KirmiziRenk);
+    text-align: var(--Yaziortalama);
+    font-weight: var(--KalinYazi);
+    background-color: var(--SariArkaplan);
+}
