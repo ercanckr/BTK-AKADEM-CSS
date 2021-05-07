@@ -521,3 +521,322 @@ body {
   border: none;
   outline: none;
 }
+
+#HeaderMenuNavAlani{
+  display: inline-block;
+  float: right;
+  width: calc(100%-235px);
+  max-width: calc(100%-235px);
+  min-width: calc(100%-235px);
+  height: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: right;
+}
+
+#HeaderMenuNav{
+  float: right;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  /* XL, L, M */
+  #HeaderMenuNav {
+    display: block;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* S, XS */
+  #HeaderMenuNav {
+    display: none;
+
+  }
+}
+#HeaderMenuSeceneklerAlani{
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* XL */
+  #HeaderMenuSeceneklerAlani {
+    padding-top: 8px;
+
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* L */
+  #HeaderMenuSeceneklerAlani {
+    padding-top: 9px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* M */
+  #HeaderMenuSeceneklerAlani {
+    padding-top: 10px;
+  }
+}
+
+.HeaderMenuSecenekleri{
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #646464;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1200px) {
+  /* XL */
+  .HeaderMenuSecenekleri {
+    font-size: 14px;
+
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* L */
+  .HeaderMenuSecenekleri {
+    font-size: 13px;;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* M */
+  .HeaderMenuSecenekleri {
+    font-size: 12px;
+  }
+}
+
+.HeaderMenuSecenekleri a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #646464;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+.HeaderMenuSecenekleri a:link, .HeaderMenuSecenekleri a:active, .HeaderMenuSecenekleri a:visited{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #646464;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+
+.HeaderMenuSecenekleri a:hover{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+#HeaderMenuAcmaButonuAlani{
+  float: right;
+  width: 26px;
+  min-width: 26px;
+  max-width: 26px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-right: 5px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  text-align: right;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  /* XL, L, M */
+  #HeaderMenuAcmaButonuAlani {
+display: none;
+  }
+}
+
+#HeaderMenuAcmaButonuAlani img{
+  display: block;
+  width: 26px;
+  min-width: 26px;
+  max-width: 26px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+#HeaderMenuAcmaButonuMenuSinirlamaAlani{
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #3d3d3d;
+  text-align: center;
+  vertical-align: middle;
+
+}
+@media only screen and (min-width: 768px) {
+  /* XL, L, M */
+  #HeaderMenuAcmaButonuMenuSinirlamaAlani {
+display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* S, XS */
+  #HeaderMenuAcmaButonuMenuSinirlamaAlani {
+display: block;
+  }
+}
+
+#HeaderMenuAcmaButonuMenu{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #3d3d3d;
+  text-align: center;
+  vertical-align: top;
+
+}
+#HeaderMenuAcmaButonuMenuSeceneklerAlani{
+  display: block;
+  float: left;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.HeaderMenuAcmaButonuMenuSecenekleri{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  margin: 0 auto;
+  padding: 5px 5px 4px 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.HeaderMenuAcmaButonuMenuSecenekleri a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+.HeaderMenuAcmaButonuMenuSecenekleri a:link, .HeaderMenuAcmaButonuMenuSecenekleri a:active, .HeaderMenuAcmaButonuMenuSecenekleri a:visited{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+
+.HeaderMenuAcmaButonuMenuSecenekleri a:hover{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+}
+
+main{
+  position: relative;
+  display: block;
+  z-index: 98;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  vertical-align: top;
+  text-align: center;
+}
